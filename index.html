@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./fonts/Bossa-web-font/Bossa-ExtendedBold.woff2">
+    <link rel="stylesheet" href="./fonts/mazzard-web-font/MazzardH-Bold.woff">
+
+    <link rel="stylesheet" href="./css/tw.css" />
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+
+            <div class="main_nav">
+                <img src="./imges/Group 305@3x.png" alt="" class="logo">
+                <ul class="hidden md:block">
+                    <li class="nav_links"><a href="#">About</a></li>
+                    <li class="nav_links"><a href="#">Courses</a></li>
+                    <li class="nav_links"><a href="#">Contact</a></li>
+                    <li class="nav_links"><a href="./SignIn.html">Sign In</a></li>
+                    <li class="nav_links signup_link">
+                        <a href="#">Signup for free</a>
+                    </li>
+                    <li>
+                        <span onclick="openNav()" class="open"><img src="./imges/menu-3-fill.png" alt=""></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a href="#">About</a>
+                    <a href="#">Courses</a>
+                    <a href="#">Contact</a>
+                    <a href="./SignIn.html">Sign In</a>
+                </div>
+            </div>
+            <!-- Use any element to open/show the overlay navigation menu -->
+        </nav>
+
+        <!-- ================================ HERO SECTION ===================== -->
+        <div class="hero_section">
+            <div class="">
+                <div class="flex justify-center flex-wrap flex-col md:flex-row">
+                    <div class=" md:w-6/12 w-full  h-96  flex-grow  flex justify-center items-center">
+                        <div class="md:w-8/12 w-10/12 hero_contain grid gap-5">
+                            <h1 class="hero_title">
+                                Earn while you learn!
+                            </h1>
+                            <p>
+                                An interactive fundraising platform for families and friends to create wealthy
+                                entrepreneurs focused on creating jobs and employment.
+                            </p>
+                            <div class="flex md:justify-start justify-center">
+                                <a href="#"
+                                    class="rounded-full md:rounded-md bg-blue-500 w-7/12 text-white px-3 text-center py-3 ">Join
+                                    Us Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="  md:w-6/12 w-full hero_img flex flex-grow md:min-h-screen h-96 bg-center ">
+                        <!-- <img src="./imges/Image@2x.png" class="w-16 md:w-32 lg:w-auto"  alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ======================= SEARCH AREA ===================== -->
+    <div class="search flex justify-center items-center w-full">
+        <div class="search_container md:text-left text-center ">
+            <div class="m-3 grid items-center  justify-center">
+                <!-- <div class=""> -->
+                <img src="./imges/Books-1.png" alt="" class="mx-auto " width="100px">
+                <h3>Library</h3>
+                <p>
+                    Buy courses online and learn on the go.
+                </p>
+                <!-- </div> -->
+            </div>
+            <div class="m-3 grid items-center  justify-center">
+                <img src="./imges/Chatbox _.png" alt="" class="mx-auto" width="300px">
+                <h3>Support</h3>
+                <p>
+                    Refer stores and products and get paid up to 80% commission for every referred purchase. That’s it.
+                    No gimmicks or fees.
+
+                </p>
+            </div>
+            <div class="m-3 grid items-center  justify-center">
+                <img src="./imges/Pig Right - [DESIGN 1.png" alt="" class="mx-auto" width="100px">
+                <h3>
+                    Rewards System
+                </h3>
+                <p>
+                    Save a product or store and we’ll notify when there’s a price drop or new coupons.
+                </p>
+            </div>
+            <div class="m-3 grid items-center justify-center">
+                <img src="./imges/Group.png" alt="" class="mx-auto" width="160px">
+                <h3>
+                    Interactive Learning
+                </h3>
+                <p>
+                    Organize your products into collections, or tag your photos or Instagram feed with products. Get
+                    paid for every referral.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="line">
+        <div class="line_container"></div>
+    </div>
+
+    <!-- ========================== SUPPORT AREA ==================  -->
+    <div class="support">
+        <div class="support_box">
+            <div class="support_text">
+                <h3>Supports your friends and families</h3>
+                <div class="showless">
+
+                </div>
+                <p>
+                    This voluntary gifting community functions as result of donations made to support its members and
+                    their projects. We believe in helping others we help ourselves.
+                </p>
+
+                <a href="#">Learn more</a>
+
+            </div>
+            <div class="support_img">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="feature"
+
+        <h1 class="flex">Featured Courses</h1>
+        <div class="feat_container justify-center grid md:flex">
+            <div class="feat_1">
+                <img src="./imges/Group 79.png" alt="">
+            </div>
+            <div class="feat_1">
+                <img src="./imges/Group 81.png" alt="">
+            </div>
+            <div class="feat_1">
+                <img src="./imges/Group 79.png" alt="">
+            </div>
+        </div>
+        <div class="feature_box w-full flex justify-center items-center">
+            <a href="#">View More</a>
+        </div>
+    </div>
+
+    <div class="sells">
+        <div class="sells_1">
+            <img src="./imges/Content 01@2x.png" class="sells_img_1" alt="">
+            <img src="./imges/Content 01.png" class="sells_img_2" alt="">
+        </div>
+    </div>
+    <!-- ================================ PACKAGES ============================ -->
+    <div class="packages">
+        <h1 class="package_title">Packages</h1>
+        <p class="package_sub_title">
+            Below are our various packages
+        </p>
+        <div class="pack grid md:flex">
+            <div class="pack_1">
+                <h4>Basic</h4>
+                <p>What you'll Get</p>
+                <div class="flex items-center">
+                    <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="" class="pack_img">
+                    <p class="m-3">Courses</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="" class="pack_img">
+                    <p class="m-3">Ebooks</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="" class="pack_img">
+                    <p class="m-3">Tutorials</p>
+                </div>
+                <div>
+                    <img src="./imges/Divider.png" alt="">
+                </div>
+                <div class="text-white dollar">
+                    <p class="m-3">&#36;30</p>
+                </div>
+                <div class="pack_btn_1">
+                    <a href="#" class="text-white">Choose</a>
+                </div>
+            </div>
+            <div class="pack_2">
+                <h4>Premium</h4>
+                <p>What you'll Get</p>
+                <div class="flex items-center">
+                    <img src="./imges/bxs-check-circle (2) 1.png" alt="">
+                    <p class="m-3">Basic Features</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="./imges/bxs-check-circle (2) 1.png" alt="">
+                    <p class="m-3">Advanced Courses</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="./imges/bxs-check-circle (2) 1.png" alt="">
+                    <p class="m-3">Advanced Tutorials</p>
+                </div>
+                <div>
+                    <img src="./imges/Divider.png" alt="">
+                </div>
+                <div class=" dollar">
+                    <p class="m-3">&#36;100</p>
+                </div>
+                <div class="pack_btn_2">
+                    <a href="#">Choose</a>
+                </div>
+            </div>
+            <div class="pack_3">
+                <h4>Business</h4>
+                <p>What you'll Get</p>
+                <div class="flex items-center">
+                    <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="" class="pack_img">
+                    <p class="m-3">Basic Features</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="" class="pack_img">
+                    <p class="m-3">Advanced Courses</p>
+                </div>
+                <div class="flex items-center">
+                    <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="" class="pack_img">
+                    <p class="m-3">Advanced Tutorials</p>
+                </div>
+                <div>
+                    <img src="./imges/Divider.png" alt="" class="pack_img_divider">
+                </div>
+                <div class=" dollar_1">
+                    <p class="m-3">&#36;200</p>
+
+                </div>
+                <div class="pack_btn_3">
+                    <a href="#">Choose</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================================== END OF PACKAGES ============================= -->
+
+
+    <!-- =============================== ALWAYS ========================== -->
+    <div class="always_create">
+        <div class="create">
+            <div class="create_box_1">
+                <div class="always_boxs">
+                    <img src="./imges/Always Free.png" alt="">
+                </div>
+
+            </div>
+            <div class="create_box_title">
+                <h3 class="always_title">Create your free account</h3>
+                <p>Start earning now. No hidden fees or gimmicks. Ever.</p>
+            </div>
+            <div class="box_create">
+                <div class="main_create_form">
+                    <div class="create_input">
+                        <p>Email Address</p>
+                        <input type="text" name="" id="" placeholder="Enter your email address">
+                    </div>
+                    <div class="create_input">
+                        <p>Password</p>
+                        <input type="text" name="" id="" placeholder="Enter your password (8+ Characters)">
+                    </div>
+                    <div class="create_btn">
+                        <a href="#">Sign up with email</a>
+                    </div>
+
+
+                </div>
+                <div class="account">
+                    <p class="text-white">Already have an account? <a href="#" class="sign_create">Sign In</a></p>
+                    <p class="text-white">By signing up, you agree to our <span class="create_term">Terms </span> and
+                        <span class="create_term">Privacy Policy.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================== ENDS ALWAYS ========================== -->
+
+
+
+    <!-- ========================================== STEPS ================================ -->
+    <div class="steps">
+        <h1>Steps to start Earning</h1>
+        <div class="steps_container">
+            <div class="steps_box grid md:flex flex-row  md:justify-between">
+                <div class="steps_1">
+                    <div class="step_1_box_x flex items-center">
+                        <div>
+                            <img src="./imges/Group 179.png" alt="">
+                        </div>
+
+                        <a href="#">
+                            <div>
+                                <p>Step 1</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="step_1_box_x_2 flex items-center">
+                        <div>
+                            <img src="./imges/Group 179.png" alt="">
+                        </div>
+                        <a href="#">
+                            <div>
+                                <p>Step 2</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="step_1_box_x_3 flex items-center">
+                        <div>
+                            <img src="./imges/Group 179.png" alt="">
+                        </div>
+                        <div>
+                            <a href="#">
+                                <p>Step 3</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="steps_2">
+                    <div class="first_box_img">
+                        <a href="#firstImage">
+                            <img src="./imges/Group 272 1@2x.png" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================== GET STARTED ========================== -->
+
+    <script src="app.js"></script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>
