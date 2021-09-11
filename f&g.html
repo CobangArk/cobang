@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./fonts/Bossa-web-font/Bossa-ExtendedBold.woff2">
+    <link rel="stylesheet" href="./fonts/mazzard-web-font/MazzardH-Bold.woff">
+
+    <link rel="stylesheet" href="./css/tw.css" />
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+
+            <div class="main_nav">
+                <img src="./imges/Group 305@3x.png" alt="" class="logo">
+                <ul class="hidden md:block">
+                    <li class="nav_links"><a href="./about.html">About</a></li>
+                    <li class="nav_links"><a href="#">Courses</a></li>
+                    <li class="nav_links"><a href="./f&g.html">F&Q</a></li>
+                    <li class="nav_links"><a href="#">Contact</a></li>
+                    <li class="nav_links"><a href="./SignIn.html">Sign In</a></li>
+                    <li class="nav_links signup_link">
+                        <a href="#">Signup for free</a>
+                    </li>
+                    <li>
+                        <span onclick="openNav()" class="open"><img src="./imges/menu-3-fill.png" alt=""></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a href="./about.html">About</a>
+                    <a href="#">Courses</a>
+                    <li class="nav_links"><a href="./f&g.html">F&Q</a></li>
+                    <a href="#">Contact</a> 
+                    <a href="./SignIn.html">Sign In</a>
+                </div>
+            </div>
+            <!-- Use any element to open/show the overlay navigation menu -->
+        </nav>
+
+       
+        <script src="app.js"></script>
+
+</body>
+
+</html>

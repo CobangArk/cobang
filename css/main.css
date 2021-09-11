@@ -20,6 +20,14 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+  font-family: 'Mazzard M';
+  src: url('../fonts/Bossa-web-font/Bossa-Bold.woff2') format('woff2');
+      /* url('MazzardM-Bold.woff') format('woff'); */
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 
 *
 {
@@ -168,7 +176,7 @@ body{
 /* ===========================================  */
 
   .hero_img{
-    background: url(../imges/Image@2x.png);
+    background: url(../imges/design-a4a346f1-455d-4253-90b8-71941d9d3eb0\ 1.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -179,6 +187,7 @@ body{
   }
   .hero_title{
     font-size: 70px;
+    padding-top: 30px;
     line-height: 70px;
   }
   .hero_contain h1{
@@ -434,8 +443,9 @@ body{
 }
 .feature .hed{
   padding-left: 190px;
-  font-size: 48px !important;
+  font-size: 48px;
   text-align: center;
+  /* background-color: red; */
   font-weight: 500;
   line-height: 100px;
 }
@@ -455,9 +465,9 @@ body{
 }
 
 @media screen and (max-width: 784px){
-  .feature h1{
-    padding-left: 37px;
-    font-size: 34px;
+  .feature .hed{
+    padding-left: 0px !important;
+    font-size: 30px;
     font-weight: 500;
     line-height: 60px;
   }
@@ -718,7 +728,7 @@ font-size: 40px;
   height: auto;
   width: 100%;
   /* background-color: red; */
-  background: url(../imges/BG\ \(1\).png);
+  background: url(../imges/BG\ \(11\).png);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -1102,37 +1112,6 @@ form{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ====================================== SIGNUP AREA============== */
 .signUp_area{
   height: 100vh;
@@ -1189,7 +1168,6 @@ form{
   margin: 10px;
 }
 .fist{
-  /* padding-top: 20px; */
   display: flex;
   justify-content: center;
 }
@@ -1290,4 +1268,399 @@ form{
      font-size: 14px;
      padding-left: 16px;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -========================= about_hero =================== */
+.about_hero{
+  height: auto;
+  /* background-color: red; */
+  background-image: url(../imges/Rectangle\ 2324.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.about_container{
+  margin: 30px;
+  height: auto;
+  padding: 20px;
+  width: 70%;
+  /* background-color: green; */
+}
+.about_text{
+  text-align: center;
+  width: 80%;
+  text-align: center;
+}
+.about_text h1{
+  font-size: 40px;
+  color: #183B56;
+  font-family: 'Bossa';
+  font-weight: 700;
+
+}
+.about_text p{
+  color: #5A7184;
+  font-size: 20px;
+  line-height: 30px;
+}
+.about_img{
+  /* background-image: url(../imges/Rectangle.png);
+  background-position: center;
+  background-size: cover; */
+  /* background-color: purple; */
+  /* position: relative; */
+  top: 80px;
+  width: 100%;
+  margin-top: 40px;
+  height:50vh;
+  border-radius: 20px;
+  border: none;
+}
+@media screen and (max-width: 789px){
+  .about_container{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .about_hero{
+    padding: 10px;
+  }
+  .about_text{
+    width: 100%;
+  }
+  .about_text p{
+    font-size: 16px;
+  }
+  .about_img {
+    margin-top: 10px;
+    height: auto;
+  }
+}
+/* ----=====================================  */
+.counter{
+  width: 100%;
+  /* background-color: lawngreen; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.sub_counter{
+  height: 70vh;
+  width: 70%;
+  /* background-color: lightcoral; */
+  display: flex;
+  justify-content: center;
+}
+
+.sub_count{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sub_count > div{
+  margin: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.count_bold{
+  font-size: 40px;
+  font-family: 'Mazzard M';
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.badge img{
+  margin-left: 40px;
+}
+.badge_1 img{
+  margin-left: 30px;
+}
+.badge_2 img{
+  margin-left: 30px;
+}
+.count_bold_text{
+  font-size: 18px;
+}
+@media screen and (max-width: 789px){
+  .sub_count{
+    display: block;
+  }
+
+.sub_counter{
+  height: auto;
+}
+
+.sub_counter{
+  width: 100%;
+ }
+.sub_count > div{
+  text-align: center;
+}
+}
+
+/* ===================== worth ================ */
+.worth{
+  height: auto;
+  width: 100%;
+  /* background-color: lightseagreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wroth_ul{
+  padding-top: 20px;
+  /* background: red; */
+  /* justify-content: space-between; */
+}
+.wroth_flex img{
+  margin: 10px;
+  display: flex;
+}
+.wroth_flex{
+  display: flex;
+  font-size: 17px;
+  font-family: 'Mazzard M';
+  /* font-weight: bold; */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.worth_sub{
+  width: 90%;
+  height: auto;
+  /* background-color: magenta; */
+  display: flex;
+  /* background-image: url(../imges/Base\ \(1\).png);
+  border-radius: 10px; */
+}
+.worth_sub_1{
+  width: 60%;
+  padding: 50px  50px; 
+  height: auto;
+  background: #259cd7;
+  color: #fff;
+}
+.worth_sub_1 h1{
+  font-size: 48px;
+  font-family: 'Mazzard M';
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.worth_sub_1 p{
+  font-size: 17px;
+  font-family: 'Mazzard M';
+  /* font-weight: bold; */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.worth_sub_2{
+  width: 40%;
+  height: auto;
+  /* background: red; */
+  background: url(../imges/Rectangle\ 2324.png);
+  background-position: center;
+  background-size: cover;
+}
+.worth_sub_2 img{
+  width: 100%;
+  position: relative;
+  left: -100px;
+}
+@media screen and (max-width: 789px){
+  .worth_sub_2{
+    display: none;
+  }
+  .worth_sub_1 h1{
+    font-size: 30px;
+  }
+  .worth_sub_1{
+    width: 100%;
+    padding: 50px  10px; 
+    height: auto;
+    background: #259cd7;
+    color: #fff;
+  }
+  .wroth_ul{
+    display: block;
+  }
+}
+/* ============================== ecosystem================= */
+.ecosystem{
+  height: auto;
+  padding: 0px 100px;   
+  /* background-color: mediumorch.id;  */
+  padding-top: 40px;
+  width: 100%;
+  flex-direction: row;
+  position: relative;
+  display: flex;
+}
+.ecos_1{
+  height: 110vh;
+  position: relative;
+  width: 100%;
+  /* background-color: red;  */
+  margin: 10px;  
+  padding: 30px;
+}
+.ecos{
+  height: 110vh;
+  position: relative;
+  padding: 20px;
+  width: 70%;
+  /* background-color: gray;  */
+}
+.eco{
+  display: flex;
+}
+.eco_1{
+  height: 430px;
+  width: 387px;
+  position: relative;
+  z-index: 2;
+}
+.eco_1 img{
+  width: 100%;
+}
+.eco_2{
+  height: 450px;
+  width: 322px;
+  position: absolute;
+  right: 50px;
+  top: 160px;
+  z-index: 1;
+}
+.eco_2 img{
+ width: 100%;
+}
+.ecos p{
+  color: #183B56;
+}
+.ecos_head{
+  font-size: 48px;
+  color: #183B56;
+  font-family: 'Bossa';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.vision h1{
+  font-size: 24px;
+  color: #183B56; 
+  padding-top: 23px;
+  font-family: 'Bossa';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.vision p{
+  color: #183B56;
+}
+.mission h1{
+  padding-top: 23px;
+  font-size: 24px;
+  color: #183B56; 
+  font-family: 'Bossa';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.mission p{
+  color: #183B56;
+}
+@media screen and (max-width: 789px){
+  .ecosystem{
+    /* display: block; */
+    flex-direction: column-reverse;
+  }
+  .ecos{
+    height: auto;
+    width: 100%;
+    /* background-color: gray;  */
+  }
+  .ecosystem{
+    padding: 0px 6px;   
+  }
+  .eco_1{
+    width: 226px;
+  }
+  .ecos_1{
+    height: auto;
+    margin: 0px;  
+    padding: 20px;
+  }
+  .eco_2{
+    width: 226px;
+    right: 20px;
+    top: 120px;
+    z-index: 1;
+  }
+  .ecos_head{
+    font-size: 33px;
+    font-family: 'Bossa';
+    font-weight: 700;
+  }
+}
+/* ====================== qoute =============== */
+.quote{
+  height: 100vh;
+  background: midnightblue;
+  width: 100%;
+}
+
+
+/* ================== get started =========== */
+.about_getStarted{
+  height: auto;
+  /* background: olive; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.started{
+  width: 80%;
+  height: 400px;
+  margin-top: 40px;
+  background: paleturquoise;
+  background: url(../imges/BG@10x.png);
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* ========================= about_footer ================ */
+.about_footer{
+  width: 100%;
+  background: crimson;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
