@@ -1105,10 +1105,19 @@ form{
 
 @media screen and (max-width: 789px){
   .main_signIn{
-    height: 460px;
+    height: 420px;
     width: 348px;
     background: #fff;
   
+  }
+  .signIn{
+    height: 90vh;
+    background: url(../imges/BG@3x.png);
+    /* background: red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -1152,6 +1161,7 @@ form{
 .signUp_area form{
   height: auto;
   width: 444px;
+  border-radius: 20px;
   background: #fff;  
   margin: 20px;
   color: #1D263A !important;
@@ -1252,7 +1262,11 @@ form{
   justify-content: center;
 }
 
-
+.check_unit{
+  padding-top: 10px;
+  display: flex; 
+  justify-content: space-between; 
+}
 @media screen and (max-width: 789px){
   .create{
     justify-content: start !important;
@@ -1262,12 +1276,21 @@ form{
     display: none;
   }
   .box_check p{
-    font-size: 11px;
+    font-size: 16px;
     justify-content: space-between;
   }
   .box_forget p{
-     font-size: 14px;
+     font-size: 16px;
      padding-left: 16px;
+  }
+  .fist{
+    display: block;
+  }
+  .check_unit{
+    display: block;
+  }
+  .box_forget{
+    padding-top: 10px;
   }
 }
 
