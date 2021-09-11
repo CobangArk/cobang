@@ -432,9 +432,10 @@ body{
    height: 266px;
    margin: 16px;
 }
-.feature h1{
+.feature .hed{
   padding-left: 190px;
-  font-size: 48px;
+  font-size: 48px !important;
+  text-align: center;
   font-weight: 500;
   line-height: 100px;
 }
@@ -1153,7 +1154,7 @@ form{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 50px;
+  /* margin: 50px; */
 }
 .cobang_title{
   padding-top: 20px;
@@ -1172,7 +1173,7 @@ form{
   height: auto;
   width: 444px;
   background: #fff;  
-  margin: 50px;
+  margin: 20px;
   color: #1D263A !important;
 }
 .signup_img{
@@ -1277,18 +1278,16 @@ form{
   .create{
     justify-content: start !important;
   }
-  .signUp_area form{
-    height: 500px;
-    width: 444px;
-    background: #fff;  
-    margin: 50px;
-    color: #1D263A !important;
-  }
-  .signUp_area form{
-    height: auto;
-    width: 444px;
-    background: #fff;  
+  .signUp_box_1{
     margin: 10px;
-    color: #1D263A !important;
+    display: none;
+  }
+  .box_check p{
+    font-size: 11px;
+    justify-content: space-between;
+  }
+  .box_forget p{
+     font-size: 14px;
+     padding-left: 16px;
   }
 }
