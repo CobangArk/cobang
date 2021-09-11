@@ -1648,13 +1648,25 @@ form{
   width: 80%;
   height: 400px;
   margin-top: 40px;
-  background: paleturquoise;
+  background: green;
   background: url(../imges/BG@10x.png);
   background-position: center;
   background-size: cover;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* align-items: center; */
 }
-
-
+.start_box{
+  width: 100%;
+  padding-top: 120px;
+  
+}
+.start_box h1{
+  font-size: 40px;
+  font-family: '  Bossa';
+  font-weight: 700;
+}
 /* ========================= about_footer ================ */
 .about_footer{
   width: 100%;
