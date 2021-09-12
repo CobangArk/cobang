@@ -1836,11 +1836,11 @@ img {vertical-align: middle;}
   }
   .quote_bx p{
     padding-top: 0px;
+    margin-top: -100px;
     /* background-color: purple; */
   }
   .img_box img{
     width:  41px;
-    /* background-color: slateblue; */
     height: 41px;
   }
 }
