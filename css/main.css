@@ -1314,7 +1314,7 @@ form{
     justify-content: start !important;
   }
   .signUp_box_1{
-    margin: 10px;
+    /* margin: 10px; */
     display: none;
   }
   .box_check p{
