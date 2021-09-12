@@ -1306,6 +1306,7 @@ form{
 .check_unit{
   padding-top: 10px;
   display: flex; 
+  width: 100%;
   justify-content: space-between; 
 }
 @media screen and (max-width: 789px){
