@@ -1935,6 +1935,10 @@ img {vertical-align: middle;}
     padding: 10px;
     margin: 20px 0px;
   }
+  .foot_1 p{
+    padding: 10px 0px;
+    font-size: 14px;
+  }
 }
 
 
