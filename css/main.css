@@ -1594,7 +1594,7 @@ form{
 .ecosystem{
   height: auto;
   padding: 0px 100px;   
-  /* background-color: mediumorch.id;  */
+  /* background-color: green;  */
   padding-top: 40px;
   width: 100%;
   flex-direction: row;
@@ -1611,7 +1611,7 @@ form{
   padding: 30px;
 }
 .ecos{
-  height: 110vh;
+  height: auto;
   position: relative;
   padding: 20px;
   width: 70%;
@@ -1623,7 +1623,7 @@ form{
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
 }
 .eco_1{
   height: 430px;
@@ -1698,7 +1698,7 @@ form{
   }
   .ecos_1{
     height: auto !important;
-    background-color: red;
+    /* background-color: red; */
     margin: 0px;  
     padding: 20px;
   }
@@ -1716,10 +1716,10 @@ form{
 }
 /* ====================== QUOTE CAROUSEL =============== */
 .quote{
-  height: 100vh;
+  height: auto;
   /* background: midnightblue; */
   width: 100%;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 .mySlides {display: none;}
 img {vertical-align: middle;}
