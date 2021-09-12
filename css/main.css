@@ -1962,9 +1962,11 @@ img {vertical-align: middle;}
 .FAQs_title{
   font-family: 'Mazzard M';
   font-weight: 400;
+  font-size: 40px;
 }
 .FAQs_sub_title{
   font-size: 20px;
+  padding-bottom: 10px;
 }
 .f_q_section{
   width: 100%;
@@ -2069,7 +2071,7 @@ img {vertical-align: middle;}
   .FAQs_title{
     font-family: 'Mazzard M';
     font-weight: 400;
-    font-size: 16px;
+    font-size: 30px;
   }
   
   
