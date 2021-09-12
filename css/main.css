@@ -89,7 +89,7 @@ body{
   .open img {
     width: 32px;
     height: 32px;
-    margin-left: 20px;
+    margin-left: 16px;
   }
   /* Position the close button (top right corner) */
   .overlay .closebtn {
@@ -194,9 +194,9 @@ body{
 
 @media screen and (max-width: 789px){
   .main_nav .logo{
-    width: 170px;
-    margin-left: 10px;
-    height: 40px;
+    width: 140px;
+    margin-left: 15px;
+    height: 30px;
     text-decoration: none;
     
 }
