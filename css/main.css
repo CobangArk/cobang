@@ -204,6 +204,9 @@ body{
    width: 30px;
    height: 30px;
 }
+.main_nav ul {
+  padding-right: 6px;
+}
 }
 /* ===========================================  */
 
