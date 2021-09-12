@@ -195,7 +195,7 @@ body{
 @media screen and (max-width: 789px){
   .main_nav .logo{
     width: 240px;
-    margin-left: 50px;
+    margin-left: 0px;
     height: 40px;
     text-decoration: none;
     
