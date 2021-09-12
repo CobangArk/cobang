@@ -194,7 +194,7 @@ body{
 
 @media screen and (max-width: 789px){
   .main_nav .logo{
-    width: 160px;
+    width: 200px;
     margin-left: 15px;
     height: 36px;
     text-decoration: none;
@@ -247,7 +247,7 @@ body{
 @media screen and (max-width: 996px){
   .hero_contain h1{
     font-weight: 400;
-    padding-top: 200px !important;
+    padding-top: 50px !important;
     color: #213053;
   }
 }
