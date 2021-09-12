@@ -1259,6 +1259,7 @@ form{
 .address input[type=text]{
   padding-left: 10px;
 }
+
 .box_check input{
   margin-left: 10px !important;
 
@@ -1306,7 +1307,7 @@ form{
 .check_unit{
   padding-top: 10px;
   display: flex; 
-  background: red;
+  /* background: red; */
   width: 100%;
   justify-content: space-between; 
 }
@@ -1332,8 +1333,12 @@ form{
   .check_unit{
     /* display: block; */
   }
+  .box_check{
+    width: 100%;
+  }
   .box_forget{
     padding-top: 10px;
+    width: 100px;
   }
   .signUp_form{
     padding: 20px;
