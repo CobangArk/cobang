@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="./fonts/Bossa-web-font/Bossa-ExtendedBold.woff2">
     <link rel="stylesheet" href="./fonts/mazzard-web-font/MazzardH-Bold.woff">
@@ -14,144 +17,169 @@
 </head>
 
 <body>
-    <div class="hero">
-        <nav>
+    <div class="main_sect_one">
+        <div class="hero">
+            <nav>
 
-            <div class="main_nav">
-                <li class="open_list">
-                    <span onclick="openNav()" class="open"><img src="./imges/menu-3-fill.png" alt=""></span>
-                </li>
-                <a href="./index.html">
-                    <img src="./imges/Group 305@3x.png" alt="" class="logo">
-                </a>
-                <ul class="hidden md:block">
-                    <li class="nav_links"><a href="./about.html">About</a></li>
-                    <li class="dropdown nav_links">
-                        <a href="./courses.html" class="dropbtn">Courses</a>
-                        <div class="dropdown-content">
-                            <a href="#">Web development</a>
-                            <a href="#">LifeStyle</a>
-                            <a href="#">Health and fitness</a>
-                            <a href="#">Digital marketing</a>
-                            <a href="#">Game development</a>
-                            <a href="#">Mobile development</a>
-                            <a href="#">Photography</a>
-                            <a href="#">Graphics design</a>
-                        </div>
+                <div class="main_nav">
+                    <li class="open_list">
+                        <span onclick="openNav()" class="open"><img src="./imges/menu-3-fill.png" alt=""></span>
                     </li>
-                    <li class="nav_links"><a href="./f&g.html">F&Q</a></li>
-                    <li class="nav_links"><a href="#">Contact</a></li>
-                    <li class="nav_links"><a href="./SignIn.html">Sign In</a></li>
-                    <li class="nav_links signup_link">
-                        <a href="./signUp.html">Signup for free</a>
-                    </li>
-                    <li>
-                        <span><img src="./imges/Combined Shape.png" alt="" class="search_meanu"></span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- The overlay -->
-            <div id="myNav" class="overlay">
-
-                <!-- Button to close the overlay navigation -->
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-                <!-- Overlay content -->
-                <div class="overlay-content">
-                    <a href="./about.html">About</a>
-                    <a href="#">Instructor</a>
-                    <a href="#">student</a>
-                    <a href="#">Dashboard</a>
-                    <a href="#">Popular Courses</a>
-                    <a href="#">Web development</a>
-                    <a href="#">LifeStyle</a>
-                    <a href="#">Health and fitness</a>
-                    <a href="#">Digital marketing</a>
-                    <a href="#">Game development</a>
-                    <a href="#">Mobile development</a>
-                    <a href="#">Photography</a>
-                    <a href="#">Graphics design</a>
-                    <a href="#">All categories</a>
-                    <br>
-                    <a href="./courses.html">Courses</a>
-                    <a href="#">Help</a>
-                    <a href="./f&g.html">FAQ</a>
-                    <a href="#">Contact</a>
-                    <a href="./SignIn.html">Sign In</a>
+                    <a href="./index.html">
+                        <img src="./imges/Group 305@3x.png" alt="" class="logo">
+                    </a>
+                    <ul class="hidden md:block">
+                        <li class="nav_links"><a href="./about.html">About</a></li>
+                        <li class="dropdown nav_links">
+                            <a href="./courses.html" class="dropbtn">Courses</a>
+                            <div class="dropdown-content">
+                                <a href="#">Web development</a>
+                                <a href="#">LifeStyle</a>
+                                <a href="#">Health and fitness</a>
+                                <a href="#">Digital marketing</a>
+                                <a href="#">Game development</a>
+                                <a href="#">Mobile development</a>
+                                <a href="#">Photography</a>
+                                <a href="#">Graphics design</a>
+                            </div>
+                        </li>
+                        <li class="nav_links"><a href="./f&g.html">F&Q</a></li>
+                        <li class="nav_links"><a href="#">Contact</a></li>
+                        <li class="nav_links"><a href="./SignIn.html">Sign In</a></li>
+                        <li class="nav_links signup_link">
+                            <a href="./signUp.html">Signup for free</a>
+                        </li>
+                        <li>
+                            <span><img src="./imges/Combined Shape.png" alt="" class="search_meanu"></span>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <!-- Use any element to open/show the overlay navigation menu -->
-        </nav>
-    </div>
 
-    <!-- ================================ HERO SECTION ===================== -->
-    <div class="hero_section">
-        <div class="">
-            <div class="flex justify-center flex-wrap flex-col md:flex-row">
-                <div class=" md:w-6/12 w-full  h-96  flex-grow  flex justify-center items-center">
-                    <div class="md:w-8/12 w-10/12 hero_contain grid gap-5">
-                        <h1 class="hero_title">
-                            Earn while you learn!
-                        </h1>
-                        <p>
-                            An interactive fundraising platform for families and friends to create wealthy
-                            entrepreneurs focused on creating jobs and employment.
-                        </p>
-                        <div class="flex md:justify-start justify-center">
-                            <a href="./signUp.html"
-                                class="rounded-full md:rounded-md bg-blue-500 w-7/12 text-white px-3 text-center py-3 ">Join
-                                Us Now</a>
-                        </div>
+                <!-- The overlay -->
+                <div id="myNav" class="overlay">
+
+                    <!-- Button to close the overlay navigation -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                    <!-- Overlay content -->
+                    <div class="overlay-content">
+                        <a href="./about.html">About</a>
+                        <a href="#">Instructor</a>
+                        <a href="#">student</a>
+                        <a href="#">Dashboard</a>
+                        <a href="#">Popular Courses</a>
+                        <a href="#">Web development</a>
+                        <a href="#">LifeStyle</a>
+                        <a href="#">Health and fitness</a>
+                        <a href="#">Digital marketing</a>
+                        <a href="#">Game development</a>
+                        <a href="#">Mobile development</a>
+                        <a href="#">Photography</a>
+                        <a href="#">Graphics design</a>
+                        <a href="#">All categories</a>
+                        <br>
+                        <a href="./courses.html">Courses</a>
+                        <a href="#">Help</a>
+                        <a href="./f&g.html">FAQ</a>
+                        <a href="#">Contact</a>
+                        <a href="./SignIn.html">Sign In</a>
                     </div>
                 </div>
-                <div class="  md:w-6/12 w-full hero_img flex flex-grow md:min-h-screen h-96 bg-center ">
-                    <!-- <img src="./imges/Image@2x.png" class="w-16 md:w-32 lg:w-auto"  alt=""> -->
+                <!-- Use any element to open/show the overlay navigation menu -->
+            </nav>
+        </div>
+
+        <!-- ================================ HERO SECTION ===================== -->
+        <div class="hero_section">
+            <div class="">
+                <div class="flex justify-center flex-wrap flex-col md:flex-row">
+                    <div class=" md:w-6/12 w-full  h-96  flex-grow  flex justify-center items-center">
+                        <div class="md:w-8/12 w-10/12 hero_contain grid gap-5">
+                            <h1 class="hero_title">
+                                Earn while you learn!
+                            </h1>
+                            <p>
+                                An interactive fundraising platform for families and friends to create wealthy
+                                entrepreneurs focused on creating jobs and employment.
+                            </p>
+                            <div class="flex md:justify-start justify-center">
+                                <a href="./signUp.html"
+                                    class="rounded-full md:rounded-md bg-blue-500 w-7/12 text-white px-3 text-center py-3 ">Join
+                                    Us Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="  md:w-6/12 w-full hero_img flex flex-grow md:min-h-screen h-96 bg-center ">
+                        <!-- <img src="./imges/Image@2x.png" class="w-16 md:w-32 lg:w-auto"  alt=""> -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     </div>
     <!-- ======================= SEARCH AREA ===================== -->
-    <div class="search flex justify-center items-center w-full">
-        <div class="search_container md:text-left text-center ">
-            <div class="m-3 grid items-center  justify-center">
-                <!-- <div class=""> -->
-                <img src="./imges/Books-1.png" alt="" class="mx-auto " width="100px">
-                <h3>Library</h3>
-                <p>
-                    Buy courses online and learn on the go.
-                </p>
-                <!-- </div> -->
+    <div class="search ">
+        <div>
+            <div class="home_search flex items-center">
+                <input type="text" placeholder="Search for courses to learn. e.g graphic design">
+                <button type="submit"><i class="fa fa-search"></i></button>
             </div>
-            <div class="m-3 grid items-center  justify-center">
-                <img src="./imges/Chatbox _.png" alt="" class="mx-auto" width="300px">
-                <h3>Support</h3>
-                <p>
-                    Refer stores and products and get paid up to 80% commission for every referred purchase. That’s it.
-                    No gimmicks or fees.
+            <div>
 
-                </p>
             </div>
-            <div class="m-3 grid items-center  justify-center">
-                <img src="./imges/Pig Right - [DESIGN 1.png" alt="" class="mx-auto" width="100px">
-                <h3>
-                    Rewards System
-                </h3>
-                <p>
-                    Save a product or store and we’ll notify when there’s a price drop or new coupons.
-                </p>
+        </div>
+        <div class="search_container md:flex grid">
+            <div class="search_box_1">
+                <div class="search_img_area">
+                    <img src="./imges/Books-1.png" alt="" width="100%">
+                </div>
+                <div>
+                    <h3>Library</h3>
+                    <p>
+                        Buy courses online and learn on the go.
+                    </p>
+                </div>
             </div>
-            <div class="m-3 grid items-center justify-center">
-                <img src="./imges/Group.png" alt="" class="mx-auto" width="160px">
-                <h3>
-                    Interactive Learning
-                </h3>
-                <p>
-                    Organize your products into collections, or tag your photos or Instagram feed with products. Get
-                    paid for every referral.
-                </p>
+            <div class="search_box_1">
+                <div class="search_img_area chat">
+                    <img src="./imges/Chatbox _@3x cropped.png" alt="">
+                </div>
+                <div>
+                    <h3>Support</h3>
+                    <p>
+                        Refer stores and products and get paid up to 80% commission for every referred purchase. That’s
+                        it.
+                        No gimmicks or fees.
+
+                    </p>
+                </div>
+            </div>
+            <div class="search_box_1">
+                <div class="search_img_area">
+                    <img src="./imges/Pig Right - [DESIGN 1.png" alt="" width="100%">
+                </div>
+                <div>
+                    <h3>
+                        Rewards System
+                    </h3>
+                    <p>
+                        Save a product or store and we’ll notify when there’s a price drop or new coupons.
+                    </p>
+                </div>
+            </div>
+            <div class="search_box_1">
+                <div class="search_img_area tree">
+                    <img src="./imges/Group.png" alt="" width="100%">
+                </div>
+                <div>
+                    <h3>
+                        Interactive Learning
+                    </h3>
+                    <p>
+                        Organize your products into collections, or tag your photos or Instagram feed with products. Get
+                        paid for every referral.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -390,64 +418,69 @@
             </div>
         </div>
     </div>
-
-    <!-- =================== about get started ========= -->
-    <div class="about_getStarted">
-        <div class="started">
-            <div class="start_box">
+    <div class="footer_cover_img">
+        <!-- =================== about get started ========= -->
+        <div class="about_getStarted">
+            <div class="started">
                 <h1>Get started today</h1>
                 <p>Signup on CobangArk now!</p>
                 <button>Create an account for free</button>
             </div>
         </div>
-    </div>
 
 
-    <!-- ================ ABOUT FOOTER ============= -->
-    <div class="about_footer">
-        <div class="footer_box">
-            <div class="foot_1">
-                <div class="footer_logo">
-                    <img src="./imges/Group 305@3x.png" alt="">
-                </div>
-                <div>
-                    <p>
-                        COBANG ARK is an interactive fundraising e-learning platform for families and friends.
-                    </p>
-                </div>
-                <div>
-                    <li class="flex footer_flex">
-                        <a href="#"><img src="./imges/101Font_Awesome_5_brands_pinterest 1.png" alt=""></a>
-                        <a href="#"><img src="./imges/101Vector.png" alt=""></a>
-                        <a href="#"><img src="./imges/101twitter 1.png" alt=""></a>
-                        <a href="#"><img src="./imges/101facebook-icon.png" alt=""></a>
-                    </li>
-                </div>
-            </div>
-            <div class="foot_2">
-                <ul>
-                    <li>
-                        <a href="#">Courses</a>
-                        <a href="#">Dashboard</a>
-                        <a href="#">Contact</a>
-                        <br>
-                        <a href="#">Profile</a>
-                        <a href="#">Testimonials</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacy and Terms</a>
-                        <a href="#">Help</a>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-                <div>
-                    <li class="flex footer_flex">
-                        <a href="#"><img src="./imges/verse.png" alt=""></a>
-                        <a href="#"><img src="./imges/g4158.png" alt=""></a>
-                        <a href="#"><img src="./imges/master.png" alt=""></a>
-                        <a href="#"><img src="./imges/HaggleX Logo 1.png" alt=""></a>
+        <!-- ================ ABOUT FOOTER ============= -->
+        <div class="about_footer">
+            <div class="about_containers">
+                <div class="footer_box">
+                    <div class="foot_1">
+                        <div class="footer_logo">
+                            <img src="./imges/Group 305@3x.png" alt="">
+                        </div>
+                        <div>
+                            <p class="footer_Txt">
+                                COBANG ARK is an interactive fundraising e-learning platform for families and friends.
+                            </p>
+                        </div>
 
-                    </li>
+                    </div>
+                    <div class="foot_2">
+                        <ul>
+                            <li>
+                                <a href="#">Courses</a>
+                                <a href="#">Dashboard</a>
+                                <a href="#">Contact</a>
+                                <a href="#">Profile</a>
+                                <a href="#">Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy and Terms</a>
+                                <a href="#">Help</a>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    
+                </div>
+                <div class="md:flex grid justify-between">
+                    <div>
+                        <li class="flex footer_flex">
+                            <a href="#"><img src="./imges/101Font_Awesome_5_brands_pinterest 1.png" alt=""></a>
+                            <a href="#"><img src="./imges/101Vector.png" alt=""></a>
+                            <a href="#"><img src="./imges/101twitter 1.png" alt=""></a>
+                            <a href="#"><img src="./imges/101facebook-icon.png" alt=""></a>
+                        </li>
+                    </div>
+                    <div class="visa">
+                        <li class="flex footer_flex">
+                            <a href="#"><img src="./imges/verse.png" alt=""></a>
+                            <a href="#"><img src="./imges/g4158.png" alt=""></a>
+                            <a href="#"><img src="./imges/master.png" alt=""></a>
+                            <a href="#"><img src="./imges/HaggleX Logo 1.png" alt=""></a>
+
+                        </li>
+                    </div>
                 </div>
             </div>
         </div>
