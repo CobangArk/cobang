@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: inherit;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
@@ -40,6 +40,9 @@
 }
 body{
     font-family: 'Open Sans', sans-serif;
+}
+.active_nav{
+  color: #259CD7 !important;
 }
 .hero{
   background-image: url(../imges/BG.png);
@@ -2577,9 +2580,470 @@ img {vertical-align: middle;}
   color: #259CD7;
 }
 
-
+.more_design{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+.more_design a{
+  display: flex;
+  width: 260px;
+  height: 60px;
+  justify-content: center;
+  align-items: center ;
+  border-radius: 20px;
+  border: 2px solid #259CD7;
+  color: #259CD7;
+  font-size: 18px;
+  font-family: 'Mazzard M';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+.more_design a:hover{
+  background-color: #259CD7;
+  color: white;
+}
 @media screen and (max-width: 789px){
   .course_1{
     display: none;
   }
+}
+
+
+
+
+
+
+
+
+
+/* ====================================== DESIGN PROGRESS =================== */
+.progress_courses_head{
+  width: 100%;
+  /* background-color: red; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center ;
+}
+.progress_title{
+  height: auto;
+  width: 500px;
+  color: 
+  #183B56;
+  display: flex;
+  padding-top: 40px;
+  font-size: 50px;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Mazzard M';
+  font-weight: 600;
+  text-align: center;
+  font-style: normal;
+  font-display: swap;
+  /* background-color: green; */
+}
+.videos-1{
+  height: auto;
+  width: 100%;
+  /* background-color: orange; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.video_containers{
+  width: 60%;
+  height: 370px;
+  /* background-color: yellow; */
+  margin-top: -140px;
+
+}
+.designer{
+  width: 100%;
+  /* background-color: red; */
+  height: auto;
+}
+.progress_hero{
+  height: 457px;
+  background: url(../imges/BG@3x.png);
+  background-position: center;
+  background-size: cover;
+}
+.designer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.designer_box{
+  height: 100px;
+  width: 60%;
+  /* background: green; */
+
+}
+.designer_vector{
+  width: 50%;
+  height: 100px;
+  /* background: brown; */
+
+}
+.rating{
+  width: auto;
+  height: 100px;
+  /* background: grey; */
+}
+.vector_img{
+  width: 100px;
+  /* padding: 10px; */
+  height: 100px;
+  background: purple;
+  background: url(../imges/Group\ 34@2x.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.vector_img img{
+  /* object-fit: contain; */
+  width: 60px;
+  height: 60px;
+
+  margin: 20px  0px 0px 0px ;
+}
+.designer_vector h1{
+  font-family: 'Mazzard M';
+  font-weight: 600;
+  text-align: center;
+  font-style: normal;
+  font-size: 20px;
+  font-display: swap;
+  text-align: start;
+}
+.designer_vector p{
+  font-family: 'Mazzard M';
+  font-weight: 400;
+}
+.rating img{
+  width: 152px;
+  height: 32px; 
+  margin-top: 20px;
+  margin-left: 90px;
+}
+.rating{
+  /* display: flex;
+  justify-content: end; */
+}
+.rating h4{
+  font-size: 24px;
+  line-height: 40px;
+  font-family: 'Mazzard M';
+  font-weight: 600;
+  text-align: end;
+  font-style: normal;
+  font-display: swap;
+}
+.section_O{
+  width: 100%;
+  height: auto;
+  padding: 60px 10px 0px 150px;
+  /* background: chocolate; */
+  
+  width: 100%;
+}
+.progress_O{
+  width: 80%;
+}
+.section11{
+    width: 334px;
+    height:892px;
+    /* background: grey; */
+    margin:0px 30px 30px 0px;
+}
+.section12{
+  width: 100%;
+  background: hotpink;
+  height: auto;
+}
+.section12 .sect li{
+  padding: 10px;
+}
+.section12 .sect li:hover{
+  border-left:solid transparent 3px;
+  border-right:solid transparent 4px;
+  border-top:solid transparent 4px;
+  border-bottom:solid #259CD7 4px;
+}
+
+.section12 .sect li a{
+  font-family: 'Mazzard M';
+  font-weight: 400;
+  font-size: 16px;
+}
+/* .section12 ul li a:hover{
+  font-weight: 600;
+  font-family: 'Mazzard M';
+} */
+
+
+.over{
+  border-left:solid transparent 3px;
+  border-right:solid transparent 4px;
+  border-top:solid transparent 4px;
+  border-bottom:solid #259CD7 4px;
+  /* border: 2px  solid black; */
+
+}
+
+.about_progress{
+  width: 100%;
+  padding: 0px 10px 0px 30px;
+  height: 164px;
+  /* background: grey; */
+}
+.about_progress h3{
+  font-family: 'Mazzard M';
+  color:#0F1B41;
+  font-size: 16px;
+}
+.about_progress p{
+  font-size: 16px;
+  font-family: 'Mazzard M';
+  font-weight: 400;
+  font-style: normal;
+  color: #5A7180;
+}
+
+.progress_learn{
+  width: 77%;
+  /* background: red; */
+  height: auto;
+  color: 
+  #5A7180;
+  margin: 0px 20px;
+}
+.progress_learn div{
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  /* background: yellow; */
+  margin: 10px;
+}
+.progress_learn h4{
+  font-family: 'Mazzard M';
+  font-weight: 400;
+  color: 
+  #0F1B41;
+  font-size: 16px;
+ 
+}
+.progress_learn ul li a{
+  font-family: 'Roboto', sans-serif;
+  line-height: 35px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.learn_1 ul{
+  padding-top: 25px;
+}
+.learn_3{
+  width: 100%;
+  background: grey;
+  padding-left: 30px;
+  height: 82px;
+}
+
+
+
+
+/* ======================== comment======================== */
+.commment{
+  width: 100%;
+  background: indianred;
+  height: 224px;
+  /* margin: 7px; */
+  margin-top: 20px;
+}
+.comment_area{
+  padding: 30px;
+}
+
+.submit_reviews{
+  display: flex;
+  width: 144px;
+  height: 40px;
+  background: #259CD7;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin: 16px 0px;
+}
+textarea{
+  width: 100%;
+  height: 103px;
+  border: 1px solid #5A7184;
+}
+.give_feedback h1{
+  padding-top: 20px;
+  /* color: white; */
+  line-height: 40px;
+  font-family: 'Mazzard M';
+  font-weight: 500;
+}
+
+
+
+/* ============================ what -==================== */
+.what{
+  width: 100%;
+  height: 224px;
+  background: red;
+}
+.say{
+  padding: 30px  30px 0px 30px;
+}
+
+
+
+
+
+/* =============================== progress_main_search ============== */
+.progress_main_search{
+  width: 100%;
+  /* background: red; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+/* Style the search field */
+.example{
+   /* background: grey; */
+   width: 600px;
+   height: auto;
+   padding-top: 170px;
+   /* align-items: baseline; */
+   display: flex !important;
+}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid transparent;
+  float: left;
+  width: 100%;
+  background: transparent
+}
+form.example input{
+  height: 57px;
+  box-shadow: 0px 44px 64px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-family: 'Mazzard M';
+  color: #1D263A;
+  outline: ;
+  font-weight: 600;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 12%;
+  padding: 10px;
+  background: transparent;
+  color: #000;
+  height: 57px;
+  font-size: 22px;
+  border: 1px solid transparent;
+  box-shadow: 0px 44px 64px rgba(0, 0, 0, 0.1);
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  /* border-radius: 15px; */
+  border-bottom-right-radius: 15px;
+  font-family: 'Mazzard M';
+  border-top-right-radius: 15px;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+  color: white;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  font-family: 'Mazzard M';
+  font-weight: 600;
+  /* text-align: end; */
+  font-style: normal;
+  font-display: swap;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+  background-color: #259CD7;
+  color: white;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+  display: block !important;
+}
+
+.panel ul li input{
+  margin: 7px;
+}
+.panel ul li{
+  padding: 18px 0px;
+  width: 100%;
+}
+.panel ul li p{
+  font-family: 'Mazzard M';
+  font-weight: 600;
+  text-align: end;
+  font-style: normal;
+  font-display: swap;
 }
