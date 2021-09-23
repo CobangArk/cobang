@@ -5,32 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./fonts/Bossa-web-font/Bossa-ExtendedBold.woff2">
-    <link rel="stylesheet" href="./fonts/mazzard-web-font/MazzardH-Bold.woff">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/tw.css" />
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./fonts/mazzard-web-font/MazzardH-Bold.woff">
+    <link rel="stylesheet" href="css/tw.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="course_hero">
+    <!-- ============================================= FIRST BACKROUND IMAGE/NAvigation =================================== -->
+    <div class="first_bg">
+        <!-- <nav class="nav_area md:flex  justify-between items-center">
+            <a href="#">
+                <img src="./imges/logo.png" alt="" class="logo">
+            </a>
+            <ul class="md:flex">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li class="first_signup flex items-center justify-center"><a href="#">Signup for free</a></li>
+            </ul>
+        </nav> -->
         <nav>
 
             <div class="main_nav">
                 <li class="open_list">
-                    <span onclick="openNav()" class="open"><img src="./imges/menu-3-fill.png" alt=""></span>
+                    <span onclick="openNav()" class="open"><img src="./imges/menu-3-fill.png" alt="" class="ham"></span>
                 </li>
                 <a href="./index.html">
-                    <img src="./imges/Group 305@3x.png" alt="" class="logo">
+                    <img src="./imges/logo.png" alt="" class="logo">
                 </a>
                 <ul class="hidden md:block">
                     <li class="nav_links"><a href="./about.html">About</a></li>
                     <li class="dropdown nav_links">
-                        <a href="#" class="dropbtn active_nav">Courses</a>
+                        <a href="./courses.html" class="dropbtn">Courses</a>
                         <div class="dropdown-content">
                             <a href="#">Web development</a>
                             <a href="#">LifeStyle</a>
@@ -44,23 +64,14 @@
                     </li>
                     <!-- <li class="nav_links"><a href="./f&g.html">F&Q</a></li> -->
                     <li class="nav_links"><a href="#">Contact</a></li>
-                    <li class="nav_links"><a href="#">Sign Out</a></li>
-                    <li>
-                        <span><img src="./imges/search@2x.png" alt="" class="courses_nav_icon"></span>
+                    <li class="nav_links"><a href="./SignIn.html">Sign In</a></li>
+                    <!-- <li class="nav_links"><a href="./Packaes.html">Packages</a></li> -->
+
+                    <li class="nav_links signup_link">
+                        <a href="./signUp.html">Signup for free</a>
                     </li>
                     <li>
-                        <span><img src="./imges/notification@2x.png" alt="" class="courses_nav_icon"></span>
-                    </li>
-                    <!-- <li>
-                       
-                    </li> -->
-                    <li class="dropdown">
-                        <span><img src="./imges/avatar@2x.png" alt="" class="avatar"></span>
-                        <!-- <a href="#" class="dropbtn">Courses</a> -->
-                        <div class="dropdown-content course_content">
-                            <a href="#">Dashboard</a>
-                            <a href="#">Login Out</a>
-                        </div>
+                        <span><img src="./imges/search@2x.png" alt="" class="search_meanu"></span>
                     </li>
                 </ul>
             </div>
@@ -74,22 +85,8 @@
                 <!-- Overlay content -->
                 <div class="overlay-content">
                     <a href="./about.html">About</a>
-                    <a href="#">Instructor</a>
-                    <a href="#">student</a>
-                    <a href="#">Dashboard</a>
-                    <a href="#">Popular Courses</a>
-                    <a href="#">Web development</a>
-                    <a href="#">LifeStyle</a>
-                    <a href="#">Health and fitness</a>
-                    <a href="#">Digital marketing</a>
-                    <a href="#">Game development</a>
-                    <a href="#">Mobile development</a>
-                    <a href="#">Photography</a>
-                    <a href="#">Graphics design</a>
-                    <a href="#">All categories</a>
-                    <br>
-                    <a href="#">Courses</a>
-                    <a href="#">Help</a>
+                    <a href="./courses.html">Courses</a>
+                    <!-- <a href="#">Help</a> -->
                     <a href="./f&g.html">FAQ</a>
                     <a href="#">Contact</a>
                     <a href="./SignIn.html">Sign In</a>
@@ -98,281 +95,566 @@
             <!-- Use any element to open/show the overlay navigation menu -->
         </nav>
 
-        <div class="courses_head">
-            Courses
+        <div class="Course flex justify-center items-center">
+            <h1>
+                Courses
+            </h1>
         </div>
     </div>
-    <!-- <img src="./imges/60%@2x.png" alt=""> -->
-    <div class="course_progress">
-        <div class="flex justify-between items-center">
-            <h1>Course In Progress</h1>
-            <a href="./main_courses.html" class="course_view">View All</a>
-        </div>
-        <div class="progress_container md:flex grid md:px-16 px-8">
-            <div class="w-full h-auto  m-4">
-                <div class="flex  justify-between p-3">
-                    <button>Frontend Development</button>
-                    <img src="./imges/angular@2x.png" alt="">
-                </div>
-                <!-- <img src="./imges/60%@2x.png" alt=""> -->
-                <div class="p-3">
-                    <p class="carousel_sub">
-                        Learn angular.js form scratch to experts
-                    </p>
-                    <p class="carousel_tx">
-                        Master Angular 5 from the basics to building an advanced application with Firebase's Firestore
-                        as …
-                    </p>
-                </div>
-                <!-- <img src="./imges/60%@2x.png" alt=""> -->
-            </div>
-            <div class="w-full h-auto m-4">
-                <div class="flex  justify-between p-3">
-                    <button>UI / UX Design</button>
-                    <img src="./imges/skech@2x.png" alt="">
-                </div>
-                <div class="p-3">
-                    <p class="carousel_sub">
-                        Sketch from A to Z (2019): Become an app designer
-                    </p>
-                    <p class="carousel_tx">
-                        Finally a comprehensive guide to using Sketch for designing mobile. Learn to design an app from
-                        A …
-                    </p>
-                </div>
-                <!-- <img src="./imges/60%@2x.png" alt="" width="100%"> -->
-            </div>
-            <div class="w-full h-auto m-4">
-                <div class="flex  justify-between p-3">
-                    <button>Backend Development</button>
-                    <img src="./imges/laravel@2x.png" alt="">
-                </div>
-                <div class="p-3">
-                    <p class="carousel_sub">
-                        Laravel 2019, complete guide with real world projects
-                    </p>
-                    <p class="carousel_tx">
-                        Build a RESTful API for a market system using Laravel and dominates the challenging RESTful …
-                    </p>
-                </div>
-                <!-- <img src="./imges/60%@2x.png" alt=""> -->
-            </div>
-        </div>
-    </div>
-
-
-    <div class="caro">
-
-
-        <div class="wrapper">
-            <div class="carousel owl-carousel">
-                <div class="card card-1">
-                    <img src="./imges/Group 79.png" alt="">
-                </div>
-                <div class="card card-2">
-                    <img src="./imges/Group 81@3x.png" alt="">
-                </div>
-                <div class="card card-3">
-                    <img src="./imges/Group 79.png" alt="">
-                </div>
-                <div class="card card-4">
-                    <img src="./imges/Group 79.png" alt="">
-                </div>
-                <div class="card card-5">
-                    <img src="./imges/Group 81@3x.png" alt="">
-                </div>
-                <div class="card card-6">
-                    <img src="./imges/Group 79.png" alt="">
+    <!-- ============================ COurse section ============== -->
+    <div class="course_section">
+        <div class="course_bx flex justify-center items-center">
+            <div class="course_search flex items-center">
+                <input type="text" placeholder="Search for courses to learn. e.g graphic design">
+                <div class="seach_course">
+                    <img src="./imges/search@2x.png" alt="">
                 </div>
             </div>
         </div>
-
-
-    </div>
-
-
-    <div class="worth">
-        <div class="worth_sub">
-            <div class="worth_sub_1">
-                <h1>We make learning worth your time!</h1>
-                <p>Our courses are sectioned into modules for better understanding; learning at your convenience
-                    makes it fun and more interesting.</p>
-                <ul class="md:flex grid wroth_ul">
-                    <div>
-                        <span class="wroth_flex">
-                            <div>
-                                <img src="./imges/Icon.png" alt="">
-                            </div>
-                            <div>
-                                <li>User friendly</li>
-                            </div>
-                        </span>
-                        <span class="wroth_flex"><img src="./imges/Icon.png" alt="">
-                            <li>Practical skills</li>
-                        </span>
-                        <span class="wroth_flex"><img src="./imges/Icon.png" alt="">
-                            <li>Valued contents</li>
-                        </span>
-                    </div>
-                    <div>
-                        <span class="wroth_flex"><img src="./imges/Icon.png" alt="">
-                            <li>Interesting Tutorials</li>
-                        </span>
-                        <span class="wroth_flex"><img src="./imges/Icon.png" alt="">
-                            <li>User friendly</li>
-                        </span>
-                        <span class="wroth_flex"><img src="./imges/Icon.png" alt="">
-                            <li>Superb communication</li>
-                        </span>
-                    </div>
-                </ul>
-            </div>
-            <div class="worth_sub_2">
-                <img src="./imges/Image@7x.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="courses_links">
-        <div class="courses_links_sub">
-            <div>
-                <h1>Creative</h1>
-                <ul>
-                    <li><a href="">Animation</a></li>
-                    <li><a href="">Drawing</a></li>
-                    <li><a href="">Graphic Design</a></li>
-                    <li><a href="">Illustration</a></li>
-                    <li><a href="">Photography</a></li>
-                    <a href="#" class="view">view all</a>
-                </ul>
-            </div>
-            <div>
-                <h1>Business </h1>
-                <ul>
-                    <li><a href="">Entrepreneurship </a></li>
-                    <li><a href="">Freelancing </a></li>
-                    <li><a href="">Leadership </a></li>
-                    <li><a href="">Marketing</a></li>
-                    <li><a href=""> Productivity</a></li>
-                    <a href="#" class="view">view all</a>
-                </ul>
-            </div>
-            <div>
-                <h1>Technology</h1>
-                <ul>
-                    <li><a href="">Data Science </a></li>
-                    <li><a href="">Game Design </a></li>
-                    <li><a href="">Mobile Development</a></li>
-                    <li><a href="">Product Management</a></li>
-                    <li><a href=""> Web Development</a></li>
-                    <a href="#" class="view">view all</a>
-                </ul>
-            </div>
-            <div>
-                <h1>Lifestyle</h1>
-                <ul>
-                    <li><a href="">Crafts</a></li>
-                    <li><a href="">Culinary</a></li>
-                    <li><a href="">Gaming</a></li>
-                    <li><a href="">Health & Wellness</a></li>
-                    <li><a href=""> Languages</a></li>
-                    <a href="#" class="view">view all</a>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-    <div class="footer_cover_img">
-        <!-- =================== about get started ========= -->
-        <div class="about_getStarted">
-            <div class="started">
-                <h1>Get started today</h1>
-                <p>Signup on CobangArk now!</p>
-                <button>Create an account for free</button>
-            </div>
-        </div>
-
-
-        <!-- ================ ABOUT FOOTER ============= -->
-        <div class="about_footer">
-            <div class="about_containers">
-                <div class="footer_box">
-                    <div class="foot_1">
-                        <div class="footer_logo">
-                            <img src="./imges/Group 305@3x.png" alt="">
+        <div class="course_1 ">
+            <div class="">
+                <div class="pad flex justify-center ">
+                    <div class="course_M flex justify-between">
+                        <div>
+                            <h1>Course In Progress</h1>
                         </div>
                         <div>
-                            <p class="footer_Txt">
-                                COBANG ARK is an interactive fundraising e-learning platform for families and friends.
-                            </p>
+                            <a href="./allCourse.html">
+                                <p>
+                                
+                                    view all
+                                </p></a>
                         </div>
-
                     </div>
-                    <div class="foot_2">
-                        <ul>
-                            <li>
-                                <a href="#">Courses</a>
-                                <a href="#">Dashboard</a>
-                                <a href="#">Contact</a>
-                                <a href="#">Profile</a>
-                                <a href="#">Testimonials</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy and Terms</a>
-                                <a href="#">Help</a>
-                                <a href="#">Contact</a>
-                            </li>
-                        </ul>
-
-                    </div>
-
                 </div>
-                <div class="md:flex grid justify-between">
-                    <div>
-                        <li class="flex footer_flex">
-                            <a href="#"><img src="./imges/101Font_Awesome_5_brands_pinterest 1.png" alt=""></a>
-                            <a href="#"><img src="./imges/101Vector.png" alt=""></a>
-                            <a href="#"><img src="./imges/101twitter 1.png" alt=""></a>
-                            <a href="#"><img src="./imges/101facebook-icon.png" alt=""></a>
-                        </li>
-                    </div>
-                    <div class="visa">
-                        <li class="flex footer_flex">
-                            <a href="#"><img src="./imges/verse.png" alt=""></a>
-                            <a href="#"><img src="./imges/g4158.png" alt=""></a>
-                            <a href="#"><img src="./imges/master.png" alt=""></a>
-                            <a href="#"><img src="./imges/HaggleX Logo 1.png" alt=""></a>
+                <div class="flex md:justify-center">
+                    <div class="course_sub_1 md:flex grid md:flex-nowrap flex-wrap">
+                        <div class="course_x_1">
+                            <div class="flex justify-between">
+                                <div class="x1 flex  justify-center items-center">
 
-                        </li>
+
+                                    Frontend development
+                                </div>
+                                <div class="x2">
+                                    <img src="./imges/angular@2x.png" alt="">
+                                </div>
+                            </div>
+                            <div class="progress_txt">
+                                <h4>Learn angular.js form scratch to experts
+
+                                </h4>
+                                <p>
+                                    Master Angular 5 from the basics to building an advanced application with Firebase's
+                                    Firestore as …
+
+                                </p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-done_1" data-done="30">
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="course_x_1 ">
+                            <div class="flex  justify-between">
+                                <div class="x1_2 flex  justify-center items-center">
+                                    UI / UX Design
+
+                                </div>
+                                <div class="x2">
+                                    <img src="./imges/skech@2x.png" alt="">
+                                </div>
+                            </div>
+                            <div class="progress_txt">
+                                <h4> Sketch from A to Z (2019): Become an app designer
+
+                                </h4>
+                                <p>
+                                    Finally a comprehensive guide to using Sketch for designing mobile. Learn to design
+                                    an app from A …
+
+                                </p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-done_2" data-done="50">
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="course_x_1 ">
+                            <div class="flex justify-between">
+                                <div class="x1_3 flex  justify-center items-center">
+                                    Backend Development
+                                </div>
+                                <div class="x2">
+                                    <img src="./imges/laravel@2x.png" alt="">
+                                </div>
+                            </div>
+                            <div class="progress_txt">
+                                <h4>
+                                    Laravel 2019, complete guide with real world projects
+                                </h4>
+                                <p>
+                                    Build a RESTful API for a market system using Laravel and dominates the challenging
+                                    RESTful …
+
+                                </p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-done" data-done="90">
+
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div class="home_featured_courses">
+        <div class="flex ">
+            <div class="">
+                <h1 class="feat-head">Featured Courses</h1>
+            </div>
+        </div>
+        <div class="flex fead justify-center">
+            <ul class="feature_ul flex flex-wrap">
+                <li><a href="">All Categories</a></li>
+                <li><a href="">Design</a></li>
+                <li><a href="">Coding</a></li>
+                <li><a href="">DIY</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">Marketing</a></li>
+                <li><a href="">Animation</a></li>
+            </ul>
+        </div>
+        <div class="home_featured_container">
+            <div class="home_carousel flex justify-center  owl-carousel owl-theme">
+                <div class="item">
+                    <div>
+                        <img src="./imges/feature1.png" alt="">
+
+                    </div>
+                    <div class="flex  ">
+                        <div class="feature_loop">
+                            <img src="./imges/featureZ.png" alt="">
+
+                        </div>
+                        <div>
+                            <div class="feat ">
+                                <h4>
+                                    Introduction to Photoshop for Web Designers
+                                </h4>
+                                <p>
+                                    Ogoluwa Ojewale
+                                </p>
+                            </div>
+                            <div class="flex feature_rating">
+                                <p>
+                                    3,700 Students
+                                </p>
+                                <div class="rate-bx">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex feature_bx">
+                                <div class="feature_bx_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="feature_bx_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./imges/feature2.png" alt="">
+                    </div>
+                    <div class="flex  ">
+                        <div class="feature_loop">
+                            <img src="./imges/featureZ.png" alt="">
+                        </div>
+                        <div>
+                            <div class="feat ">
+                                <h4>
+                                    Creating custom Shapes and Fonts
+                                </h4>
+                                <p>
+                                    Immanuel D’Trainer
+                                </p>
+                            </div>
+                            <div class="flex feature_rating">
+                                <p>
+
+                                    1,652 Students
+                                </p>
+                                <div class="rate-bx">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex feature_bx">
+                                <div class="feature_bx_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="feature_bx_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <img src="./imges/feature3.png" alt="">
+                    </div>
+                    <div class="flex  ">
+                        <div class="feature_loop">
+                            <img src="./imges/featureZ.png" alt="">
+                        </div>
+                        <div>
+                            <div class="feat ">
+                                <h4>
+                                    Video Editing Masterclass with Adobe Premiere Pro...
+                                </h4>
+                                <p>
+                                    Ukpono Lens
+                                </p>
+                            </div>
+                            <div class="flex feature_rating">
+                                <p>
+
+                                    721 Students
+                                </p>
+                                <div class="rate-bx">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex feature_bx">
+                                <div class="feature_bx_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="feature_bx_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./imges/feature4.png" alt="">
+                    </div>
+                    <div class="flex  ">
+                        <div class="feature_loop">
+                            <img src="./imges/featureZ.png" alt="">
+                        </div>
+                        <div>
+                            <div class="feat ">
+                                <h4>
+                                    3D & Animation for Beginners with Blender
+                                </h4>
+                                <p>
+
+                                    Ogoluwa Ojewale
+                                </p>
+                            </div>
+                            <div class="flex feature_rating">
+                                <p>
+
+                                    2,300 Students
+                                </p>
+                                <div class="rate-bx">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex feature_bx">
+                                <div class="feature_bx_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="feature_bx_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./imges/feature5.png" alt="">
+                    </div>
+                    <div class="flex  ">
+                        <div class="feature_loop">
+                            <img src="./imges/featureZ.png" alt="">
+                        </div>
+                        <div>
+                            <div class="feat ">
+                                <h4>
+                                    Drawing made easy with Procreate
+                                </h4>
+                                <p>
+                                    D’Artist Frank
+                                </p>
+                            </div>
+                            <div class="flex feature_rating">
+                                <p>
+
+                                    3,700 Students
+                                </p>
+                                <div class="rate-bx">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex feature_bx">
+                                <div class="feature_bx_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="feature_bx_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="view_btn w-full flex justify-center ">
+            <a href="#">view more</a>
+        </div> -->
+    </div>
+
+    <!-- ============================= Worth ================== -->
+    <div class="worth flex justify-center items-center">
+        <div class="worth_container">
+            <div class="wroth_bx p-4">
+                <div class="worth_sub">
+                    <h1>We make learning worth your time!</h1>
+                    <p>An interactive fundraising platform for families and friends to create wealthy entrepreneurs
+                        focused
+                        on creating jobs and employment.</p>
+                </div>
+                <div class="wory md:flex  justify-between">
+                    <div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+                            <p>Fast Delivery</p>
+                        </div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+                            <p>Hungry for Exploration</p>
+                        </div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+                            <p>Teamwork Always</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+                            <p>Communication</p>
+                        </div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+
+                            <p>Weekly Evaluation</p>
+                        </div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+                            <p>Update for the Trend</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================== Creative ==================== -->
+    <div class="creative">
+        <div class="creative_bx flex justify-center">
+            <div class="creative_container flex-wrap md:flex grid">
+                <div class="creative_1">
+                    <p>Creative</p>
+                    <ul>
+                        <li><a href="">Animation</a></li>
+                        <li><a href="">Drawing</a></li>
+                        <li><a href="">Graphic Design</a></li>
+                        <li><a href="">Illustration</a></li>
+                        <li><a href="">Photography</a></li>
+                        <div class="creative_button">
+                            <a href="#">View All </a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="creative_1">
+                    <p>Business</p>
+                    <ul>
+                        <li><a href="">Entrepreneurship </a></li>
+                        <li><a href="">Freelancing</a></li>
+                        <li><a href="">Leadership</a></li>
+                        <li><a href="">Marketing</a></li>
+                        <li><a href="">Productivity</a></li>
+                        <div class="creative_button">
+                            <a href="#">View All </a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="creative_1">
+                    <p>Technology</p>
+                    <ul>
+                        <li><a href="">Data Science </a></li>
+                        <li><a href="">Game Design</a></li>
+                        <li><a href="">Mobile Development</a></li>
+                        <li><a href="">Product Management</a></li>
+                        <li><a href="">Web Development</a></li>
+                        <div class="creative_button">
+                            <a href="#">View All </a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="creative_1">
+                    <p>LifeStyle</p>
+                    <ul>
+                        <li><a href="">Crafts </a></li>
+                        <li><a href="">Culinary</a></li>
+                        <li><a href="">Gaming</a></li>
+                        <li><a href="">Health & Wellness</a></li>
+                        <li><a href="">Languages</a></li>
+                        <div class="creative_button">
+                            <a href="#">View All </a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ========================== GET STARTED -======================== -->
+    <div class="footer_color">
+        <div class="get_started flex justify-center items-center">
+            <div class="get_container flex justify-center items-center">
+                <div class="get_Area text-center">
+                    <h1>Get started today <br> Sign up on CobangArk now!</h1>
+                    <div class="flex justify-center">
+                        <div class="get_button">
+                            <a href="#">create account for free</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ================================== FOOTER ====================== -->
+        <div class="footer flex justify-center items-center">
+            <div class="footer_box md:flex grid justify-between items-center">
+                <div class="footer_box_1">
+                    <div class="footer_logo">
+                        <img src="./imges/logo.png" alt="">
+                    </div>
+                    <div>
+                        <p>
+                            COBANG ARK is an interactive fundraising e-learning platform for families and friends.
+                        </p>
+                    </div>
+                    <div>
+                        <ul class="box_one_img flex flex-wrap ">
+                            <li><a href=""><img src="./imges/101Font_Awesome_5_brands_pinterest 1.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101Vector.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101twitter 1.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101facebook-icon.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_box_1 footer_extra">
+                    <div>
+                        <ul class="md:flex grid flex-wrap md:justify-end">
+                            <li><a href="">Courses</a></li>
+                            <li><a href="">Dashboard</a></li>
+                            <li><a href="">contact</a></li>
+                            <li><a href="">Profile</a></li>
+                            <li><a href="">Testimonial</a></li>
+
+                        </ul>
+                        <ul class="md:flex grid flex-wrap md:justify-end">
+
+                            <li><a href="">Privacy and Terms </a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul class="box_one_1 flex flex-wrap md:justify-end ">
+                            <li><a href=""><img src="./imges/g4158.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/verse.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/master.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/HaggleX Logo 1.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>
     <script>
-        $(".carousel").owlCarousel({
-            margin: 50,
+        $('.owl-carousel').owlCarousel({
             loop: true,
-            autoplay: true,
-            autoplayTimeout: 2000,
-            autoplayHoverPause: true,
+            margin: 13,
+            nav: false,
+            dots: true,
             responsive: {
                 0: {
-                    items: 1,
-                    nav: false
+                    items: 1
                 },
                 600: {
-                    items: 2,
-                    nav: false
+                    items: 3
                 },
+
                 1000: {
-                    items: 3,
-                    nav: false
-                },
+                    items: 4.6
+                }
             }
         })
+
+        const progress = document.querySelector('.progress-done');
+
+        progress.style.width = progress.getAttribute('data-done') + '%';
+        progress.style.opacity = 1;
+
+        const progress_1 = document.querySelector('.progress-done_1');
+
+        progress_1.style.width = progress_1.getAttribute('data-done') + '%';
+        progress_1.style.opacity = 1;
+
+
+        const progress_2 = document.querySelector('.progress-done_2');
+
+        progress_2.style.width = progress_2.getAttribute('data-done') + '%';
+        progress_2.style.opacity = 1;
+
+
+
+
     </script>
-    <s </script>
 </body>
 
 </html>

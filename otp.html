@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tw.css">
+    <link rel="stylesheet" href="css/new.scss">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="signup_page flex items-center md:justify-around ">
+        <div class="signup_1 md:flex hidden">
+
+        </div>
+        <div class="signup_2">
+            <form action="" class="signup_form">
+                <div class="signup_logo flex justify-center">
+                    <a href="./index.html">
+                        <img src="./imges/logo.png" alt=""></a>
+                    </div>
+                <div class="flex justify-center">
+                    <div class="verfi">
+                        <div class="text-center">
+                            <h3>
+                                Enter OTP
+                            </h3>
+                            <P>
+                                Enter 4-digit code sent to your phone numver or email address
+                            </P>
+                        </div>
+                        <div class="otp-box flex justify-center">
+                            <!-- <input type="text">
+                            <input type="text">
+                            <input type="text">
+                            <input type="text"> -->
+
+                            <!-- <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+                            <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                            <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" /> -->
+                            <input id="codeBox1" type="number" maxlength="1" onkeyup="onKeyUpEvent(1, event)"
+                                onfocus="onFocusEvent(1)">
+                            <input id="codeBox2" type="number" maxlength="1" onkeyup="onKeyUpEvent(2, event)"
+                                onfocus="onFocusEvent(2)">
+                            <input id="codeBox3" type="number" maxlength="1" onkeyup="onKeyUpEvent(3, event)"
+                                onfocus="onFocusEvent(3)">
+                            <input id="codeBox4" type="number" maxlength="1" onkeyup="onKeyUpEvent(4, event)"
+                                onfocus="onFocusEvent(4)">
+                        </div>
+                        <div class="flex justify-center w-full">
+                            <a href="./success.html" class="otp-verify">Verify</a>
+                        </div>
+                        <div class="instruct text-center">
+                            <p>
+                                Didn’t receive the code?
+                            </p>
+                            <a href="#">Resend it</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script>
+        function getCodeBoxElement(index) {
+            return document.getElementById('codeBox' + index);
+        }
+        function onKeyUpEvent(index, event) {
+            const eventCode = event.which || event.keyCode;
+            if (getCodeBoxElement(index).value.length === 1) {
+                if (index !== 4) {
+                    getCodeBoxElement(index + 1).focus();
+                } else {
+                    getCodeBoxElement(index).blur();
+                    // Submit code
+                    console.log('submit code ');
+                }
+            }
+            if (eventCode === 8 && index !== 1) {
+                getCodeBoxElement(index - 1).focus();
+            }
+        }
+        function onFocusEvent(index) {
+            for (item = 1; item < index; item++) {
+                const currentElement = getCodeBoxElement(item);
+                if (!currentElement.value) {
+                    currentElement.focus();
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

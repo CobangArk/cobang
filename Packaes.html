@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./fonts/Bossa-web-font/Bossa-ExtendedBold.woff2">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./fonts/mazzard-web-font/MazzardH-Bold.woff">
+    <link rel="stylesheet" href="css/tw.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ============================================= FIRST BACKROUND IMAGE/NAvigation =================================== -->
+    <div class="first_bg">
+        <!-- <nav class="nav_area md:flex  justify-between items-center">
+            <a href="#">
+                <img src="./imges/logo.png" alt="" class="logo">
+            </a>
+            <ul class="md:flex">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li class="first_signup flex items-center justify-center"><a href="#">Signup for free</a></li>
+            </ul>
+        </nav> -->
+        <nav>
+
+            <div class="main_nav">
+                <li class="open_list">
+                    <span onclick="openNav()" class="open"><img src="./imges/menu-3-fill.png" alt="" class="ham"></span>
+                </li>
+                <a href="./index.html">
+                    <img src="./imges/logo.png" alt="" class="logo">
+                </a>
+                <ul class="hidden md:block">
+                    <li class="nav_links"><a href="./about.html">About</a></li>
+                    <li class="dropdown nav_links">
+                        <a href="./courses.html" class="dropbtn">Courses</a>
+                        <div class="dropdown-content">
+                            <a href="#">Web development</a>
+                            <a href="#">LifeStyle</a>
+                            <a href="#">Health and fitness</a>
+                            <a href="#">Digital marketing</a>
+                            <a href="#">Game development</a>
+                            <a href="#">Mobile development</a>
+                            <a href="#">Photography</a>
+                            <a href="#">Graphics design</a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav_links"><a href="./f&g.html">F&Q</a></li> -->
+                    <li class="nav_links"><a href="#">Contact</a></li>
+                    <li class="nav_links"><a href="./SignIn.html">Sign In</a></li>
+                    <li class="nav_links signup_link">
+                        <a href="./signUp.html">Signup for free</a>
+                    </li>
+                    <li>
+                        <span><img src="./imges/search@2x.png" alt="" class="search_meanu"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a href="./about.html">About</a>
+                    <a href="./courses.html">Courses</a>
+                    <!-- <a href="#">Help</a> -->
+                    <a href="./f&g.html">FAQ</a>
+                    <a href="#">Contact</a>
+                    <a href="./SignIn.html">Sign In</a>
+                </div>
+            </div>
+            <!-- Use any element to open/show the overlay navigation menu -->
+        </nav>
+
+        <!-- -------------------------------------  -->
+        <div class="packages ">
+            <div class="text-center">
+                <h1>
+                    Packages
+                </h1>
+                <p class="pack_sub">
+                    Below are our various packages
+                </p>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="packages_container flex justify-center">
+                    <div class="pack_1">
+                        <div>
+                            <h2>Basic</h2>
+                            <p>What You’ll Get</p>
+                        </div>
+                        <div class="pack_main">
+                            <div class="flex items-center">
+                                <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="">
+                                <p>Courses </p>
+                            </div>
+
+                            <div class="flex items-center">
+                                <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="">
+                                <p>Ebooks </p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="">
+                                <p>Tutorials </p>
+                            </div>
+                            <div>
+                                <p>
+                                    $30
+                                </p>
+                            </div>
+                            <div class="flex justify-center">
+                                <div class="pack_button_1">
+                                    <a href="#">Choose</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pack_2">
+                        <div>
+                            <h2>Premium</h2>
+                            <p>What You’ll Get</p>
+                        </div>
+                        <div class="pack_main_1">
+                            <div class="flex items-center">
+                                <img src="./imges/bxs-check-circle (2) 1.png" alt="">
+                                <p>Basic Features </p>
+                            </div>
+
+                            <div class="flex items-center">
+                                <img src="./imges/bxs-check-circle (2) 1.png" alt="">
+                                <p>Advanced Courses </p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="./imges/bxs-check-circle (2) 1.png" alt="">
+                                <p> Advanced Tutorials </p>
+                            </div>
+                            <div>
+                                <p>
+                                    $100
+                                </p>
+                            </div>
+                            <div class="flex justify-center">
+                                <div class="pack_button_2">
+                                    <a href="#">Choose</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pack_3">
+                        <div>
+                            <h2>Business</h2>
+                            <p>What You’ll Get</p>
+                        </div>
+                        <div class="pack_main">
+                            <div class="flex items-center">
+                                <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="">
+                                <p>Premium Features </p>
+                            </div>
+
+                            <div class="flex items-center">
+                                <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="">
+                                <p>Features 2 </p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="">
+                                <p>Features 3 </p>
+                            </div>
+                            <div>
+                                <p>
+                                    $200
+                                </p>
+                            </div>
+                            <div class="flex justify-center">
+                                <div class="pack_button_3">
+                                    <a href="#">Choose</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- ============================= Worth ================== -->
+    <div class="worth flex justify-center items-center">
+        <div class="worth_container">
+            <div class="wroth_bx p-4">
+                <div class="worth_sub">
+                    <h1>We make learning worth your time!</h1>
+                    <p>An interactive fundraising platform for families and friends to create wealthy entrepreneurs
+                        focused
+                        on creating jobs and employment.</p>
+                </div>
+                <div class="wory md:flex  justify-between">
+                    <div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+                            <p>Fast Delivery</p>
+                        </div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+                            <p>Hungry for Exploration</p>
+                        </div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+                            <p>Teamwork Always</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+                            <p>Communication</p>
+                        </div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+
+                            <p>Weekly Evaluation</p>
+                        </div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+                            <p>Update for the Trend</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--==========================GET STARTED -========================-->
+    <div class="footer_color">
+        <div class="get_started flex justify-center items-center">
+            <div class="get_container flex justify-center items-center">
+                <div class="get_Area text-center">
+                    <h1>Get started today <br> Sign up on CobangArk now!</h1>
+                    <div class="flex justify-center">
+                        <div class="get_button">
+                            <a href="#">create account for free</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================== FOOTER ====================== -->
+        <div class="footer flex justify-center items-center">
+            <div class="footer_box md:flex grid justify-between items-center">
+                <div class="footer_box_1">
+                    <div class="footer_logo">
+                        <img src="./imges/logo.png" alt="">
+                    </div>
+                    <div>
+                        <p>
+                            COBANG ARK is an interactive fundraising e-learning platform for families and friends.
+                        </p>
+                    </div>
+                    <div>
+                        <ul class="box_one_img flex flex-wrap ">
+                            <li><a href=""><img src="./imges/101Font_Awesome_5_brands_pinterest 1.png" alt=""></a>
+                            </li>
+                            <li><a href=""><img src="./imges/101Vector.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101twitter 1.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101facebook-icon.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_box_1 footer_extra">
+                    <div>
+                        <ul class="md:flex grid flex-wrap md:justify-end">
+                            <li><a href="">Courses</a></li>
+                            <li><a href="">Dashboard</a></li>
+                            <li><a href="">contact</a></li>
+                            <li><a href="">Profile</a></li>
+                            <li><a href="">Testimonial</a></li>
+
+                        </ul>
+                        <ul class="md:flex grid flex-wrap md:justify-end">
+
+                            <li><a href="">Privacy and Terms </a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul class="box_one_1 flex flex-wrap md:justify-end ">
+                            <li><a href=""><img src="./imges/g4158.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/verse.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/master.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/HaggleX Logo 1.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

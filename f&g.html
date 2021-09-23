@@ -18,27 +18,53 @@
 </head>
 
 <body>
-    <div class="hero">
+    <div class="first_bg">
+        <!-- <nav class="nav_area md:flex  justify-between items-center">
+            <a href="#">
+                <img src="./imges/logo.png" alt="" class="logo">
+            </a>
+            <ul class="md:flex">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li class="first_signup flex items-center justify-center"><a href="#">Signup for free</a></li>
+            </ul>
+        </nav> -->
         <nav>
 
             <div class="main_nav">
                 <li class="open_list">
-                    <span onclick="openNav()" class="open"><img src="./imges/menu-3-fill.png" alt=""></span>
+                    <span onclick="openNav()" class="open"><img src="./imges/menu-3-fill.png" alt="" class="ham"></span>
                 </li>
                 <a href="./index.html">
-                    <img src="./imges/Group 305@3x.png" alt="" class="logo">
+                    <img src="./imges/logo.png" alt="" class="logo">
                 </a>
                 <ul class="hidden md:block">
                     <li class="nav_links"><a href="./about.html">About</a></li>
-                    <li class="nav_links"><a href="#">Courses</a></li>
-                    <li class="nav_links"><a href="./f&g.html">F&Q</a></li>
+                    <li class="dropdown nav_links">
+                        <a href="./courses.html" class="dropbtn">Courses</a>
+                        <div class="dropdown-content">
+                            <a href="#">Web development</a>
+                            <a href="#">LifeStyle</a>
+                            <a href="#">Health and fitness</a>
+                            <a href="#">Digital marketing</a>
+                            <a href="#">Game development</a>
+                            <a href="#">Mobile development</a>
+                            <a href="#">Photography</a>
+                            <a href="#">Graphics design</a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav_links"><a href="./f&g.html">F&Q</a></li> -->
                     <li class="nav_links"><a href="#">Contact</a></li>
                     <li class="nav_links"><a href="./SignIn.html">Sign In</a></li>
+                    <!-- <li class="nav_links"><a href="./Packaes.html">Packages</a></li> -->
+
                     <li class="nav_links signup_link">
                         <a href="./signUp.html">Signup for free</a>
                     </li>
                     <li>
-                        <span><img src="./imges/Combined Shape.png" alt="" class="search_meanu"></span>
+                        <span><img src="./imges/search@2x.png" alt="" class="search_meanu"></span>
                     </li>
                 </ul>
             </div>
@@ -52,22 +78,8 @@
                 <!-- Overlay content -->
                 <div class="overlay-content">
                     <a href="./about.html">About</a>
-                    <a href="#">Instructor</a>
-                    <a href="#">student</a>
-                    <a href="#">Dashboard</a>
-                    <a href="#">Popular Courses</a>
-                    <a href="#">Web development</a>
-                    <a href="#">LifeStyle</a>
-                    <a href="#">Health and fitness</a>
-                    <a href="#">Digital marketing</a>
-                    <a href="#">Game development</a>
-                    <a href="#">Mobile development</a>
-                    <a href="#">Photography</a>
-                    <a href="#">Graphics design</a>
-                    <a href="#">All categories</a>
-                    <br>
-                    <a href="#">Courses</a>
-                    <a href="#">Help</a>
+                    <a href="./courses.html">Courses</a>
+                    <!-- <a href="#">Help</a> -->
                     <a href="./f&g.html">FAQ</a>
                     <a href="#">Contact</a>
                     <a href="./SignIn.html">Sign In</a>
@@ -75,18 +87,17 @@
             </div>
             <!-- Use any element to open/show the overlay navigation menu -->
         </nav>
+
+        <div class="Course flex justify-center items-center">
+            <div class="text-center ">
+                <h1>
+                    F&Gs
+                </h1>
+                <p>Frequently Asked Questions</p>
+            </div>
+        </div>
     </div>
 
-
-
-
-    <div class="FAQs">
-        <h1 class="FAQs_title">FAQs</h1>
-        <p class="FAQs_sub_title">
-            Frequently Asked Questions
-        </p>
-    </div>
-    </div>
     <section class="f_q_section">
         <div class="container">
             <div class="accordance">
@@ -321,73 +332,75 @@
     </section>
 
 
-    <div class="footer_cover_img">
-        <!-- =================== about get started ========= -->
-        <div class="about_getStarted">
-            <div class="started">
-                <h1>Get started today</h1>
-                <p>Signup on CobangArk now!</p>
-                <button>Create an account for free</button>
+
+
+    <!-- ========================== GET STARTED -======================== -->
+    <div class="footer_color">
+        <div class="get_started flex justify-center items-center">
+            <div class="get_container flex justify-center items-center">
+                <div class="get_Area text-center">
+                    <h1>Get started today <br> Sign up on CobangArk now!</h1>
+                    <div class="flex justify-center">
+                        <div class="get_button">
+                            <a href="#">create account for free</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
 
-        <!-- ================ ABOUT FOOTER ============= -->
-        <div class="about_footer">
-            <div class="about_containers">
-                <div class="footer_box">
-                    <div class="foot_1">
-                        <div class="footer_logo">
-                            <img src="./imges/Group 305@3x.png" alt="">
-                        </div>
-                        <div>
-                            <p class="footer_Txt">
-                                COBANG ARK is an interactive fundraising e-learning platform for families and friends.
-                            </p>
-                        </div>
-
+        <!-- ================================== FOOTER ====================== -->
+        <div class="footer flex justify-center items-center">
+            <div class="footer_box md:flex grid justify-between items-center">
+                <div class="footer_box_1">
+                    <div class="footer_logo">
+                        <img src="./imges/logo.png" alt="">
                     </div>
-                    <div class="foot_2">
-                        <ul>
-                            <li>
-                                <a href="#">Courses</a>
-                                <a href="#">Dashboard</a>
-                                <a href="#">Contact</a>
-                                <a href="#">Profile</a>
-                                <a href="#">Testimonials</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy and Terms</a>
-                                <a href="#">Help</a>
-                                <a href="#">Contact</a>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                </div>
-                <div class="md:flex grid justify-between">
                     <div>
-                        <li class="flex footer_flex">
-                            <a href="#"><img src="./imges/101Font_Awesome_5_brands_pinterest 1.png" alt=""></a>
-                            <a href="#"><img src="./imges/101Vector.png" alt=""></a>
-                            <a href="#"><img src="./imges/101twitter 1.png" alt=""></a>
-                            <a href="#"><img src="./imges/101facebook-icon.png" alt=""></a>
-                        </li>
+                        <p>
+                            COBANG ARK is an interactive fundraising e-learning platform for families and friends.
+                        </p>
                     </div>
-                    <div class="visa">
-                        <li class="flex footer_flex">
-                            <a href="#"><img src="./imges/verse.png" alt=""></a>
-                            <a href="#"><img src="./imges/g4158.png" alt=""></a>
-                            <a href="#"><img src="./imges/master.png" alt=""></a>
-                            <a href="#"><img src="./imges/HaggleX Logo 1.png" alt=""></a>
+                    <div>
+                        <ul class="box_one_img flex flex-wrap ">
+                            <li><a href=""><img src="./imges/101Font_Awesome_5_brands_pinterest 1.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101Vector.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101twitter 1.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101facebook-icon.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_box_1 footer_extra">
+                    <div>
+                        <ul class="md:flex grid flex-wrap md:justify-end">
+                            <li><a href="">Courses</a></li>
+                            <li><a href="">Dashboard</a></li>
+                            <li><a href="">contact</a></li>
+                            <li><a href="">Profile</a></li>
+                            <li><a href="">Testimonial</a></li>
 
-                        </li>
+                        </ul>
+                        <ul class="md:flex grid flex-wrap md:justify-end">
+
+                            <li><a href="">Privacy and Terms </a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul class="box_one_1 flex flex-wrap md:justify-end ">
+                            <li><a href=""><img src="./imges/g4158.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/verse.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/master.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/HaggleX Logo 1.png" alt=""></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
     <script src="app.js"></script>
 
 </body>

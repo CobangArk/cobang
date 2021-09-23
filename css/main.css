@@ -2,13 +2,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-@font-face {
+/* @font-face {
     font-family:"Mazzard";
     src: url("/imges/fonts/Mazzard-GraphicUX.com/MazzardH-Black.otf") format("truetype");
-  }
+  } */
   @font-face {
     font-family:"Mazzard.new";
-    src: url("/imges/fonts/Mazzard-GraphicUX.com/MazzardH-BlackItalic.otf") format("truetype");
+    src: url("../fonts/mazzard-web-font/MazzardM-Regular.woff2") format("truetype");
   }
   @font-face {
     font-family: 'Mazzard M';
@@ -19,2215 +19,2599 @@
     font-display: swap;
 }
 @font-face {
-  font-family: 'Mazzard M';
+  font-family: 'Bossa';
   src: url('../fonts/Bossa-web-font/Bossa-Bold.woff2') format('woff2');
       /* url('MazzardM-Bold.woff') format('woff'); */
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
-
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;   font-family: 'Mazzard.light';
+    box-sizing: border-box;
 }
-/* ================================= GENERAL FOOTER STYLE ============ */
-
-.footer_cover_img{
-  background: url(../imges/BG@2xmain.png);
-   background-size: cover;
+.first_bg{
+    height: auto;
+    width: 100%;
+    background: url(../imges/about.png);
+    background-position: center;
+    background-size: cover;
 }
-
-/* =============================== END GENERAL FOOTER STYLE ============ */
-
-
- /*==========================================================================================
-  ================================ START DROPDOWN MENU FOR THE COURSES LINK ====================
-============================================================================================== */
-  
-/* ============================== NAVIGATION DOWNDOWN MENU ================================= */
 
 /* Style The Dropdown Button */
 .dropbtn {
-  /* background-color: #4CAF50; */
-  color: white;
-  padding: 16px;
-  display: flex;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 210px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.course_content{
-  margin-left: -100px;
-  min-width: 170px;
-}
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
- /*==========================================================================================
-  ================================END DROPDOWN MENU FOR THE COURSES LINK ====================
- ---------------============================================================================= */
-
-/* =========================================================================================
- ======================================== NAVIGATION MEUN ================================= 
- ============================================================================================*/
-
-.active_nav{
-  color: #259CD7 !important;
-}
-.main_sect_one{
-  background-image: url(../imges/BG@2xmain.png);
-  background-position: center;
-  background-size: cover;
-  height: auto;
-  width: 100%;
-}
-/* The Overlay (background) */
-.overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-   background-color: #183B56;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    /* background-color: #4CAF50; */
+    color: white;
+    padding: 16px;
+    display: flex;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
   }
   
-  /* Position the content inside the overlay */
-  .overlay-content {
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
     position: relative;
-    top: 8%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    /* text-align: center; Centered text/links */
-    padding: 20px;
+    display: inline-block;
   }
   
-  /* The navigation links inside the overlay */
-  .overlay a {
-    text-transform: uppercase;
-    padding: 8px;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #CFDBF5;
-    line-height: 30px;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  .open img {
-    width: 32px;
-    height: 32px;
-    margin-left: 16px;
-  }
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
     position: absolute;
-    top: 10px;
-    right: 8px;
-    font-size: 50px;
-  }
-  .open{
-      cursor: pointer;
-      display: none;
-  }
-  .open_list{
-    list-style: none;
-    display: none;
-  }
-  .main_nav{
-      display: flex;
-      justify-content: space-between;
-      /* background-color: red; */
-      align-items: center;
-      height: 18vh;
-  }
-  .main_nav ul {
-      display: flex;
-      padding-right: 10px;
-      align-items: center;
-  }
-  .main_nav ul li {
-      list-style: none;
-      padding: 20px;
-  }
-  .main_nav ul li a{
-      color: #213053;
-      font-family: 'Mazzard M';
-      font-weight: bold;
-      font-style: normal ;
-      font-display: swap;
-      text-decoration: none;
-  }
-  .main_nav .logo{
-      width: 240px;
-      margin-left: 120px;
-      height: 40px;
-      text-decoration: none;
-      
-  }
-  .main_nav ul {
-    padding-right: 6px;
-  }
-  .signup_link{
-    display: flex;
-    background-color: #259CD7;
-    height: 45px;
-    width: 180px;
-    display: flex;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-}
-.signup_link a{
-    color: #fff !important;
-}
-.search_meanu{
-  width: 32.1px;
-  height: 32.1px;
-  display: none;
-}
-
- /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
- @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-
-}
-.search_meanu{
-  width: 30px;
-  height: 30px;
-}
-
-
-
-@media screen and (max-width: 1035px){
- .main_nav ul .nav_links{
-     display: none;
- }
-  .open{
-      display: block;
-  }
- .main_nav{
-     display: flex;
-     justify-content: space-between;
- }
- .open_list{
-  display: block;
-}
- .main_nav .logo{
-  width: 168px;
-  height: 28px;
- }
- .main_nav ul {
-  padding-right: 20px;
-}
-}
-@media screen and (max-width: 1013px){
-  .search_meanu{
-    display: block;
-  }
-}
-
-@media screen and (max-width: 789px){
-.main_nav .logo{
-  width: 200px;
-  margin-left: 15px;
-  height: 36px;
-  text-decoration: none;
-  
-}
-}
-  /*=========================================================================================
-   ================================= END OF NAVIGATION MEUN =================================
-   ============================================================================================= */
-  
-
-
-/*===================================================================================================
- ========================================= START OF HOME PAGE  ====================================== 
- =====================================================================================================*/
-
-.hero_img{
-  background: url(../imges/design-a4a346f1-455d-4253-90b8-71941d9d3eb0\ 1.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.hero_1{
-  /* background-color: red; */
-  width: 500px;
-}
-.hero_title{
-  font-size: 70px;
-  padding-top: 30px;
-  line-height: 70px;
-}
-.hero_contain h1{
-  font-weight: 700;
-  color: #213053;
-}
-.hero_contain p{
-  color: #213053;
-  font-size: 19px;
-}
-
-@media screen and (max-width: 755px){
-  .hero_title{
-    font-size: 50px;
-    line-height: 50px;
-  }
-  .hero_contain{
-    text-align: center;
-  }
-
-}
-
-@media screen and (max-width: 996px){
-.hero_contain h1{
-  font-weight: 400;
-  padding-top: 0px !important;
-  color: #213053;
-}
-}
-
-/* ===========================
-======= HOME SEARCH AREA ======
-============================== */
-.search{
-  height: auto;
-  /* background: red; */
-}
-.search_container{
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 40px;
-}
-
-.search_container .search_box_1{
-width: 363px;
-height: auto;
-margin: 10px;
-/* background: green; */
-}
-.search_box_1{
- padding: 10px;
-}
-.search_img_area{
- width: 100px;
- height: 100px;
- display: flex;
- justify-content: center;
- align-items: center;
- /* background: #2A206F; */
-}
-.tree{
- width: 130px;
-}
-.search_box_1 h3{
- font-size: 20px;
- font-family: 'Mazzard M';
- line-height:70px;
-}
-.search_box_1 p{
- font-family: 'Roboto' sans-serif;
-}
-.home_search button{
-height: 70px;
-width: 100px;
- background: #fff;
- border-bottom-right-radius: 15px;
- border-top-right-radius: 15px;
-}
-.home_search{
- position: relative;
- display: flex;
- top: -40px;
- justify-content: center;
- align-items: center;
-}
-.home_search input{
- width: 37%;
- outline: none;
- height: 70px;
-background: #fff ;
-font-family: 'Mazzard M';
-box-shadow: 0px 44px 64px rgba(0, 0, 0, 0.1);
-border-bottom-left-radius: 15px;
-border-top-left-radius: 15px;
-}
-.home_search input[type=text]{
- padding-left: 30px   ;
-}
-
-@media screen and (max-width: 789px){
-.search_container{
-  padding-left:  0px;
-  padding-right: 0px;
-  padding-top: 40px;
-}
-}
-/* ===========================
-======= END OF HOME SEARCH AREA ======
-============================== */
-
-
-/*=================== 
-======= LINE =====
-===================== */
-.line_container{
-  height: 1px;
-  background-color: #3a4a6f;
-  width: 89%;
-  
-}
-.line_container hr{
-  border: 2px solid black;
-}
-.line{
-  padding-top: 40px;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-}
-@media screen and (max-width: 700px){
-  .line{
-    padding-top: 0px;
-    width: 100%;
-    justify-content: center;
-    display: none;
-  }
-}
-/*=================== 
-=======END OF LINE =====
-===================== */
-
-
-  
-/* ======================
-======= START SUPPORT AREA ====
-========================= */
-.support{
-  height: auto ;
-  /* background-color: #213053; */
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-}
-.support_box{
-  margin: 50px;
-  width: 77.4%;
-  display: flex;
-  height: 425.75px;
-  align-items: center;
-  /* background-color: red; */
-}
-.support_img{
-  background: url(../imges/11.png);
-  background-position: center;
-  background-size: cover;
-  height: 425.75px;
-  width: 646px;
-}
-.support_text{
-  padding: 20px;
-  width: 398px;
-  height: auto;
-  /* background-color: #fff; */
-}
-.support_text h3{
-  font-size: 30px;
-  font-family: 'Mazzard M';
-  font-weight: 500;
-}
-.support_text p{
-  font-family: 'Roboto' sans-serif;
-  color: #1D263A;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-}
-.support_text a{
-  display: flex;
-  width: 268px;
-  height: 69.01px;
-  background: #259CD7;
-  justify-content: center;
-  align-items: center;
-  font-size: 28px;
-  font-family: 'Mazzard' ;
-  color: #fff;
-  border-radius: 20px;
-  margin-top: 30px;
-}
-
-.showless{
-  background: url(../imges/1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  /* background-color: red; */
-  background-size: cover;
-  width: 100%;
-  height: 250.68px;
-  border-radius: 10px;
-  margin-top: 20px;
-  display: none;
-}
-
-@media screen and (max-width: 923px){
-  .support_img{
-    width: 500px !important;
-  }
-
-  
-}
-
-@media screen and (max-width: 700px){
-  .support_box{
-    margin: 0px;
-    width: 77.4%;
-    display: flex;
-    height: 425.75px;
-    align-items: center;
-    /* background-color: red; */
-  }
-  .support{
-    height: auto !important;
-  }
-  .support_img{
-    width: 500px !important;
-    display: none;
-  }
-  .showless{
-    display: block;
-  }
-  .support_text{
-    padding: 5px;
-    width:100%;
-    height: auto;
-    /* background-color: #fff; */
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  .support_text p{
-    text-align: center;
-    padding-top: 30px;
-    font-size: 17px;
-
-  }
-  .support_text a{
-    /* line-break: 10px; */
-    /* line-height: 50px; */
-    display: flex;
-    width: 100%;
-    height: 69.01px;
-    background: #259CD7;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    border-radius: 40px !important;
-    color: #fff;
-    border-radius: 20px;
-    margin-top: 30px;
-  }
-  .support_text h3{
-    /* padding-top: 40px; */
-    font-size:  30px;
-    color: #1D263A;
-    font-weight: 700;
-  }
-  .support_box{
-    width: 90%;
-    display: flex;
-    height: auto;
-    align-items: center;
-    /* background-color: red; */
-  }
-}
-/* ======================
-======= END OF  SUPPORT AREA ====
-========================= */
-
-
-
-/* ========================
-====== START OF FEATURED COURSES
-========== =============== */
-.feature{
-  height: auto;
-  width: 100%;
-  /* background-color: red; */
-}
-
-.feat_container .feat_1{
-   width: 300px;
-   height: 266px;
-   margin: 16px;
-}
-.feature .hed{
-  padding-left: 190px;
-  font-size: 48px;
-  text-align: start;
-  /* background-color: red; */
-  font-weight: 500;
-  font-family: 'Mazzard M';
-  color: #1D263A;
-  line-height: 100px;
-}
-.feature_box a{
-  border-radius: 8px;
-  margin-top: 40px;
-  color: #259CD7;
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 225px;
-  height: 55px;
-  background-color: #fff;
-  border: 2px solid #259CD7;
-  font-family: 'Mazzard' ;
-  font-weight: 200;
-}
-
-@media screen and (max-width: 784px){
-  .feature .hed{
-    padding-left: 0px !important;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 60px;
-  }
-  .feature_box a{
-   display: none;
-  }
-}
-
-/* ========================
-====== END OF FEATURED COURSES
-========== =============== */
-
-/* ==============================
-========== START OF SELLS ======= */
-/* -============================ */
-.sells{
-  height: auto;
-  width: 100%;
-  /* background-color: green; */
-
-}
-.sells_1{
-  height: auto;
-  /* background-color: red; */
-  width: 100%;
-
-}
-.sells_img_1{
-  display: block;
-}
-
-.sells_img_2{
-  display: none;
-}
-
-
-
-@media screen and (max-width: 788px){
-  .sells_img_1{
-    display: none;
-  }
-  .sells_img_2{
-  display: block;
-  } 
-}
-
-/* ==============================
-========== END OF SELLS ======= */
-/* -============================ */
-
-
-
-
-/* ==========================*/
-/* ======= START OF PACKAGES ======= 
-==============================*/
-
-.packages{
-  height: auto;
-  width: 100%;
-  /* background-color: green; */
-  padding-left: 81px;
-  padding-right: 90px;
-}
-.package_title{
-  text-align: center;
-  padding-top: 50px;
-  font-size: 48px;
-  font-family: 'Mazzard M';
-  font-style: normal;
-  letter-spacing: -1;
-  font-weight: 700;
-}
-.package_sub_title{
-  text-align: center;
-  font-family: 'Mazzard M';
-}
-.pack .pack_1,.pack_2,.pack_3{
-  width: 340px;
-  height: auto;
-  /* background-color: red; */
-  margin: 20px;
-  border-radius: 26px;
-  padding: 30px;
-}
-.pack_1 h4{
-  font-family: 'Mazzard M';
-  color: #fff;
-  line-height: 57px;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 41.65px;
-  font-display: swap;
-}
-.pack_1 p{
-  font-size: 26px;
-  color: #fff;
-  line-height: 40px;
-
-}
-.pack_2 p{
-  font-size: 20px;
-  line-height: 40px;
-
-}
-.pack_2 h4{
-  font-family: 'Mazzard M';
-  font-weight: 900;
-  font-style: normal;
-  font-size: 41.65px;
-  font-display: swap;
-}
-.pack_3 p{
-  font-size: 20px;
-  line-height: 40px;
-
-}
-.pack_3 h4{
-  font-family: 'Mazzard M';
-  font-weight: 900;
-  font-style: normal;
-  font-size: 41.65px;
-  font-display: swap;
-}
-.pack_1 p{
-  font-size: 20px;
-
-}
-.pack_1{
-  background-color: #0C0655;
-}
-.pack_2{
-  background: url(../imges/BG.png);
-  background-position: center;
-  background-size: cover;
-}
-.pack_3{
-  background-color: #259CD7;
-  color: #fff !important;
-}
-.pack_1 .pack_img{
-  width: 31.24px;
-  height: 31.24px;
-}
-.pack_3 .pack_img{
-  width: 31.24px;
-  height: 31.24px;
-}
-.pack_btn_1{
-    width: 100%;
-    justify-content: center;
-}
-.pack_btn_1 a{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  font-size:20px;
-  border-radius: 20px;
-  height: 60px;
-  Offset: 0px, 15.62px rgba(29, 187, 255, 0.5);
-  Fill: Solid#259CD7;
-  background-color: #259CD7;
-
-
-}
-.pack_btn_2 a{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #259CD7;
-  font-size:20px;
-  border-radius: 20px;
-  height: 60px;
-  Offset: 0px, 15.62px rgba(29, 187, 255, 0.5);
-  Fill: Solid#259CD7;
-  background-color: transparent;
-
-
-}
-.pack_btn_3 a{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  color: #fff;
-  align-items: center;
-  border: 2px solid #259CD7;
-  font-size:20px;
-  border-radius: 20px;
-  height: 60px;
-  Offset: 0px, 15.62px rgba(29, 187, 255, 0.5);
-  Fill: Solid#259CD7;
-  background-color: #2A206F;
-
-
-}
-.dollar p{
-  font-family: 'Mazzard M';
-font-weight: bold;
-font-style: normal;
-font-display: swap;
-padding-top: 10px;
-font-size: 40px;
-}
-.dollar_1 p{
-  font-family: 'Mazzard M';
-font-weight: bold;
-font-style: normal;
-font-display: swap;
-padding-top: 10px;
-color: #fff;
-font-size: 40px;
-}
-@media screen and (max-width: 789px){
-  .pack .pack_1,.pack_2,.pack_3{
-    width: 320px;
-    height: 500px;
-    margin: 20px;
-  }
-  .pack_1 h4{
-    font-family: 'Bossa';
-    font-weight: 900;
-    font-style: normal;
-    font-size: 29px;
-    font-display: swap;
-  }
-  .pack_1 p{
-    font-size: 18px;
-  
-  }
-  .pack_2 h4{
-    font-family: 'Bossa';
-    font-weight: 900;
-    font-style: normal;
-    font-size: 29px;
-    font-display: swap;
-  }
-  .pack_2 p{
-    font-size: 18px;
-  
-  }
-  .pack_3 h4{
-    font-family: 'Bossa';
-    font-weight: 900;
-    font-style: normal;
-    font-size: 29px;
-    font-display: swap;
-  }
-  .pack_3 p{
-    font-size: 18px;
-  
-  }
-  .pack_btn_1 a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border-radius: 31px;
-    height: 60px;
-    font-size: 16px;
-    Offset: 0px, 15.62px rgba(29, 187, 255, 0.5);
-    Fill: Solid#259CD7;
-    background-color: #259CD7;
-  
-  }
-  
-}
-/* ==========================*/
-/* ======= END OF PACKAGES ======= 
-==============================*/
-
-
-
-/* ==========================
-== START OF ALWAYS CREATE  ===
-============================= */
-.always_create{
-  height: auto;
-  width: 100%;
-  /* background-color: red; */
-  background: url(../imges/BG\ \(11\).png);
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  padding: 30px;
-  align-items: center;
-  justify-content: center ;
-  background-attachment: fixed;
-}
-.create{
-  height: auto;
-  width:50%;
- 
-}
-.always_boxs{
-  margin-top: 30px;
-  width: 120px;
-  height: 30px;
-  border-radius: 8px;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.always_title{
-  font-size: 48px;
-
-}
-.create_box_1{
-   display: flex;
-   width: 100%;
-   /* background-color: green; */
-   justify-content: center;
-   align-items: center;
-}
-.create_box_title{
-  color: #fff;
-  text-align: center;
-}
-
-.main_create_form{
-  width: 100%;
-  height: auto;
-  padding-top: 20px;
-  color: #fff;
-  
-  /* background-color: hotpink; */
-}
-.sign_create{
-    color: #EE6B43;
-}
-.create_term{
- color: #259CD7;
-}
-.box_create{
-  /* background-color: indigo;   */
-  padding: 0px 130px;
-  height: 100%;
-}
-.create_input{
-  padding: 10px;
- 
-}
-.create_input input[type=text]{
-  padding-left: 12px;
-  color: #000000;
-}
-.create_input input{
-  width: 100%;
-  height: 40px;
-  outline: none;
-  border-radius: 15px;
-  background-color: white;
-}
-.create_btn{
-  padding: 10px;
-}
-.create_btn a{
-  display: flex;
-  border-radius: 15px;
-  width: 100%;
-  background-color: #259CD7;
-  color: #fff;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-}
-.create_line{
-  padding: 12px;
-}
-.create_line p{
-  padding: 8px;
-}
-.create_line img{
-   height: 2px;
-   width: 100%;
-   /* width: 145px; */
-}
-.account p{
-  font-size: 14px !important;
-}
-@media screen and (max-width: 789px){
-  .box_create{
-    padding: 0px 11px;
-  }
-  .create_input{
-    padding: 2px;
-  }
-  .create_btn{
-    padding: 2px;
-  }
-  .create_btn{
-    margin-top: 12px;
-  }
-  .box_create{
-    /* background-color: indigo;   */
-    padding: 0px 0px !important;
-    height: 100%;
-  }
-  .create{
-    height: auto;
-    margin-bottom: 20px;
-    width:100%;
-   
-  }
-  .always_title{
-    font-size: 27px;
-  }
-  .create_box_title p{
-    font-size: 16px;
-  }
-  
-}
-/* ==========================
-== END OF ALWAYS CREATE  ===
-============================= */
-
-
-/* =========================
-==== START OF STEPS ========
-============================ */
-.steps{
-  height: auto;
-  width: 100%;
-  /* background-color: red; */
-
-}
-.steps h1{
-  text-align: center;
-  padding-top: 40px;
-  font-size: 46px;
-}
-.steps_container{
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.steps_box{
-  height: auto;
-  text-align: center;
-  padding-top: 40px;
-  width: 70%;
-  /* background-color: green; */
-}
-.steps_1{
-   width: 40%;
-}
-.steps_1 .step_1_box_x{
-  margin: 10px;
-  padding: 20px;
-  height: 100px;
-  width: 300px;
-  border: 2px solid #259CD7;
-  border-radius: 30px;
-}
-.steps_1 .step_1_box_x_2{
-  margin: 10px;
-  padding: 20px;
-  height: 100px;
-  width: 300px;
-}
-.steps_1 .step_1_box_x_3{
-  margin: 10px;
-  padding: 20px;
-  height: 100px;
-  width: 300px;
-}
-.step_1_box_x div{
-  padding: 6px;
-}
-.step_1_box_x_2 div{
-  padding: 6px;
-}
-.step_1_box_x_3 div{
-  padding: 6px;
-}
-.steps_2{
-  width: 100%;
-  /* background-color: #fff; */
-}
-.first_box_img{
-  padding: 20px;
-}
-.first_box_img img{
-  width: 100%;
-}
-
-
-
-@media screen and (max-width: 789px){
-  .steps_1{
-    /* background-color: #44545c; */
-    width: 100%;
- }
- .steps_container{
-  justify-content: start;
-  }
-  .steps_1 .step_1_box_x{
-    height: 60px;
-    padding: 2px;
-  }
-  .steps_1 .step_1_box_x_2{
-    height: 60px;
-    padding: 2px;
-
-  }
-
-  .steps_1 .step_1_box_x_3{
-    height: 60px;
-    padding: 2px;
-  }
-  .steps h1{
-    font-size: 26px;
-  }
-}
-/* =========================
-==== END OF STEPS ========
-============================ */
-
-
-
-
-
-
-
-/*===================================================================================================
- ========================================= END OF HOME PAGE  ====================================== 
- =====================================================================================================*/
-
- 
-
-
-
-
-
-/* =================================================================================================
-=========================================== START OF SIGN IN PAGE ==================================
-======================================================================================================= */
-.signIn{
-  height: 100vh;
-  background: url(../imges/BG@3x.png);
-  /* background: red; */
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main_signIn{
-  height: 430px;
-  width: 348px;
-  background: #fff;
-
-}
-.box_signIn{
-  width: 100%;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-.box_signIn img{
-  width: 212px;
-}
-.check{
-  display: flex;
-  justify-content: space-between;
-  /* padding-top: 30px; */
-}
-.sign_main{
-  padding: 0px 30px;
-}
-.sign_main h4{
-  line-height: 40px;
-  font-size: 14px;
-}
-.sign_main input{
-  width: 100%; 
-  border-radius: 5px;
-  border: 1px solid; 
-  height: 34px;
-  outline: none;
-}
-.check_input{
-  height: 15px !important;
-  width: 15px !important;
-}
-.sign_main input[type=text]{
- padding-left: 13px;
-}
-.sign_title{
-  padding-left: 30px;
-  color: #1D263A;
-}
-.one{
-  font-size: 20px;
-  padding-top: 23px;
-  font-weight: 
-  500;
-}
-.one_1{
-  font-size: 13px;
-}
-
-form{
-   color: #1D263A !important;
-  
- }
-.signIn_button{
-  width: 100%;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 44px;
-  background: #259cd7;
-  font-size: 17px;
-  border-radius: 10px;
-  color: #fff;
-}
-.signUp_btn{
-  text-decoration: none;
-}
-.check_area p{
-  font-size: 13px;
-}
-
-.check_11{
-  display: flex;
-  align-items: center;
-}
-.check_11 p{
-  font-size: 14px;
-}
-@media screen and (max-width: 486px){
-  .signIn{
-    padding: 20px;
-  }
-  .main_signIn{
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 789px){
-  .main_signIn{
-    height: 420px;
-    width: 348px;
-    background: #fff;
-  
-  }
-  .signIn{
-    height: 90vh;
-    background: url(../imges/BG@3x.png);
-    /* background: red; */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-
-/* =================================================================================================
-=========================================== END OF SIGN IN PAGE ==================================
-======================================================================================================= */
-
-
-
-/* =================================================================================================
-=========================================== START OF SIGN UP PAGE ==================================
-======================================================================================================= */
-.signUp_area{
-  height: 100vh;
-  width: 100%;
-  background: url(../imges/BG@3x.png);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #1D263A !important;
-}
-.signUp_form{
-  padding: 30px;
-}
-.signUp_box_1{
-  width: 649px;
-  height: 341px;
-  /* width: 100%; */
-  background: url(../imges/Right@3x.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* margin: 50px; */
-}
-.cobang_title{
-  padding-top: 20px;
-  padding-left: 10px;
-
-}
-.til{
-  font-weight: 600;
-  font-size: 22px;
-}
-.acct{
-  font-size: 16px;
-  font-weight: 400;
-}
-.signUp_area form{
-  height: auto;
-  width: 444px;
-  border-radius: 20px;
-  background: #fff;  
-  margin: 20px;
-  color: #1D263A !important;
-}
-.signup_img{
-  display: flex;
-  justify-content: center;
-}
-.signup_img img{
-  width: 230px;
-  height: 37px;
-  margin-top: 11px;
-}
-.fist div{
-  margin: 10px;
-}
-.fist{
-  display: flex;
-  justify-content: center;
-}
-.fist,.address p{
-  font-size: 15px;
-}
-.fist_2 input{
-  width: 100%;
-  outline: none;
-  height: 34px;
-  border-radius: 6px;
-  border: 0.7px solid #1D263A;
-}
-.fist_2 input::placeholder{
-  font-size: 13px;
-}
-.fist_2 input[type=text]{
-  padding-left: 10px;
-}
-.address{
-  padding-right: 10px;
-  padding-left: 10px;
-}
-.address p{
-  padding-top:10px;
-}
-.address input{
-  border: 0.7px solid #1D263A;
-  width: 100%;
-  outline: none;
-  border-radius: 6px;
-  height: 34px;
-}
-.address input::placeholder{
-  font-size: 13px;
-}
-.address input[type=text]{
-  padding-left: 10px;
-}
-
-.box_check input{
-  margin-left: 10px !important;
-
-}
-.box_check p{
-  padding-left: 10px;
-  font-size: 14px;
-}
-.box_forget p{
-  padding-right: 30px;
-}
-.signUp_button{
-  display: flex;
-  width: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  height: 44px;
-  background-color: #259CD7;
-  font-size: 16px;
-  color: #fff;
-  margin-top: 10px;
-  justify-content: center;
-  align-items: center;
-}
-.don{
-  padding-left: 10px;
-}
-.don p{
-   color: #3a4a6f;
-   line-height: 50px;
-   font-size: 14px;
-}
-.don a{
-  color: #259CD7;
-  text-decoration: none;
-}
-.up{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.check_unit{
-  padding-top: 10px;
-  display: flex; 
-  /* background: red; */
-  width: 100%;
-  justify-content: space-between; 
-}
-@media screen and (max-width: 789px){
-  .create{
-    justify-content: start !important;
-  }
-  .cear
-  /* {
-    height: 10vh;
-    width: 100%;
-    background-position: center;
-  } */
-  .signUp_box_1{
-    display: none;
-  }
-  .box_check p{
-    font-size: 14px;
-    justify-content: space-between;
-  }
-  .box_forget p{
-     font-size: 14px;
-     padding-left: 16px;
-  }
-  .fist{
-    display: block;
-  }
-
-  .box_check{
-    width: 100%;
-  }
-  .box_forget{
-    padding-top: 10px;
-    width: 100px;
-  }
-  .signUp_form{
-    padding: 20px;
-  }
-}
-
-
-/* =================================================================================================
-=========================================== END OF SIGN UP PAGE ==================================
-======================================================================================================= */
-
-
-
-
-
-
-/* =================================================================================================
-=========================================== START OF ABOUT PAGE ==================================
-======================================================================================================= */
-
-.about_hero{
-  height: auto;
-  /* background-color: red; */
-  background-image: url(../imges/Rectangle\ 2324.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  display: flex;
-  padding: 50px;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.about_container{
-  margin: 30px;
-  height: auto;
-  padding: 20px;
-  width: 70%;
-  /* background-color: green; */
-}
-.about_text{
-  text-align: center;
-  width: 80%;
-  text-align: center;
-}
-.about_text h1{
-  font-size: 40px;
-  color: #183B56;
-  font-family: 'Bossa';
-  font-weight: 700;
-
-}
-.about_text p{
-  color: #5A7184;
-  font-size: 20px;
-  line-height: 30px;
-}
-.about_img{
-  /* background-image: url(../imges/Rectangle.png);
-  background-position: center;
-  background-size: cover; */
-  /* background-color: purple; */
-  /* position: relative; */
-  top: 80px;
-  width: 100%;
-  margin-top: 40px;
-  height:50vh;
-  border-radius: 20px;
-  border: none;
-}
-@media screen and (max-width: 789px){
-  .about_container{
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-  }
-  .about_hero{
-    padding: 10px;
-  }
-  .about_text{
-    width: 100%;
-  }
-  .about_text p{
-    font-size: 16px;
-  }
-  .about_img {
-    margin-top: 10px;
-    height: auto;
-  }
-}
-/* ==================== ============
-======= START COUNTER ============
-==================================== */
-.counter{
-  width: 100%;
-  /* background-color: lawngreen; */
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.sub_counter{
-  height: 70vh;
-  width: 70%;
-  /* background-color: lightcoral; */
-  display: flex;
-  justify-content: center;
-}
-
-.sub_count{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.sub_count > div{
-  margin: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-}
-.count_bold{
-  font-size: 40px;
-  font-family: 'Mazzard M';
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-.badge img{
-  margin-left: 40px;
-}
-.badge_1 img{
-  margin-left: 30px;
-}
-.badge_2 img{
-  margin-left: 30px;
-}
-.count_bold_text{
-  font-size: 18px;
-}
-@media screen and (max-width: 789px){
-  .sub_count{
-    display: block;
-  }
-
-.sub_counter{
-  height: auto;
-}
-
-.sub_counter{
-  width: 100%;
- }
-.sub_count > div{
-  text-align: center;
-}
-}
-/* =================================
-======= END OF COUNTER ============
-==================================== */
-
-/* ===============================
-======= WORTH SECTION ======= 
-=================================*/
-.worth{
-  height: auto;
-  width: 100%;
-  /* background-color: lightseagreen; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.wroth_ul{
-  padding-top: 20px;
-  /* background: red; */
-  /* justify-content: space-between; */
-}
-.wroth_flex img{
-  margin: 10px;
-  display: flex;
-}
-.wroth_flex{
-  display: flex;
-  font-size: 17px;
-  font-family: 'Mazzard M';
-  /* font-weight: bold; */
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-.worth_sub{
-  width: 90%;
-  height: auto;
-  /* background-color: magenta; */
-  display: flex;
-  /* background-image: url(../imges/Base\ \(1\).png);
-  border-radius: 10px; */
-}
-.worth_sub_1{
-  width: 60%;
-  padding: 50px  50px; 
-  height: auto;
-  background: #259cd7;
-  color: #fff;
-}
-.worth_sub_1 h1{
-  font-size: 48px;
-  font-family: 'Mazzard M';
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-.worth_sub_1 p{
-  font-size: 17px;
-  font-family: 'Mazzard M';
-  /* font-weight: bold; */
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-.worth_sub_2{
-  width: 40%;
-  height: auto;
-  /* background: red; */
-  background: url(../imges/Rectangle\ 2324.png);
-  background-position: center;
-  background-size: cover;
-}
-.worth_sub_2 img{
-  width: 100%;
-  position: relative;
-  left: -100px;
-}
-@media screen and (max-width: 789px){
-  .worth_sub_2{
-    display: none;
-  }
-  .worth_sub_1 h1{
-    font-size: 30px;
-  }
-  .worth_sub_1{
-    width: 100%;
-    padding: 50px  10px; 
-    height: auto;
-    background: #259cd7;
-    color: #fff;
-  }
-  .wroth_ul{
-    display: block;
-  }
-}
-/* ===============================
-======= END OF WORTH SECTION ======= 
-=================================*/
-/* ===============================
-======= START OF ECOSYSTEM SECTION ======= 
-=================================*/
-.ecosystem{
-  height: auto;
-  padding: 0px 100px;   
-  /* background-color: green;  */
-  padding-top: 40px;
-  width: 100%;
-  flex-direction: row;
-  position: relative;
-  display: flex;
-}
-.ecos_1{
-  height: 110vh;
-  position: relative;
-  width: 100%;
-  /* background-color: red;  */
- 
-  margin: 10px;  
-  padding: 30px;
-}
-.ecos{
-  height: auto;
-  position: relative;
-  padding: 20px;
-  width: 70%;
-  /* background-color: gray;  */
-}
-.eco{
-  display: flex;
-  background-image: url(../imges/Group\ 338@2x.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-.eco_1{
-  height: 430px;
-  width: 387px;
-  position: relative;
-  z-index: 2;
-}
-.eco_1 img{
-  width: 100%;
-}
-.eco_2{
-  height: 450px;
-  width: 322px;
-  position: absolute;
-  right: 50px;
-  top: 160px;
-  z-index: 1;
-}
-.eco_2 img{
- width: 100%;
-}
-.ecos p{
-  color: #183B56;
-}
-.ecos_head{
-  font-size: 48px;
-  color: #183B56;
-  font-family: 'Bossa';
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-.vision h1{
-  font-size: 24px;
-  color: #183B56; 
-  padding-top: 23px;
-  font-family: 'Bossa';
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-.vision p{
-  color: #183B56;
-}
-.mission h1{
-  padding-top: 23px;
-  font-size: 24px;
-  color: #183B56; 
-  font-family: 'Bossa';
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-.mission p{
-  color: #183B56;
-}
-@media screen and (max-width: 789px){
-  .ecosystem{
-    /* display: block; */
-    flex-direction: column-reverse;
-  }
-  .ecos{
-    height: auto;
-    width: 100%;
-    /* background-color: gray;  */
-  }
-  .ecosystem{
-    padding: 0px 6px;   
-  }
-  .eco_1{
-    width: 226px;
-  }
-  .ecos_1{
-    height: 60vh !important;
-    /* background-color: red; */
-    margin: 0px;  
-    padding: 20px;
-  }
-  .eco_2{
-    width: 226px;
-    right: 20px;
-    top: 120px;
+    background-color: #f9f9f9;
+    min-width: 210px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  .ecos_head{
-    font-size: 33px;
+  .course_content{
+    margin-left: -100px;
+    min-width: 170px;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+   /*==========================================================================================
+    ================================END DROPDOWN MENU FOR THE COURSES LINK ====================
+   ---------------============================================================================= */
+  
+  /* =========================================================================================
+   ======================================== NAVIGATION MEUN ================================= 
+   ============================================================================================*/
+  
+  .active_nav{
+    color: #259CD7 !important;
+  }
+  .main_sect_one{
+    background-image: url(../imges/BG@2xmain.png);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+  }
+  /* The Overlay (background) */
+  .overlay {
+      /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+      height: 100%;
+      width: 0;
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+     background-color: #183B56;
+      overflow-x: hidden; /* Disable horizontal scroll */
+      transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+    
+    /* Position the content inside the overlay */
+    .overlay-content {
+      position: relative;
+      top: 8%; /* 25% from the top */
+      width: 100%; /* 100% width */
+      /* text-align: center; Centered text/links */
+      padding: 20px;
+    }
+    
+    /* The navigation links inside the overlay */
+    .overlay a {
+      text-transform: uppercase;
+      padding: 8px;
+      text-decoration: none;
+      font-family: 'Mazzard m';
+      font-weight: 400;
+      font-size: 14px;
+      color: #CFDBF5;
+      line-height: 30px;
+      display: block; /* Display block instead of inline */
+      transition: 0.3s; /* Transition effects on hover (color) */
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+    }
+    .open img {
+      width: 32px;
+      height: 32px;
+      margin-left: 16px;
+    }
+    /* Position the close button (top right corner) */
+    .overlay .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 8px;
+      font-size: 50px;
+    }
+    .open{
+        cursor: pointer;
+        display: none;
+    }
+    .open_list{
+      list-style: none;
+      display: none;
+    }
+    .main_nav{
+        display: flex;
+        justify-content: space-between;
+        /* background-color: red; */
+        align-items: center;
+        height: 18vh;
+    }
+    .main_nav ul {
+        display: flex;
+        padding-right: 10px;
+        align-items: center;
+    }
+    .main_nav ul li {
+        list-style: none;
+        padding: 20px;
+    }
+    .main_nav ul li a{
+        color: #213053;
+        font-family: 'Mazzard M';
+        font-weight: bold;
+        font-style: normal ;
+        font-display: swap;
+        text-decoration: none;
+    }
+    .main_nav .logo{
+        width: 240px;
+        margin-left: 120px;
+        height: 40px;
+        text-decoration: none;
+        
+    }
+   
+    .signup_link{
+      display: flex;
+      background-color: #259CD7;
+      height: 45px;
+      width: 180px;
+      display: flex;
+      border-radius: 10px;
+      justify-content: center;
+      align-items: center;
+  }
+  .signup_link a{
+      color: #fff !important;
+  }
+  .search_meanu{
+    width: 32.1px;
+    height: 32.1px;
+    display: none;
+  }
+  .logo{
+    width: 270px;
+    height: 43px;
+  }
+  
+   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+   @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  
+  }
+  .search_meanu{
+    width: 30px;
+    height: 30px;
+  }
+  
+  
+  
+  @media screen and (max-width: 1035px){
+   .main_nav ul .nav_links{
+       display: none;
+   }
+    .open{
+        display: block;
+    }
+   .main_nav{
+       display: flex;
+       justify-content: space-between;
+   }
+   .open_list{
+    display: block;
+  }
+   .main_nav .logo{
+    width: 168px;
+    height: 28px;
+   }
+   .main_nav ul {
+    padding-right: 20px;
+  }
+  }
+  @media screen and (max-width: 1013px){
+    .search_meanu{
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 789px){
+  .main_nav .logo{
+    width: 170px;
+    margin-left: 15px;
+    height: 30px;
+    text-decoration: none;
+    
+  }
+  .main_nav ul {
+    padding-right: 0px;
+}
+  .icons_hidden{
+    display: none;
+  }
+  .ham img{
+      /* width: 10px !important; */
+  }
+  }
+    /*=========================================================================================
+     ================================= END OF NAVIGATION MEUN =================================
+     ============================================================================================= */
+  
+     
+/* .logo{
+    width: 270px;
+    height: 43px;
+}
+nav{
+    padding: 20px  100px;
+}
+nav ul li{
+    padding: 15px;
+}
+nav ul li a{
+    font-size: 15px;
+    font-family: 'Bossa';
+    font-weight: 600;
+}
+.first_signup{
+    color: #fff;
+    background: #259CD7;
+    width: 160px;
+    font-size: 15px;
+    border-radius: 15px;
+    height: 45px;
+} */
+
+
+    
+.hero{
+    height: auto;
+    padding: 40px 0px 0px 0px;
+}
+.hero_1{
+    height: auto;
+    width: 100%;
+    padding: 85px 100px;
+}
+.hero_1 h1{
+    font-size: 64px;
     font-family: 'Bossa';
     font-weight: 700;
-  }
+    font-style: normal;
+    line-height: 60px;
+    color: #2A206F;
+}
+.hero_1 p{
+    font-family: Mazzard m;
+    padding-top: 29px;
+    color: #474545;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 30px;
+}
+.hero_2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.hero_2 img{
+    height: 545px;
+    width: 520px;
+}
+.hero_2_sub{
+    height: auto;
+   width: 100%;
+   display: flex ;
+   justify-content: center ;
+}
+.hero_1_sub a{
+    margin: 17px 0px;
+    background: #259CD7;
+    display: flex;
+    width: 268px;
+    height: 69px;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    font-family: 'Bossa';
+    font-size: 27px;
+    filter: drop-shadow(0px 16px 36px rgba(37, 156, 215, 0.21));
+    border-radius: 20px;
 }
 
-/* ===============================
-=== END OF ECOSYSTEM SECTION======= 
-=================================*/
+@media screen and (max-width: 789px){
+   .hero_1_sub{
+       text-align: center;
+   }
+   .hero_1{
+    padding: 10px 30px;
+   }
+   .hero_1_sub a{
+    width: 200px;
+    font-size: 16px;
+    margin-left: 68px;
+    border: none;
+    height: 50px;
+    border-radius: 40px;
+}
+.hero_1 h1{
+    font-size: 40px;
+    line-height: 45px;
+}
+.hero_1 p{
+    font-family: 'Bossa';
+    padding-top: 9px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.hero_2 img{
+    height: 453px;
+    width: 528.6px;
+}
 
-/* ======================
-==== START OF QUOTE CAROUSEL =====
-========================== */
-.quote{
-  height: auto;
-  /* background: midnightblue; */
+
+
+}
+
+/* =============================== home_search_button =========================== */
+.home_search_button{
+    width: 100%;
+    height: auto;
+}
+.home_search_sub{
+    width: auto;
+    height: auto;
+    margin-top: -33px;
+}
+.home_search_sub input{
+    background: #FFFFFF;
+    box-shadow: 0px 44px 64px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 620px;
+    outline: none; 
+    height: 60px;
+}
+.home_search_sub input::placeholder{
+    font-family: 'Bossa';
+}
+.home_search_sub input[type=text]{
+    padding-left: 20px;
+}
+.home_search_icon{
+    background: #fff;
+    height: 60px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 0px 20px;
+}
+.home_search_icon img{
+    width: 41px;
+    height: 41px;
+}
+
+
+/* ============================================== HOME LIBRARY ===================== */
+.home_library{
+    height: auto;
+    width: 100%;
+    padding: 60px 0px;
+}
+.home_library_box{
+    width: 90%;
+    height: auto;
+    padding: 3px;
+    
+}
+.home_library_box .home_library_box_1{
+    width: 100%;
+    height: auto;
+    color: #213053;
+    padding: 0px 20px;
+    margin: 8px;
+}
+.home_library_box_1 h3{
+    line-height: 40px;
+    font-family: 'Bossa';
+}
+.home_library_box p{
+    font-family:"Mazzard.new";
+    padding-top: 12px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+.home_library_box_1 div{
+    height: 110px;
+}
+.library_img_1{
+    display: flex ;
+    align-items: center;
+}
+.library_img img{
+    width: 118px;
+    height: 121px;
+}
+.library_img_1 img{
+    width: 80px;
+}
+.library_img_2 img{
+    width: 82px ;
+}
+.library_img_3 img{
+    width: 158.94px;
+}
+@media screen and (max-width: 789px){
+    .home_library_box .home_library_box_1{
+        margin: 0px 0px;
+    }
+    .home_library_box{
+        width: 88%;
+        height: auto;
+        padding: 0px;
+    }
+    .home_library_box p {
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+    .library_img img{
+        width: 100px;
+        height: 110px;
+    }
+    .library_img_1 img{
+        width: 70px;
+    }
+    .library_img_2 img{
+        width: 75px ;
+    }
+    .library_img_3 img{
+        width: 130px;
+    }
+}
+
+
+/* ========================================== SUPPORT ========================= */
+.support{
+    height: auto;
+    width: 100%;
+    padding: 20px 0px;
+}
+.support_box{
+    width:70%;
+    height: auto;
+}
+.support_box .support_box_1{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+
+}
+.support_box_1 a{
+    display: flex;
+    filter: drop-shadow(0px 16px 36px rgba(37, 156, 215, 0.21));
+    width: 190px;
+    background: #259CD7;
+    font-family: 'Mazzard.new';
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    margin: 10px 0px;
+    border-radius: 15px;
+    color: #fff;
+}
+.support_box .support_box_2{
+    width: 100%;
+    height: 400px;
+}
+.support_box_1 h3{
+    font-family: Bossa;
+    color: #1D263A;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 50px;
+}
+.support_box_1 p{
+    color: #1D263A;
+    font-family:"Mazzard.new";
+    font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+}
+@media screen and (max-width:789px){
+    .support_box .support_box_1 {
+        padding: 0px;
+    }
+    .support{
+        padding: 0px 0px;
+    }
+    .support_box{
+        width:80%;
+    }
+    .support_box_1 h3{
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .support_box_1 p{
+        font-size: 16px;
+    line-height: 28px;
+    }
+}
+
+/* ================================= HOME FEATURED COURSES ======================= */
+.home_featured_courses{
+    height: auto;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.home_featured_container{
+    display: flex;
+    justify-content: center;
+}
+.home_featured_courses h1{
+    font-family: 'Bossa';
+    font-size: 43px;
+    padding-left: 120px;
+    color: #1D263A;
+    font-weight: 700;
+}
+.item img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.feat h4{
+    font-size: 14px;
+    font-family: 'Mazzard.new';
+    font-weight: 700;
+    color: #213053;
+    
+    padding-top: 25px;
+}
+.feat p{
+    color: #213053;
+    font-size: 13px;
+    font-family: 'Mazzard.new';
+    font-weight: 400;
+}
+
+.feature_rating p{
+    font-size: 10px;
+    font-family: 'Mazzard.new';
+    font-weight: 700;
+    padding: 8px;
+    color: #213053;
+}
+.feature_bx .feature_bx_1{
+    background: rgba(37, 156, 215, 0.1);
+    border: 1px solid #259CD7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 10px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature_bx_2{
+    background: rgba(37, 156, 215, 0.1);
+    border: 1px solid #259CD7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 10px;
+    width: 60px;
+    color: #259CD7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature_bx div{
+    margin: 2px;
+}
+.feature_bx .feature_bx_1 a{
+    font-family: 'Mazzard.new';
+    color: #259CD7;
+}
+.home_featured_courses .item{
+    width: 100%;
+    height:auto;
+    background-color: #fff !important;
+    margin: 30px 0px;
+    padding: 0px 0px 20px 0px;
+    box-shadow: 0px 5.20673px 72.8942px rgba(0, 0, 0, 0.12);
+border-radius: 20px;
+}
+.feature_loop img{
+    margin-top: 20px;
+}
+.home_carousel{
+    display: flex;
+    justify-content: center;
+  
+    width: 84% !important;
+}
+.rate-bx{
+    /* background-color: red; */
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view_btn{
+    margin-top: 30px;
+}
+.view_btn a{
+    width: 225px;
+    color: #259CD7;
+    height: 55px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mazzard M';
+    background: transparent;
+    border: 2px solid #259CD7;
+}
+.feature_ul li{
+    padding: 10px 34px;
+}
+.feature_ul{
+    /* background: green; */
+    width: 87%;
+}
+.feature_ul li a{
+    font-family: 'Bossa';
+    font-size: 20px;
+    font-weight: 500;
+    color: #213053;
+}
+.feature_ul li a:hover{
+    color: #259CD7;
+}
+@media screen and (max-width: 700px){
+    .home_featured_courses h1{
+        font-family: 'Bossa';
+        font-size: 25px;
+        padding-left: 40px;
+    }
+    .home_carousel{
+        width: 100% !important;
+        /* background-color: red; */
+    }
+    .home_featured_courses .item{
+        width: 330px;
+        margin: 20px;
+    }
+    .view_btn a{
+        width: 200px;
+        color: #259CD7;
+        height: 45px;
+    }
+    .home_featured_courses{
+        padding-bottom: 30px;
+    }
+    .feature_ul li a{
+        display: none;
+    }
+    .home_carousel{
+        width: 100% !important;
+        padding: 1.3rem;
+    }
+}
+/* =============================================== VENDORS ====================== */
+.vendors{
+    height: 100vh;
+    width: 100%;
+    /* background: green; */
+    
+}
+.vendor_img_1{
+    background: url(../imges/vendorImg1.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.vendor_img_2{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../imges/Content\ 01@2x.png);
+    height: 70vh;
+    /* align-items: center;
+    justify-content: center; */
+    width: 100%;
+}
+.vendor_box{
+   width: 400px;
+   height: 374px;
+   background-color: #fff;
+   /* margin-left: 750px; */
+   margin-top: 160px;
+   margin-right: 150px;
+   padding: 40px;
+   border-radius: 30px;
+}
+.vendor_box h1{
+    font-family: 'Mazzard.new';
+    font-size: 46px;
+    line-height: 51px;
+    color: #213053;
+    font-weight: 600;
+    font-style: normal;
+}
+.vendor_box p{
+    font-family: 'Mazzard.new';
+    font-weight: 400;
+    color: #213053;
+    font-style: normal;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.vendor_box a{
+    display: flex;
+    width: 100%;
+    height: 69px;
+    font-family: 'Mazzard.new';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    background: #259CD7;
+    filter: drop-shadow(0px 16px 36px rgba(37, 156, 215, 0.21));
+    border-radius: 20px;
+}
+.vendor_area{
+    height: auto;
+   
+    width: 100%;
+    /* background-color: red; */
+}
+@media screen and (max-width: 789px){
+    .vendor_img_box{
+        padding: 290px 20px;
+        /* background-color: red; */
+    }
+    .vendor_img_box h1{
+        font-size: 23px;
+        font-family: 'Bossa';
+        line-height: 30px;
+        font-weight: 700;
+    }
+    .vendor_img_box p{
+        font-size: 18px;
+        font-family: 'Mazzard.new';
+    }
+    .vendors{
+        height: auto !important;
+    }
+}
+
+/* ====================================== PACKAGES ========================== */
+.packages{
+    height: auto;
+    width: 100%;
+    /* background: red; */
+}
+.packages_container{
+    width: 100%;
+    /* display: flex; */
+    flex-direction: row;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    height: auto;
+}
+.pack_1 h2{
+    font-family: 'Bossa';
+    font-size: 30px;
+    color: #fff;
+}
+.pack_1 p{
+    color: #fff;
+    /* font-size: 10px; */
+}
+.pack_2 h2{
+    font-family: 'Bossa';
+    font-size: 30px;
+    color: #000;
+}
+.pack_2 p{
+    color: #000 !important;
+}
+.pack_3 h2{
+    font-family: 'Bossa';
+    font-size: 30px;
+    color: #fff;
+}
+.pack_3 p{
+    color: #fff !important;
+}
+.packages_container .pack_1{
+    height: auto;
+    margin: 10px;
+    width: 350px;
+    background: #0C0655;
+    box-shadow: 0px 16px 36px rgba(37, 156, 215, 0.21);
+    border-radius: 26.0337px;
+    padding: 20px;
+}
+.packages_container .pack_2{
+    height: auto;
+    margin: 10px;
+    width: 350px;
+    background: url(../imges/BG@3x.png);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 5.20673px 72.8942px rgba(0, 0, 0, 0.12);
+    border-radius: 26.0337px;
+    padding: 20px;
+}
+.packages_container .pack_3{
+    height: auto;  
+    margin: 10px;
+    width: 350px;
+    background: #259CD7;
+box-shadow: 0px 16px 36px rgba(37, 156, 215, 0.21);
+border-radius: 26.0337px;
+padding: 20px;
+}
+.packages h1{
+    font-size: 44px;
+    font-family: 'Bossa';
+    padding-top: 40px;
+}
+.packages p{
+    font-family: 'Mazzard.new';
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+.pack_main img{
+    width: 31px;
+    height: 31px;
+}
+.pack_main p{
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+}
+.pack_main_1 p{
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+}
+.pack_button_1{
+   width: 360px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   box-shadow: 0px 15.6202px 41.6538px rgba(29, 187, 255, 0.5);
+border-radius: 20px;
+   align-items: center;
+   margin-bottom: 20px;
+   background: #259CD7;
+}
+.pack_button_1 a{
+    font-family: 'Mazzard.new';
+font-style: normal;
+font-weight: 600;
+
+font-size: 20px;
+color: #fff;
+}
+.pack_button_2{
+    width: 360px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    /* box-shadow: 0px 15.6202px 41.6538px rgba(29, 187, 255, 0.5); */
+ border-radius: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 1px solid #259CD7;
+    box-sizing: border-box;
+    border-radius: 20px;
+ }
+ .pack_button_2 a{
+     font-family: 'Mazzard.new';
+ font-style: normal;
+ font-weight: 600;
+ font-size: 20px;
+ color: #259CD7;
+ }
+
+ .pack_button_3{
+    width: 360px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 15.6202px 41.6538px rgba(29, 187, 255, 0.5);
+ border-radius: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #2A206F;
+    box-shadow: 0px 15.6202px 41.6538px rgba(8, 44, 87, 0.5);
+    border-radius: 20px;
+ }
+ .pack_button_3 a{
+     font-family: 'Mazzard.new';
+ font-style: normal;
+ font-weight: 600;
+ font-size: 23px;
+ color: #fff;
+ }
+ @media screen and (max-width: 789px){
+     .packages_container{
+         padding: 30px;
+     }
+    .packages_container .pack_1{
+        width: 100%;
+    }
+    .packages_container .pack_2{
+        width: 100%;
+    }
+    .packages_container .pack_3{
+        width: 100%;
+    }
+    .packages h1{
+        font-size: 31px;
+    }
+    .pack_sub{
+        font-size: 18px !important;
+    }
+
+
+    .pack_1 h2{
+        font-size: 27px;
+    }
+    .pack_1 p{
+       font-size: 18px;
+    }
+    .pack_2 h2{
+        font-size: 27px;
+    }
+    .pack_2 p{
+        font-size: 18px;
+    }
+    .pack_3 h2{font-size: 27px;
+    }
+    .pack_3 p{
+        font-size: 18px ;
+    }
+ }  
+/* ===================================== Always ========================== */
+.always{
+    height: auto;
+    width: 100%;
+    background: url(../imges/alwaysfree.png);
+    background-position: center;
+    background-size: cover;
+}
+.always_container{
+    height: auto;
+    width: 40%;
+    /* background-color: red; */
+    margin: 80px 0px;
+}
+.always_img{
+    background: #fff;
+    width: 120px;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 30px;
+}
+.always_container h1{
+    font-size: 18px;
+    font-family: 'Bossa';
+    font-weight: 400;
+    font-size: 40px;
+    color: #FFF;
+}
+.create-title p{
+    font-family: 'Mazzard.new';
+    font-size: 18px;
+    color: #fff;
+}
+.always_sign_box{
+    width: 90%;
+}
+.always_sign_box input{
+    width: 100%;
+    border-radius: 15px;
+    height: 40px ;
+    color: #213053;
+    font-family: 'Mazzard.new';
+}
+.always_sign_box p{
+    font-family: 'Mazzard.new';
+    padding-top: 17px;
+    line-height: 40px;
+    font-size: 17px;
+    color: #fff;
+}
+.always_sign_box input[type=text]{
+    padding-left: 20px;
+}
+.always_button {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background: #259CD7;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+.always_button a{
+    font-family: 'Mazzard.new';
+    font-size: 18px;
+    color: #fff;
+}
+.always_change_1 div{
+    margin: 5px;
+}
+.always_select select{
   width: 100%;
-  /* margin-top: 100px; */
+  background: #fff;
+  padding-left: 20px;
+  color: #213053;
+  height: 40px ;
+  border-radius: 15px;
+  outline: none;
+  font-family: 'Mazzard.new';
 }
-.mySlides {display: none;}
-img {vertical-align: middle;}
+.always_equal{
+    padding: 10px;
+}
+.select_option option{
+    font-family: 'Mazzard.new'
+}
+@media screen and (max-width: 789px){
+    .always{
+        padding:9px;
+    }
+    .always_container{
+        height: auto;
+        width: 100%;
+        margin: 80px 0px;
+    }
+    .always_container h1{
+     text-align: center;
+     font-size: 24px;
+    }
+    .always_sign_box input[type=text]{
+        font-size: 15px;
+        padding-left: 13px;
+    }
+}
+/* ============================= START EARNING ===================== */
+.start_earning{
+    height: auto;
+    width: 100%;
+    /* background: red; */
+}
+.start_aern_box h1{
+    font-family: 'Bossa';
+    font-size: 40px;
+}
+
+.start_aern_box{
+    width:64%;
+    margin: 30px 0px;
+    height: auto;
+}
+.earn_box_1{
+    height: 546px;
+    width: 100%;
+}
+.earn_box_2{
+    height: 400px;
+    width: 100%;
+    position: relative;
+    /* background: greenyellow; */
+    padding: 30px 0px;
+}
+.earn{
+    background: purple;
+    height: auto;
+    width: 100%;
+    /* padding: 10px; */
+}
+.earn_1{
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+}
+.earn_2{
+    height: auto;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+}
+.earn_box_2 div{
+    position: absolute;
+}
+.earn_box_1 button{
+    width: 355px;
+    padding: 20px;
+    height: 150px;
+box-sizing: border-box;
+margin: 10px 0px;
+}
+.earn_box_1 button:hover{
+    border-radius: 24px;
+    border: 2px solid #259CD7;
+}
+.box_earn{
+    /* background: rgba(29, 187, 255, 0.5); */
+}
+.earn_box_1 button div{
+    margin: 10px;
+}
+.earn_box_1 p{
+    text-align: start;
+}
+.earn_box_1{
+    padding: 30px;
+}
+.start_earning_button .earn_button_1{
+    width: 20%;
+    height: 50px;
+}
+.start_earning_button .earn_button_2{
+    width: 100%;
+    height: 50px;
+}
+.button_title{
+    font-family: 'Bossa';
+    font-size: 20px;
+    font-weight: 700;
+}
+.button_para{
+    font-family: 'Mazzard.new';
+    font-weight: 400;
+    font-size: 17px;
+}
+.mystyle {
+    width: 100%;
+    padding: 25px;
+    color: white;
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 789px){
+    .earn_box_2{
+        padding: 10px 0px;
+    }
+    .earn_box_1{
+        padding: 0px;
+    }
+    .earn_box_1 button{
+        width: 260px;
+        padding: 10px;
+        height: 150px;
+    margin: 5px 10px;
+    }
+    .start_aern_box{
+        width:100%;
+    }
+  
+    .button_title{
+        font-size: 16px;
+    }
+    .button_para{
+        font-size: 16px;
+    }
+    .start_aern_box h1{
+        font-size: 20px;
+        text-align: center;
+    }
+  }
+/* ===================================== Get Started ======================= */
+.get_started{
+    height: auto;
+    width: 100%;
+}
+.get_container{
+    height: 50vh;
+    width: 85%;
+    background: url(../imges/Getstarted.png);
+    background-repeat: none;
+    background-size: cover;
+    border-radius: 30px !important;  
+    background-repeat: no-repeat;
+    padding: 20px;
+    background-position: center;
+    margin: 30px 0px;
+    /* background: chocolate; */
+}
+.get_button{
+    border-radius: 30px;
+    width: 230px;
+    height: 55px;
+    background: #1D263A;
+    color: #fff;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.get_button a{
+    font-family: 'Mazzard.new';
+    font-weight: 600;
+    font-size: 16px;
+}
+.get_Area{
+    width: 575px;
+}
+.get_Area h1{
+    font-size: 43px;
+    font-family: 'Mazzard.new';
+    line-height: 40px;
+    font-weight: 700;
+    color: #1D263A;
+}
+@media screen and (max-width: 789px){
+    .get_Area h1{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .get_button{
+        width: 190px;
+        height: 40px;
+        margin-top: 20px;
+    }
+    .get_button a{
+        font-size: 14px;
+    }
+    .get_container{
+        margin: 8px 0px;
+        /* background: chocolate; */
+    }
+}
+/* ====================================== Footer ============================= */
+.footer{
+    height: auto;
+    /* background: chartreuse; */
+    width: 100%;
+}
+.footer_color{
+    background: url(../imges/footer_gradient.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer_box{
+    width: 80%;
+    /* background: red; */
+    margin: 40px 0px;
+    height: auto;
+}
+.footer_box .footer_box_1{
+    width: 390px;
+    /* background: olive; */
+    height: auto;
+}
+.footer_logo img{
+    width: 250px;
+    height: 40px;
+}
+.footer_box_1 p{
+    font-family: 'Mazzard.new';
+    font-weight: 400;
+    padding-top: 30px;
+    font-size: 15px;
+}
+.footer_box_1 ul li{
+    padding: 7px;
+
+}
+.footer_box_1 ul li a{
+    font-size:  15px;
+    font-family: 'Mazzard.new';
+    font-weight: normal;
+}
+
+.box_one li img{
+    padding-top: 40px;
+}
+.footer_extra{
+    padding-top: 45px;
+}
+.box_one_img img{
+    width: 27px;
+}
+
+@media screen and (max-width: 789px){
+    .footer_box_1 p{
+        padding-top: 15px;
+        font-size: 15px;
+    }
+    .footer_box{
+        width: 85%;
+        /* background: red; */
+        margin: 0px 0px ;
+        height: auto;
+    }
+    .footer_box .footer_box_1{
+        width: 100%;
+    }
+    .footer_logo img{
+        width:190px;
+        height: 33px;
+    }
+    .footer_box{
+        margin: 20px 0px;
+    }
+}
+
+
+
+
+
+/* ================================= SignUp Page ============ */
+.signup_page{
+    background: url(../imges/signBg.png);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    padding: 80px;
+}
+.signup_1{
+    height: 70vh;
+    width: 80%;
+    margin: 30px;
+    background: red;
+    background: url(../imges/Right@3x.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.signup_title h1{
+    padding-top: 24px;
+    padding-left: 10px;
+    color: 
+    #0F1B41;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Bossa';
+ 
+}
+.signup_title p{
+    color: #5A7184;
+    padding-left: 10px;
+    font-size: 18px ;
+    font-family: 'Mazzard.new';
+    font-weight: 400;
+}
+.signup_logo img{
+    width: 250px;
+    height: 40px;
+}
+.signup_2{
+    height: 90vh;
+    width: 50%;
+}
+.signup_form{
+    height: auto;
+    padding: 30px 20px;
+    border-radius: 20px;
+    padding-top: 30px;
+    background: #fff;
+    width: 100%;
+}
+.signup_form input[type=text]{
+    padding-left: 10px;
+}
+.signup_bx1 p{
+    color: #0F1B41;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Mazzard.new';
+}
+.signup_bx1 div{
+    padding: 10px;
+}
+.signup_bx2 {
+    padding: 10px;
+}
+.signup_bx3 {
+    padding: 10px;
+}
+.signup_bx4 {
+    padding: 10px;
+}
+.signup_bx5 {
+    padding: 10px;
+}
+.signup_bx5 p{
+    font-family: 'Mazzard.new';
+}
+.signup_bx6 {
+    padding: 10px;
+}
+
+.signup_bx7 {
+    padding: 10px;
+}
+.signup_bx5 input{
+    width: 14px;
+    margin: 8px;
+    height: 14px;
+}
+
+.signup_bx1 input::placeholder{
+    font-size: 15px;
+    color: 
+    #99A2BC;
+    font-weight: 600;
+    font-family: 'Mazzard.new';
+}
+.signup_bx1 input{
+    height: 40px;
+    width: 100%;
+    border:  1px solid #99A2BC;
+}
+.signup_bx2 input{
+    height: 40px;
+    width: 100%;
+    border:  1px solid #99A2BC;
+}
+.signup_bx2 p{
+    color: #0F1B41;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Mazzard.new';
+}
+
+.signup_bx2 input::placeholder{
+    font-size: 15px;
+    color: 
+    #99A2BC;
+    font-weight: 600;
+    font-family: 'Mazzard.new';
+}
+.signup_bx3 p{
+    color: #0F1B41;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Mazzard.new';
+}
+.signup_bx3 select{
+    /* padding: 10px; */
+    color: #5A7184;
+    font-family: 'Mazzard.new';
+    width: 100%;
+    border: 1px solid #99A2BC;
+    outline: none;
+    background: #fff;
+    height: 40px;
+}
+.signup_bx3 option{
+    font-family: 'Mazzard.new'
+}
+.signup_bx4 p{
+    color: #0F1B41;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Mazzard.new';
+}
+
+.signup_bx4 input::placeholder{
+    font-size: 15px;
+    color: 
+    #99A2BC;
+    font-weight: 600;
+    font-family: 'Mazzard.new';
+}
+.signup_bx4 input{
+    border: 1px solid #99A2BC;
+    width: 100%;
+    padding-left: 10px;
+    height: 40px;   
+}
+.signup_bx4{
+    position: relative;
+}
+.signup_bx4 img{
+    width: 25px;
+    position: absolute;
+    left: 350px;
+    height: 25px;
+}
+.signup_bx6 {
+    width: 100%;
+    margin: 5px 10px;    
+    height: 40px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #259CD7;
+    color: #fff;
+}
+.signup_bx6 a{
+    font-family: 'Mazzard.new';
+}
+.signup_bx7{
+    padding: 10px 20px;
+    font-family: 'Mazzard.new';
+}
+
+@media screen and (max-width: 789px){
+    .signup_form{
+        /* background: red; */
+    }
+    .signup_2{
+        width: 100%;
+    }
+    .signup_bx4 img{
+        left: 250px;
+    }
+}
+
+
+
+/* ============================= OTP ================== */
+.otp-box input{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(77, 63, 96, 0.172549);
+    border-radius: 4px;
+    width: 48px;
+    height: 62px;
+    margin: 6px;
+    outline: none;
+    margin-top: 20px;
+    color: #259CD7;
+   
+}
+.verfi h3{
+    font-size: 24px;
+    color: 
+    #0F1B41;
+    font-family: 'Bossa';
+    padding-top: 20px;
+    font-weight: 700;
+}
+.verfi p{
+    color: #5A7184;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    padding-top: 10px;
+    font-family: 'Mazzard.new';
+}
+.verfi{
+    width: 228px;
+}
+.otp-box input:hover{
+    border: 1px solid #259CD7;
+}
+.otp-verify{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Mazzard.new';
+    align-items: center;
+    height: 50px;
+    background: #259CD7;
+}
+
+
+
+.instruct{
+    padding-top: 30px;
+}
+.instruct p{
+    line-height: 50px;
+}
+.instruct a{
+    color: #259CD7;
+    font-family: 'Mazzard.new';
+}
+
+
+
+
+
+/* ======================== Success Page ============== */
+.success_area h3{
+    color: #0F1B41; 
+    font-family: 'Bossa';
+    font-size: 18px;
+}
+.success_area{
+    width: 260px;
+    padding-top: 40px;
+    text-align: center;
+}
+.success_logo{
+    width: 100%;
+    margin-top: 30px;
+}
+.success_logo img{
+    width: 130px;
+  
+}
+.success_login a{
+    display: flex;
+    width: 236px;
+    background: #259CD7;
+    color: #fff;
+    font-family: 'Mazzard.new';
+    font-size: 20px;
+    height: 46px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+
+
+/* ======================== SIGIN IN ============ */
+.signIn_box1 input{ 
+  width: 100%;
+  height:40px;
+  border-radius: 6px;
+  border: 1px solid #5A7184;
+  outline: none;
+}
+.signIn_form{
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff;
+}
+.signIn_box1 input[type=text]{
+    padding-left: 20px;
+    font-family: 'Mazzard.new'
+}
+.signIn_2{
+    width: 40%;
+}
+.signIn_Title h3{
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: 'Bossa';
+    color: #183B56;
+}
+.signIn_Title p{
+    font-size: 18px;
+    color: #5A7184;
+    font-family: 'Mazzard.new';
+}
+.signIn_box1{
+    padding-top: 20px;
+}
+.signIn_box1 p{
+    font-size: 20px;
+    font-family: 'Mazzard.new';
+    font-weight: 700;
+}
+.signIn_button a{
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #259CD7;
+    font-family: 'Mazzard.new';
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+/* ====================================== About section ============= */
+.about{
+    height: auto;
+    width: 100%;
+    /* background: red; */
+}
+.about_container{
+    width: 66%;
+    height: auto;
+    margin: 50px 0px;
+}
+.about_1{
+    text-align: center;
+    width: 60%;
+    height: auto;
+}
+.about_1 h1{
+    font-size: 40px;
+    color: 
+    #183B56;
+    font-family: 'Bossa';
+}
+.about_1 p{
+    font-family: 'Mazzard.new';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+color: #5A7184;
+line-height: 30px;
+}
+.about_2{
+    width: 100%;
+    filter: drop-shadow(0px 16px 36px rgba(0, 43, 65, 0.15));
+border-radius: 20px;
+background-image: url(../imges/Rectangle@2x.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+    /* background: orchid; */
+     height: 480px ;
+     margin-bottom: -200px;  
+}
+.about_counter{
+    width: 100%;
+    height: 70vh;
+}
+.about_x > div{
+    margin: 60px;
+}
+.about_x h3{
+    font-size: 39px;
+    font-family: 'Bossa';
+    color: #183B56;
+}
+.about_x p{
+    color: #5A7184;font-size: 18px;
+    font-family: 'Mazzard.new';
+}
+@media screen and (max-width: 789px){
+    .about_counter{
+        height: auto;
+    }
+    .about_2{
+    background-size: cover;
+    }
+    .about_container{
+        width: 87%;
+    }
+    .about_1{
+        width: 100%;
+    }
+    .about_1 h1{
+        font-size: 30px;
+    }
+    .about_1 p{
+    font-size: 14px;
+    }
+    .about_x{
+      margin-top: 100px;
+    }
+    .about_x h3{
+        font-size: 30px; 
+    }
+    .counter_bx{
+        /* width: 80%; */
+        text-align: center;
+        /* background: red; */
+    }
+    .counter_bx img{
+        margin-left: 20px;
+    }
+    .about_2{
+        height: 190px ;
+         background-size: contain !important;
+    }
+}
+
+
+
+/* =======================  Wroth================ */
+.worth{
+    /* background: navy; */
+    height: auto;
+    width: 100%;
+}
+.worth_container{
+    margin: 20px 0px;
+    width: 80%;
+    border-radius: 30px;
+    height: auto;
+    background: url(../imges/Culture@2x.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    /* background: palegreen; */
+}
+.wroth_bx h1{
+    font-family: 'Bossa';
+    font-size: 40px;
+    color: #fff;
+    line-height: 48px;
+}
+.worth_sub p{
+    font-family: 'Mazzard.new';
+    font-size: 20px;
+}
+.wroth_bx{
+    color: #fff;
+    /* margin-left:  100px; */
+    margin: 20px 100px;
+    width: 40%;
+    height: auto;
+    /* background-color: red; */
+}
+.wory{
+    padding-top: 20px;
+}
+.wory p{
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 500;
+    font-family: 'Mazzard.new';
+}
+@media screen and (max-width: 789px){
+    .wroth_bx{
+        margin: 20px 4px;
+        width: 100%;
+    }
+    .wroth_bx h1{
+        font-family: 'Bossa';
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .worth_sub p{
+        font-family: 'Mazzard.new';
+        font-size: 16px;
+        padding: 10px 0px;
+    }
+    .wory p{
+        padding: 10px;
+    }
+    .wory{
+        padding-top: 10px;
+    }
+    .worth_container{
+        width: 85%;
+    }
+}
+/* =================================== ECO ============= */
+.eco{
+    height: auto;
+    width: 100%;
+}
+.eco_container{
+    width: 70%;
+    margin: 30px 0px;
+    height: auto;
+}
+.eco_1{
+    width: 100%;
+    margin: 20px;
+}
+.eco_1 img{
+    width: 100%;
+}
+.eco_2{
+    width: 100%;
+    margin: 20px;
+}
+.ecos_head{
+    font-size: 30px;
+    color: #183B56;
+    font-family: 'Bossa';
+    line-height: 50p;
+}
+.eco_sub{
+    font-family: 'Mazzard.new';
+    font-weight: 400;
+    font-style: normal;
+    color: #5A7184;
+font-weight: normal;
+}
+.vision h1{
+    font-family: 'Bossa';
+    font-size: 20px;
+    font-weight: 600;
+    color: #183B56;
+    line-height: 40px;
+}
+.vision p{
+    font-family: 'Mazzard.new';
+    font-weight: 400;
+    font-style: normal;
+    color: #5A7184;
+font-weight: normal;
+}
+.mission p{
+    font-family: 'Mazzard.new';
+    font-weight: 400;
+    color: #5A7184;
+    font-style: normal;
+font-weight: normal;
+}
+ .mission h1{
+    font-family: 'Bossa';
+    color: #183B56;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 600;
+}
+@media screen and (max-width: 789px){
+    .eco_1{
+        margin: 20px 0px;
+    }
+    .eco_2{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .eco_container{
+        /* background-color: red; */
+        width: 80%;
+        height: auto;
+    }
+    .ecos_head{
+        font-size: 25px;
+    }
+}
+/*=============================== QOUTE =================== */
+.quote{
+    height: auto;
+    width: 100%;
+}
+.qoute_container{
+    margin: 30px 0px;
+    /* background-color: red; */
+    width: 60%;
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: #1D263A;
-  font-size: 15px;
-  font-family: 'Mazzard M';
-  /* background-color: green; */
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-.mySlides{
-  width: 100%;
-  /* background-color: red; */
-  height: 70vh;
-  /* padding-left: 200px; */
-  display: flex;
-  justify-content: center;
-  /* margin-left: 100px; */
-}
-.img_box{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.quote_bx{
-  padding-top: 100px;
-  /* background-color: green; */
-  /* width: 80%; */
-  text-align: center;
-}
-.quote_bx p{
-  padding-top: 30px;
-  font-size: 20px;
-  font-weight: 400;
-  font-family: 'Mazzard M';
-  color: #183B56;
-}
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-@media screen and (max-width: 789px){
-  .quote{
-    padding: 30px;
-  }
-  .mySlides{
-    width: 100%;
-    /* background-color: red; */
-    height: 50vh;
+    position: relative;
+    /* background: #f1f1f1f1; */
   }
   
-  .quote_bx{
-    height: 70vh;
-    padding-top: 0px;
-    /* background-color: rosybrown; */
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 20px 70px;
+    text-align: center;
   }
-  .mySlides{
-    height: auto;
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
   }
-  .quote_bx p{
-    padding-top: 0px;
-    margin-top: -100px;
-    /* background-color: purple; */
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
   }
-  .img_box img{
-    width:  41px;
-    height: 41px;
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
   }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    /* padding: 20px; */
+    /* background: #ddd; */
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    /* background-color: #717171; */
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-family: 'Mazzard.new'; font-weight: 500; color: 
+    #183B56; font-size: 20px;}
+  
+  /* Add a blue color to the author */
+  .author {color: #183B56;padding-top: 30px; font-family: 'Bossa'; font-weight: 500; font-size: 20px;}
+
+
+
+  @media screen and (max-width: 789px){
+    .qoute_container{
+        width: 100%;
+    }
+    .mySlides {
+        padding: 0px 60px;
+      }
+      .qoute_icon img{
+          width: 30px;
+      }
+      
+      q{
+          font-size: 16px;
+      }
+      .author{
+          font-size: 15px;
+          padding-top: 13px;
+      }
+      .dot{
+          margin-top: 20px;
+      }
+  }
+
+
+
+
+
+  /* ================================== COURSES ================= */
+  .Course h1{
+      font-size: 40px;
+      font-family: 'Bossa';
+      color: #183B56;
+      
+  }
+  .Course{
+      padding-bottom: 120px;
+      padding-top: 30px;
+  }
+  .course_bx{
+      height: auto;
+      /* background: red; */
+      width: 100%;
+  }
+  .course_search{
+      width: 600px;
+      border-bottom-right-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 30px;
+      background: #fff;
+      margin-top: -30px;
+      box-shadow: 0px 44px 64px rgba(0, 0, 0, 0.1);
+  }
+  .course_search input{
+      width: 100%;
+      height: 60px;
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 30px;
+      
+  }
+  .course_search input[type=text]{
+   padding-left: 20px;
+   font-family: 'Bossa';
+}
+  .course_search img{
+      width: 38px;
+      height: 38px;
+      margin-left: 6px;
+  }
+
+  .seach_course{
+      width: 60px;
+  }
+  .course_1{
+      height: auto;
+      width: 100%;
+      padding-bottom: 70px;
+  }
+  .course_sub_1{
+      width: 85%;
+  }
+  .course_M{
+      width: 82%;
+      padding-top: 50px;
+  }
+  .course_x_1{
+      width: 100%;  
+      /* background: green; */
+      height: auto;
+      margin: 24px;
+	/* box-shadow: 0 3px 3px -5px #259CD7, 0 2px 5px #259CD7; */
+
+  }
+  .course_M h1{
+      font-size: 33px;
+      font-family: 'Bossa';
+      color: 
+      #0F1B41;
+  }
+  .course_M p{
+      font-family: 'Bossa';
+      font-size: 20px;
+      color: 
+      #0F1B41;
+  }
+.progress_txt h4{
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: 'Bossa';
+    color: #0F1B41;
+}
+.progress_txt p{
+    color: 
+    #5A7184;
+    padding-top: 20px;
+    font-family: 'Bossa';
+}
+  .progress {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	margin: 30px 0;
+	height: 10px;
+	width: 300px;
 }
 
-/* ======================
-==== END OF QUOTE CAROUSEL =====
-========================== */
-
-
-/* ============================= 
-= START OF GET STARTED AREA ====
-================================*/
-
-.get_started{
-  height: auto;
-  width: 100%;
-  background-color: green;
+.progress-done {
+	/* background: linear-gradient(to left, #F2709C, #FF9472); */
+    background: #259CD7;
+	/* box-shadow: 0 3px 3px -5px #259CD7, 0 2px 5px #259CD7; */
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
 }
-.get_started_container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.progress-done_1 {
+    background: #259CD7;
+	/* box-shadow: 0 3px 3px -5px #313b41, 0 2px 5px #259CD7; */
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
 }
-.get_started_bx{
-  background: url(../imges/BG\ \(1\)11.png);
-  height: 398px;
-  background-color: purple;
-  background-position: center;
-  text-align: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-repeat: no-repeat;
-  width: 1494px;
-  /* padding-top: 40px; */
+.progress-done_2 {
+    background: #259CD7;
+	/* box-shadow: 0 3px 3px -5px #259CD7, 0 2px 5px #259CD7; */
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
 }
-
-.about_getStarted{
-  height: 398px;
-  /* background: olive; */
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.x1{
+    width: 200px;
+    background: rgba(255, 104, 104, 0.1);
+border-radius: 4px;
+    color: #FF6868;
+    font-family: 'Mazzard.new';
+    font-size: 16px;
+    height: 30px;
+    /* background: red; */
 }
-.started{
-  width: 78%;
-  background: url(../imges/BG@10x.png);
-  background-position: center;
-  border-radius: 15px;
-  /* background-repeat: no-repeat;
-  background-size: contain; */
-  height: 338px;
-  /* background: red; */
-  align-items: center;
-  padding-top: 70px;
-  text-align: center;
+.x1_2{
+    width: 200px;
+    background: rgba(255, 193, 104, 0.1);
+    border-radius: 4px;
+color: #FFA82B;
+    font-family: 'Mazzard.new';
+    font-size: 16px;
+    height: 30px;
 }
-.started h1{
-  font-size: 42px;
-  font-family: 'Mazzard';
-  font-style: normal;
-  font-weight: 400;
-  color: #213053;
+.x1_3{
+    background: rgba(82, 92, 229, 0.1);
+    border-radius: 4px;
+    width: 200px;
+    color: 
+    #525CE5;
+    font-family: 'Mazzard.new';
+    font-size: 16px;
+    height: 30px;
 }
-.started p{
-  font-size: 42px;
-  font-family: 'Mazzard';
-  color: #213053;
-}
-.started button{
-  /* font-size: 42px; */
-  font-size: 16px;
-  Width :230px;
-  border-radius: 20px;
-  color: #fff;
-  Height:55px;
-  background: #1D263A;
+.x2{
+    width: 30px;
+    height: 30px;
 }
 @media screen and (max-width: 789px){
-  .started h1{
-    font-size: 20px;
+    .course_x_1{
+        margin: 19px 0px;
+        width: 100%;
+    }
+    .course_sub_1{
+        padding: 6px;
+        width: 100%;
+    }
+    .course_1{
+        padding: 20px;
+    }
+    .progress{
+        width: 100%;
+    }
+    .course_search{
+        width: 80%;
+    }
+    .course_M{
+        width: 100%;
+        padding-top: 50px;
+    }
+    .course_M h1{
+        font-size: 18px;
+    }
+    .course_M p{
+        font-size: 16px;
+    }
+    .course_search input[type=text]{
+      font-size: 12px;
+     }
+}
+
+  /* ============================== CREATIVE =================== */
+  .creative{
+      height: auto;
+      width: 100%;
+
+  }
+  .creative_1{
+      height: auto;
+      width: 250px;
+      margin: 10px;
+  }
+  .creative_container{
+     width: 80%;
+  }
+  .creative_bx{
+      width: 100%;
+      margin: 50px 0px;
+  }
+  .creative_1 p{
+      font-size: 38px;
+      font-family: 'Bossa';
+      font-weight: 600;
+      color: 
+      #0F1B41;
+  }
+  .creative_1 ul{
+      padding-top: 10px;
+  }
+  .creative ul li a{
+      color: #259CD7;
+      font-size: 20px;
+      font-family: 'Mazzard.new';
+      font-weight: 400;
+  }
+  .creative_button{
+      margin: 12px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #259CD7;
+box-sizing: border-box;
+width: 120px;
+height: 42px;
+border-radius: 25px;
+  }
+  
+  .creative_button a{
+      font-size: 20px;
+      color: #259CD7;
+      font-family: 'Mazzard.new';
+  }
+  @media screen and (max-width: 789px){
+    .creative_1{
+        width: 100%;
+    }
+    .creative_container{
+        width: 100%;
+        padding: 30px;
+     }
+     .creative_1{
+        height: auto;
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .creative_1 p{
+        font-size: 28px;
+    }
+    .creative ul li a{
+        font-size: 20px;
+    }
+
+  }
+
+
+
+  /* ================================ ALL COURSE ========== */
+  .all{
+      height: auto;
+      width: 100%;
+      /* background-color: red; */
+      margin-bottom: 50px;
+  }
+  .all_bx1{
+      width: 37%;
+      /* background-color: green; */
+      height: auto;
+      padding: 52px 80px;
+      /* display: none; */
+  }
+  .filter_Area{
+      padding: 50px 40px  10px 10px;
+  }
+  .all_bx2{
+      width: 100%;
+      /* padding: 20px; */
+      height: auto;
+  }
+  .all_element{
+      height: auto;
+      width: 289px;
+      border-radius: 20px;
+      box-shadow: 0px 5.20673px 72.8942px rgba(0, 0, 0, 0.12);
+border-radius: 20px;
+      margin: 10px;
+  }
+  .filter img{
+      width: 32px;
+      height: 32px;
+  }
+  .all_title{
+      font-family: 'Bossa';
+      font-size: 33px;
+      font-weight: 400;
+  }
+  .filter{
+      color: #259CD7;
+      font-family: 'Mazzard.new';
+      font-size: 16px;
+      font-weight: 600;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(85, 146, 188, 0.32);
+    border-radius: 5px;
+    width: 127px;
+    height: 45px;
+  }
+  .all_search input[type=text]{
+      padding-left: 20px;
+      font-family: 'Mazzard.new';
+      font-weight: 500;
+  }
+  .all_search input{
+    height: 40px;
+    /* width: 100%; */
+    outline: none;
+  }
+  .bx-all{
+      padding-top: 30px;
+  }
+  .bx-all ul li a{
+      font-size: 21px;
+      line-height: 50px;
+      font-weight: 700;
+      color: 
+      #213053;
+      font-family: 'Mazzard.new';
+  }
+  .bx-all ul li a:hover{
+      color: #259CD7;
+  }
+  .all_search{
+      height: 40px;
+      width: 100%;
+      /* background-color: red; */
+      background: #FFFFFF;
+box-shadow: 0px 20px 64px rgba(0, 0, 0, 0.09);
+border-radius: 15px;
+  }
+  /* .all_search div{
+      width: 200px;
+  } */
+  .all_search img{
+      width: 20px;
+      height: 20px;
+  }
+.all_img1 img{
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    background-color: #2A206F;
+}
+  /* .home_carousel{
+    display: flex;
+    justify-content: center;
+  
+    width: 84% !important;
+} */
+.all_element h4{
+    font-size: 16px;
+    font-weight: 700;
     color: #213053;
-  }
-  .started p{
-    font-size: 20px;
+    font-family: 'Mazzard.new';
+}
+.all_element p{
+    font-size: 16px;
+    font-weight: 700;
     color: #213053;
-  }
-  .started{
-    padding-top: 120px;
-  }
-  .started button{
-    /* font-size: 42px; */
-    font-size: 14px;
-    Width :200px;
+    font-family: 'Mazzard.new';
+}
+.all_rate {
+    width: 60px;
+    margin: 10px;
+}
+.all_btn_1{
+
+}
+.all_btn_1{
+    background: rgba(37, 156, 215, 0.1);
+    border: 1px solid #259CD7;
+    box-sizing: border-box;
     border-radius: 20px;
-     margin-top: 20px;
-    color: #fff;
-    Height:40px;
-    background: #1D263A;
-  }
+    font-size: 10px;
+    width: 90px;
+    color: #259CD7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/* ============================= 
-= END OF GET STARTED AREA ====
-================================*/
+.all_btn_2{
+    background: rgba(37, 156, 215, 0.1);
+    border: 1px solid #259CD7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 10px;
+    width: 60px;
+    color: #259CD7;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+}
+.all_btn_2 a{
+    font-family: 'Mazzard.new';
+
+}
+.all_btn_1 a{
+    font-family: 'Mazzard.new';
+}
+
+@media screen and (max-width: 769px){
+    .all_element{
+        width: 90%;
+    }
+    .all_bx2{
+        padding: 20px;
+    }
+}
 
 
-/* ==============================
-== START OF ABOUT FOOTER SECTION ==
-================================= */
-.about_footer{
-  width: 100%;
-  /* background: crimson; */
-  /* background: url(../imges/BG@2xmain.png); */
-  background-position: center;
-  /* background-size: cover; */
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* ================================= Search Result ========= */
+.search_titles{
+    /* background-color: red; */
+    width: 39%;
+
 }
-.about_containers{
-  /* background: green; */
-  width: 78%;
+
+
+/* ============================= DESIGN COURSE -============ */
+
+.design_button{
+    border: 4px solid #259CD7;
+box-sizing: border-box;
+border-radius: 20px;
+width: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 53px;
+margin-top: 30px;
 }
-.footer_box{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
+.design_button a{
+    font-family: 'Mazzard.new';
+    font-size: 20px;
+    color: #259CD7;
+    font-weight: 700;
 }
-.visa{
-  padding-left: 30px;
-}
-.foot_1{
-  padding: 3px;
-  width: 410px;
-  height: auto;
-  /* background-color:saddlebrown; */
-}
-.footer_Txt{
-  padding: 10px;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px !important;
-  color: #1D263A;
-}
-.foot_2{
-  /* padding: 10px; */
-  /* background: royalblue; */
-  width: 430px;
-  
-  height: auto;
-  /* background-color: orange; */
-}
-.foot_2 ul li{
-  padding-top: 26px;
-}
-.foot_2 ul li a{
-  padding: 4px;
-  /* font-family: 'Mazzard'; */
-  font-weight: 400;
-  font-size: 14px !important;
-  font-style: normal;
-  color: #1D263A;
-}
-.foot_2 ul{
-  text-align: end;
-  padding: 10px;
-}
-.foot_1 p{
-  font-size: 20px;
-}
-.footer_logo img{
-  width:230px;
-}
-.footer_flex a{
-  padding: 20px 10px;
-}
-@media screen and (max-width: 789px){
-  .footer_box{
-    display: block;
-    padding: 10px;
-  }
-  .about_footer{
-    height: auto;
-  }
-  .footer_Txt{
-    padding: 0px;
-  }
-  .foot_1{
-    /* margin: 10px; */
-    width: 100%;
-    padding: 10px;
-    margin: 20px 0px;
-  }
-  .foot_2{
-    width: 100%;
-    padding: 10px;
-    margin: 20px 0px;
-  }
-  .foot_2 ul{
-    text-align: start;
-    padding: 0px;
-  }
-  
-  .foot_2 ul li {
-    padding-top: 0px;
-}
-.visa{
-  padding-left: 0px;
-}
-}
-/* ==============================
-== END OF ABOUT FOOTER SECTION ==
-================================= */
 
 
 
-/* =================================================================================================
-=========================================== END OF ABOUT PAGE ==================================
-======================================================================================================= */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2235,1137 +2619,127 @@ img {vertical-align: middle;}
  =============================== START FREQUENTLY ASKED QUESTIONS =========================================
  =======================================================================================================*/
 
-.FAQs{
-  width: 100%;
-  text-align: center;
-  padding-top: 20px;
-  color: 
-#183B56;
-}
-.FAQs_title{
-  font-family: 'Mazzard M';
-  font-weight: 400;
-  font-size: 40px;
-}
-.FAQs_sub_title{
-  font-size: 20px;
-  padding-bottom: 10px;
-}
-.f_q_section{
-  width: 100%;
-  height: auto;
-  /* background-color: red; */
-  display: flex;
-  align-items: center;
-  /* padding-top: 100px; */
-  justify-content: center;
-}
-
-
-.f_q_section .container{
-  width: 60%;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-.accordance-item{
-  background-color: #259CD7;
-  margin-bottom: 1rem;
-  border-radius: .4rem;
-  padding: 1rem;
-  box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
-}
-
-.accordance-link{
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  color: #fff;
-  background-color: #259CD7;
-  text-decoration: none ;
-  padding: 1rem 0;
-}
-
-.accordance-link i{
-    color: #e7d5ff;
-    padding: .5rem;
-}
-
-.accordance-link .remove{
-  display: none;
-}
-.answer{
-  max-height: 0;
-  overflow: hidden;
-  overflow-y: scroll;
-  position: relative;
-  background-color: #259CD7;
-  transition:  max-height 650ms;
-}
-
-.answer::before{
-  content: '';
-  position: absolute;
-  width: .6rem;
-  height: 90%;
-  background-color: #259CD7;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
-.answer p{
-  font-size: 20px;
-  color: #fff;
-  padding: 2rem;
-}
-
-.accordance-item:target .answer{
-  max-height: 20rem;
-}
-
-.accordance-item:target .accordance-link .add{
-  display: none;
-}
-
-.accordance-item:target .accordance-link .remove{
-  display: block;
-}
-
-
-@media screen and (max-width: 789px){
-  .accordance-link{
-    font-size: 16px;
-  }
-  .f_q_section{
-    padding-top: 50px;
-    height: auto;
-  }
-  .f_q_section .container{
-    width: 90%;
-  }
-  .answer p{
-    font-size: 14px;
-    color: #fff;
-    padding: 0.9rem;
+ .FAQs{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    color: 
+  #183B56;
   }
   .FAQs_title{
     font-family: 'Mazzard M';
     font-weight: 400;
-    font-size: 30px;
+    font-size: 40px;
   }
-  
-  
-}
-
-/*=========================================================================================================
- =============================== START FREQUENTLY ASKED QUESTIONS =========================================
- =======================================================================================================*/
-
-
-
-
-/* ===================================================================================================
- ============================================= START OF FIRST COURSES PAGE ======================================== 
- =====================================================================================================*/
-.avatar{
-  width: 50px;
-  height: 50px;
-}
-.courses_nav_icon{
-  width: 25px;
-  cursor: pointer;
-  height: 25px;
-}
-.course_hero{
-  background: url(../imges/Hero\ Area@2x.png);
-  background-position: center;
-  background-size: cover;
-  height:350px;
-  
-}
-.courses_head{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px;
-  font-family: 'Mazzard M';
-  font-size: 64px;
-  color: #183B56;
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-.course_progress{
-  height: auto;
-  /* background-color: purple; */
-  width: 100%;
-}
-.course_progress h1{
-  padding-top: 30px;
-}
-.progress_container > div{
-  /* background: yellow; */
-}
-.course_progress h1{
-  color:#0F1B41;
-  font-size: 38px;
-  font-family: 'Mazzard M';
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-  padding-left: 80px;
-}
-
-
-.course_ul{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.course_ul li{
-  padding: 10px 32px;
-  font-size: 24px;
-  font-family: 'Mazzard M';
-  color: #183B56;
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-.course_ul li a{
-  color: #1D263A;
-  text-decoration: none;
-}
-.course_ul li a:hover{
-  color: #259CD7;
-}
-.course_active{
-  color: #259CD7 !important;
-}
-.courses_ul_box{
-  padding-left: 50px;
-}
-
-
-.courses_ul_box h1{
-  text-transform: capitalize;
-  font-size: 38px;
-  color: #1D263A;
-  font-family: 'Mazzard M';
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-  padding-left: 36px;
-}
-.progress_container img{
-  width: 29px;
-  height: 29px;
-}
-.progress_container button{
-  font-family: 'Mazzard M';
-  font-weight: 500;
-  font-size: 16px;
-  font-style: normal;
-  font-display: swap;
-}
-.carousel_sub{
-  font-size: 18px;
-  font-family: 'Mazzard M';
-  color: #183B56;
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-.carousel_tx{
-  font-size: 18px;
-  font-family: 'Mazzard M';
-  color: 
-  #5A7184;
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@media screen and (max-width: 789px){
-  .progress_container{
-    padding-left: 0px !important;
-  }
-  .course_progress h1{
-    color:#0F1B41;
+  .FAQs_sub_title{
     font-size: 20px;
+    padding-bottom: 10px;
   }
-}
-
-
-
-
-/* ===================================================================================================
- ============================================= END OF FIRST COURSES PAGE ======================================== 
- =====================================================================================================*/
-
-/*===============================================================================================
- ==================================== START MAIN COURSES PAGE ================================== 
- ==================================================================================================*/
-
-.featured_couro{
-  padding-left: 110px;
-}
-.featured_couro ul{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.featured_couro h1{
-  color: #1D263A;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 38px;
-  padding-left: 30px;
-  padding-top: 20px;
-  font-display: swap;
-}
-.featured_couro ul li{
-  padding:10px 30px;
-  font-family: 'Mazzard M';
-  color:#213053;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 22px;
-  font-display: swap;
-}
-.feat_one{
-  color: #259CD7;
-}
-.caro{
-  /* display: flex; */
-  align-items: center;
-  min-height: 100vh;
-}
-.card{
-  background-color: transparent;
-}
-.wrapper{
-  width: 100%;
-}
-.wrapper .carousel{
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 30px;
-}
-.carousel .card{
-  /* background-color: green; */
-  line-height: 250px;  
-  text-align: center;
-  color: #fff;
-  font-size: 90px;
-  font-weight: 600;
-  margin: 20px 0;
-}
-.owl-item{
-  background-color: white !important;
-}
-.card{
-  /* background-color: white !important; */
-}
-.carousel .card-1{
-  /* background-color: white; */
-}
-.carousel .card-2{
-  /* background-color: red; */
-}
-.carousel .card-3{
-  /* background-color: #2A206F; */
-}
-.carousel .card-4{
-  /* background-color: purple; */
-}
-.carousel .card-5{
-  /* background-color: orange; */
-}
-.carousel .card-6{
-  /* background-color: green; */
-}
-.owl-dots{
-  text-align: center;
-  margin-top: 40px;
-}
-.owl-dot{
-  height: 15px !important;
-  width: 15px !important;
-  margin: 0 5px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  outline: none;
-  border: 2px solid #0072bc !important;
-}
-.owl-dot:hover,
-.owl-dot:active{
-  background-color: green;
-}
-
-
-
-.courses_links{
-  height: auto;
-  width: 100%;
-  /* background-color: red; */
-}
-.courses_links_sub{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.courses_links_sub div{
-  height: auto;
-  margin: 40px;
-  width: 244px;
-  padding: 20px;
-  /* background-color: green; */
-}
-.view{
-  width: 120px;
-  height: 40px;
-  color: #259CD7;
-  text-transform: capitalize;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 25px;
-  font-family: 'Mazzard M';
-  font-weight: bold;
-  font-style: normal;
-  border: 2px solid #259CD7;
-}
-.courses_links_sub h1{
-  font-family: 'Mazzard M';
-  color:#0F1B41;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 30px;
-  font-display: swap;
-}
-.courses_links_sub ul li{
-  font-size: 16px;
-  font-family: 'Mazzard M';
-  color: #259CD7;
-  line-height: 45px;
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-.course_view{
-  margin-right: 100px;
-  font-size: 20px;
-  padding-top: 50px;
-  color: #2A206F;
-  font-family: 'Mazzard M';
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-.main_course{
-  height: auto;
-  width: 100%;
-  /* background-color: red; */
-}
-.main_courses_sub{
-  height: auto;
-  width: 100%;
-  /* background-color: green; */
-  display: flex;
-}
-.course_filter{
-  width: 127px;
-  height: 52px;
-  justify-content: center;
-  box-shadow: 0px 5px 20px rgba(85, 146, 188, 0.32);
-  border-radius: 5px;
-  font-family: 'Mazzard M';
-  color: #259CD7;
-  margin-right: 70px;
-  margin-bottom: 20px;
-  line-height: 45px;
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-.course_2 h1{
-  font-family: 'Mazzard M';
-  color: #1D263A;
-  line-height: 45px;
-  font-weight: bold;
-  font-style: normal;
-  padding-left: 70px;
-  font-size: 34px;
-  font-display: swap;
-}
-.course_filter img{
-  width: 32px;
-  height: 32px;
-}
-.course_1{
-  width: 500px;
-  height: auto;
-  /* background-color: orange; */
-
-
-}
-
-.course_1_sidebar{
-  padding-left: 70px;
-}
-.course_2{
-  padding-top: 30px;
-  width: 100%;
-  height: auto;
-  /* background-color: purple; */
-
-}
-.course_sub{
-  display: flex;
-  flex-direction: row;
-  padding-left: 60px;
-  flex-wrap: wrap;
-}
-.course_sub .course_box_1{
-  width: 250px;
-  height: 250px;
-  /* background-color: yellow; */
-  margin: 0px 20px;
-}
-.search_courses img{
-  margin-left: -30px;
-  width: 20px;
-  height: 20px;
-}
-.search_courses{
-  padding: 43px 17px 43px 70px;
-  /* background-color: red; */
-}
-.search_courses input{
-  width: 100%;
-  height: 40px;
-  outline: none;
-  border-radius: 15px;
-  box-shadow: 0px 20px 64px rgba(0, 0, 0, 0.09);
-}
-
-.search_courses input[type=text]{
-  padding-left: 20px;
-  font-weight: bold;
-  font-style: normal;
-  padding-left: 24px;
-  font-size: 16px;
-  font-display: swap;
-}
-.course_1_sidebar ul li{
-  font-size: 22px;
-  line-height: 50px;
-  font-family: 'Mazzard M';
-  color: #1D263A;
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-.course_1_sidebar ul li:hover{
-  color: #0072bc;
-}
-.course_one{
-  color: #259CD7;
-}
-
-
-/*===============================================================================================
- ==================================== START MAIN COURSES PAGE ================================== 
- ==================================================================================================*/
-
-
-
-
-
-
-
-
-
-/*======================================================================================
- ============================== START DESIN COURSES SECTION =========================== 
- ========================================================================================*/
-
-
-.more_design{
+  .f_q_section{
     width: 100%;
+    height: auto;
     /* background-color: red; */
     display: flex;
+    align-items: center;
+    /* padding-top: 100px; */
     justify-content: center;
-}
-.more_design a{
-  display: flex;
-  width: 260px;
-  height: 60px;
-  justify-content: center;
-  align-items: center ;
-  border-radius: 20px;
-  border: 2px solid #259CD7;
-  color: #259CD7;
-  font-size: 18px;
-  font-family: 'Mazzard M';
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-.more_design a:hover{
-  background-color: #259CD7;
-  color: white;
-}
-@media screen and (max-width: 789px){
-  .course_1{
+  }
+  
+  
+  .f_q_section .container{
+    width: 60%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .accordance-item{
+    background-color: #259CD7;
+    margin-bottom: 1rem;
+    border-radius: .4rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+  }
+  
+  .accordance-link{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+    background-color: #259CD7;
+    text-decoration: none ;
+    padding: 1rem 0;
+  }
+  
+  .accordance-link i{
+      color: #e7d5ff;
+      padding: .5rem;
+  }
+  
+  .accordance-link .remove{
     display: none;
   }
-}
-
-
-
-/*======================================================================================
- ============================== END DESIN COURSES SECTION =========================== 
- ========================================================================================*/
-
-
-
-
-
-/*=================================================================
- =================== START OF PRODUCT DESIGN P =================== 
- ==================================================================*/
-
-.progress_courses_head{
-  width: 100%;
-  /* background-color: red; */
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-content: center ;
-}
-.progress_title{
-  height: auto;
-  width: 500px;
-  color: 
-  #183B56;
-  display: flex;
-  padding-top: 40px;
-  font-size: 50px;
-  justify-content: center;
-  align-content: center;
-  font-family: 'Mazzard M';
-  font-weight: 600;
-  text-align: center;
-  font-style: normal;
-  font-display: swap;
-  /* background-color: green; */
-}
-.videos-1{
-  height: auto;
-  width: 100%;
-  /* background-color: orange; */
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-.video_containers{
-  width: 60%;
-  height: 370px;
-  /* background-color: yellow; */
-  margin-top: -140px;
-
-}
-.designer{
-  width: 100%;
-  /* background-color: red; */
-  height: auto;
-}
-.progress_hero{
-  height: 457px;
-  background: url(../imges/BG@3x.png);
-  background-position: center;
-  background-size: cover;
-}
-.designer{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-.designer_box{
-  height: 100px;
-  width: 60%;
-  /* background: green; */
-
-}
-.designer_vector{
-  width: 50%;
-  height: 100px;
-  /* background: brown; */
-
-}
-.rating{
-  width: auto;
-  height: 100px;
-  /* background: grey; */
-}
-.vector_img{
-  width: 100px;
-  /* padding: 10px; */
-  height: 100px;
-  /* background: purple; */
-  background: url(../imges/Group\ 34@2x.png);
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-.vector_img img{
-  /* object-fit: contain; */
-  width: 60px;
-  height: 60px;
-
-  margin: 20px  0px 0px 0px ;
-}
-.designer_vector h1{
-  font-family: 'Mazzard M';
-  font-weight: 600;
-  text-align: center;
-  font-style: normal;
-  font-size: 20px;
-  font-display: swap;
-  text-align: start;
-}
-.designer_vector p{
-  font-family: 'Mazzard M';
-  font-weight: 400;
-}
-.rating img{
-  width: 152px;
-  height: 32px; 
-  margin-top: 20px;
-  margin-left: 90px;
-}
-.rating{
-  /* display: flex;
-  justify-content: end; */
-}
-.rating h4{
-  font-size: 24px;
-  line-height: 40px;
-  font-family: 'Mazzard M';
-  font-weight: 600;
-  text-align: end;
-  font-style: normal;
-  font-display: swap;
-}
-.section_O{
-  width: 100%;
-  height: auto;
-  padding: 60px 10px 0px 150px;
-  /* background: chocolate; */
+  .answer{
+    max-height: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    position: relative;
+    background-color: #259CD7;
+    transition:  max-height 650ms;
+  }
   
-  width: 100%;
-}
-.progress_O{
-  width: 80%;
-}
-.section11{
-    width: 334px;
-    height:892px;
-    /* background: grey; */
-    margin:0px 30px 30px 0px;
-}
-.section12{
-  width: 100%;
-  /* background: hotpink; */
-  height: auto;
-}
-.section12 .sect li{
-  padding: 10px;
-}
-.section12 .sect li:hover{
-  border-left:solid transparent 3px;
-  border-right:solid transparent 4px;
-  border-top:solid transparent 4px;
-  border-bottom:solid #259CD7 4px;
-}
-
-.section12 .sect li a{
-  font-family: 'Mazzard M';
-  font-weight: 400;
-  font-size: 16px;
-}
-/* .section12 ul li a:hover{
-  font-weight: 600;
-  font-family: 'Mazzard M';
-} */
-
-
-.over{
-  border-left:solid transparent 3px;
-  border-right:solid transparent 4px;
-  border-top:solid transparent 4px;
-  border-bottom:solid #259CD7 4px;
-  /* border: 2px  solid black; */
-
-}
-
-.about_progress{
-  width: 100%;
-  padding: 0px 10px 0px 30px;
-  height: 164px;
-  /* background: grey; */
-}
-.about_progress h3{
-  font-family: 'Mazzard M';
-  color:#0F1B41;
-  font-size: 16px;
-}
-.about_progress p{
-  font-size: 16px;
-  font-family: 'Mazzard M';
-  font-weight: 400;
-  font-style: normal;
-  color: #5A7180;
-}
-
-.progress_learn{
-  width: 77%;
-  /* background: red; */
-  height: auto;
-  color: 
-  #5A7180;
-  margin: 0px 20px;
-}
-.progress_learn div{
-  width: 100%;
-  height: auto;
-  padding-top: 20px;
-  /* background: yellow; */
-  margin: 10px;
-}
-.progress_learn h4{
-  font-family: 'Mazzard M';
-  font-weight: 400;
-  color: 
-  #0F1B41;
-  font-size: 16px;
- 
-}
-.progress_learn ul li a{
-  font-family: 'Roboto', sans-serif;
-  line-height: 35px;
-  font-weight: 400;
-  font-size: 16px;
-}
-.progress_learn ul li a:hover{
-  color: #259cd7;
-}
-.learn_1 ul{
-  padding-top: 25px;
-}
- 
-/* ======================
- ==== learn3 ====
-==================== */
-.learn_3{
-  width: 100%;
-  /* background: grey; */
-  padding: 30px;
-  height: auto;
-}
-.learn_3 h3{
-  font-family: 'Mazzard M';
-  color: 
+  .answer::before{
+    content: '';
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #259CD7;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .answer p{
+    font-size: 20px;
+    color: #fff;
+    padding: 2rem;
+  }
   
-  #0F1B41;
-  font-size: 16px;
-}
-.learn_3 p{
-  font-family: 'Roboto', sans-serif;
-  color: 
-  #5A7180;
-  font-size:  16px;
-  font-weight: 100;
-}
-
-
-/*====================
- === comment ===
- ====================*/
- .commment{
-  width: 100%;
-  /* background: indianred; */
-  height: 224px;
-  /* margin: 7px; */
-  margin-top: 20px;
-}
-.comment_area{
-  padding: 0px 0px 0px 30px;
-}
-
-.submit_reviews{
-  display: flex;
-  width: 144px;
-  height: 40px;
-  background: #259CD7;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  margin: 16px 0px;
-}
-textarea{
-  padding: 13px !important;
-  width: 100%;
-  height: 103px;
-  border: 1px solid #5A7184;
-}
-.give_feedback h1{
-  padding-top: 20px;
-  /* color: white; */
-  line-height: 40px;
-  font-family: 'Mazzard M';
-  font-weight: 500;
-}
-
-/*====================
- === END OF comment ===
- ====================*/
-
-
-/*=========================
- ====== START OF WHAT ==== 
- ==========================*/
-.say{
-  width: 100%;
-  height: auto;
-  /* background: red; */
-  padding: 20px;
-  background: url(../imges/card@2x.png);
-  background-position: center;
-  background-size: cover;
-
-} 
-.say_area{
-  padding: 0px 30px 0px 0px ;
-}
-.say{
-  margin: 30px  30px 0px 30px;
-}
-.what img{
-  width: 48px;
-  margin: 0px 10px;
-  height: 48px;
-}
-.what h4{
-  font-family: 'Mazzard M';
-}
-.what h3{
-  font-family: 'Mazzard M';
-}
-.what p{
-  font-family: 'Roboto' sans-serif;
-}
-.about_instructor{
-  padding-left: 20px;
-}
-.area{
-  background: url(../imges/allrating@2x.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  /* width: 100%; */
-}
-.warren .comment_img {
-    width: 100%;
-    /* background: green; */
-}
-.comment_img img{
-  width: 42px;
-  height: 42px;
-}
-.comment_rating img{
-  width: 121px;
-  height: 22px;
-}
-
-.comment_img div{
-  padding-left: 10px;
-}
-.comment_img h1{
-  font-family: 'Mazzard M';
-}
-.review_comment p{
-  padding-top: 20px;
-}
-
-/*=========================
- ====== END OF WHAT ==== 
- ==========================*/
-
-/* ============================= 
-=== progress_main_search === 
-==============================*/
-.progress_main_search{
-  width: 100%;
-  /* background: red; */
-  height: auto;
-  display: flex;
-  justify-content: center;
-
-
-}
-
-/* Style the search field */
-.example{
-   /* background: grey; */
-   width: 600px;
-   height: auto;
-   padding-top: 170px;
-   /* align-items: baseline; */
-   display: flex !important;
-}
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid transparent;
-  float: left;
-  width: 100%;
-  background: transparent
-}
-form.example input{
-  height: 57px;
-  box-shadow: 0px 44px 64px rgba(0, 0, 0, 0.1);
-  border-bottom-left-radius: 15px;
-  border-top-right-radius: 15px;
-  font-family: 'Mazzard M';
-  color: #1D263A;
-  /* outline: ; */
-  font-weight: 600;
-}
-
-/* Style the submit button */
-form.example button {
-  float: left;
-  width: 12%;
-  padding: 10px;
-  background: transparent;
-  color: #000;
-  height: 57px;
-  font-size: 22px;
-  border: 1px solid transparent;
-  box-shadow: 0px 44px 64px rgba(0, 0, 0, 0.1);
-  border-left: none; /* Prevent double borders */
-  cursor: pointer;
-  /* border-radius: 15px; */
-  border-bottom-right-radius: 15px;
-  font-family: 'Mazzard M';
-  border-top-right-radius: 15px;
-}
-
-form.example button:hover {
-  background: #0b7dda;
-  color: white;
-}
-
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-/* ============================= 
-=== END progress_main_search === 
-==============================*/
-
-
-/*===========================
-== START OF PRODUCT DESIGN ==
-=============================*/
-
-
-/* Style the buttons that are used to open and close the accordion panel */
-button.accordion {
-  background-color: #fff;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  font-family: 'Mazzard M';
-  font-weight: 600;
-  /* text-align: end; */
-  font-style: normal;
-  font-display: swap;
-  outline: none;
-  transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-button.accordion.active, button.accordion:hover {
-  background-color: #259CD7;
-  color: white;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-div.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-}
-
-/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
-div.panel.show {
-  display: block !important;
-}
-
-.panel ul li input{
-  margin: 7px;
-}
-.panel ul li{
-  padding: 18px 0px;
-  width: 100%;
-}
-.panel ul li p{
-  font-family: 'Mazzard M';
-  font-weight: 600;
-  text-align: end;
-  font-style: normal;
-  font-display: swap;
-}
-
-/*===========================
-== END OF PRODUCT DESIGN ==
-=============================*/
-
-
-/*=================================================================
- =================== END OF PRODUCT DESIGN P =================== 
- ==================================================================*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .accordance-item:target .answer{
+    max-height: 20rem;
+  }
+  
+  .accordance-item:target .accordance-link .add{
+    display: none;
+  }
+  
+  .accordance-item:target .accordance-link .remove{
+    display: block;
+  }
+  
+  
+  @media screen and (max-width: 789px){
+    .accordance-link{
+      font-size: 16px;
+    }
+    .f_q_section{
+      padding-top: 50px;
+      height: auto;
+    }
+    .f_q_section .container{
+      width: 90%;
+    }
+    .answer p{
+      font-size: 14px;
+      color: #fff;
+      padding: 0.9rem;
+    }
+    .FAQs_title{
+      font-family: 'Mazzard M';
+      font-weight: 400;
+      font-size: 30px;
+    }
+    
+    
+  }

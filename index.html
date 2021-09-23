@@ -5,508 +5,781 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Load icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="./fonts/Bossa-web-font/Bossa-ExtendedBold.woff2">
-    <link rel="stylesheet" href="./fonts/mazzard-web-font/MazzardH-Bold.woff">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/tw.css" />
+    <link rel="stylesheet" href="./fonts/mazzard-web-font/MazzardH-Bold.woff">
+    <link rel="stylesheet" href="css/tw.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="main_sect_one">
-        <div class="hero">
-            <nav>
+    <!-- ============================================= FIRST BACKROUND IMAGE/NAvigation =================================== -->
+    <div class="first_bg">
+        <!-- <nav class="nav_area md:flex  justify-between items-center">
+            <a href="#">
+                <img src="./imges/logo.png" alt="" class="logo">
+            </a>
+            <ul class="md:flex">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li class="first_signup flex items-center justify-center"><a href="#">Signup for free</a></li>
+            </ul>
+        </nav> -->
+        <nav>
 
-                <div class="main_nav">
-                    <li class="open_list">
-                        <span onclick="openNav()" class="open"><img src="./imges/menu-3-fill.png" alt=""></span>
+            <div class="main_nav">
+                <li class="open_list">
+                    <span onclick="openNav()" class="open"><img src="./imges/menu-3-fill.png" alt="" class="ham"></span>
+                </li>
+                <a href="./index.html">
+                    <img src="./imges/logo.png" alt="" class="logo">
+                </a>
+                <ul class="hidden md:block">
+                    <li class="nav_links"><a href="./about.html">About</a></li>
+                    <li class="dropdown nav_links">
+                        <a href="./courses.html" class="dropbtn">Courses</a>
+                        <div class="dropdown-content">
+                            <a href="#">Web development</a>
+                            <a href="#">LifeStyle</a>
+                            <a href="#">Health and fitness</a>
+                            <a href="#">Digital marketing</a>
+                            <a href="#">Game development</a>
+                            <a href="#">Mobile development</a>
+                            <a href="#">Photography</a>
+                            <a href="#">Graphics design</a>
+                        </div>
                     </li>
-                    <a href="./index.html">
-                        <img src="./imges/Group 305@3x.png" alt="" class="logo">
-                    </a>
-                    <ul class="hidden md:block">
-                        <li class="nav_links"><a href="./about.html">About</a></li>
-                        <li class="dropdown nav_links">
-                            <a href="./courses.html" class="dropbtn">Courses</a>
-                            <div class="dropdown-content">
-                                <a href="#">Web development</a>
-                                <a href="#">LifeStyle</a>
-                                <a href="#">Health and fitness</a>
-                                <a href="#">Digital marketing</a>
-                                <a href="#">Game development</a>
-                                <a href="#">Mobile development</a>
-                                <a href="#">Photography</a>
-                                <a href="#">Graphics design</a>
-                            </div>
-                        </li>
-                        <li class="nav_links"><a href="./f&g.html">F&Q</a></li>
-                        <li class="nav_links"><a href="#">Contact</a></li>
-                        <li class="nav_links"><a href="./SignIn.html">Sign In</a></li>
-                        <li class="nav_links signup_link">
-                            <a href="./signUp.html">Signup for free</a>
-                        </li>
-                        <li>
-                            <span><img src="./imges/Combined Shape.png" alt="" class="search_meanu"></span>
-                        </li>
-                    </ul>
-                </div>
+                    <!-- <li class="nav_links"><a href="./f&g.html">F&Q</a></li> -->
+                    <li class="nav_links"><a href="#">Contact</a></li>
+                    <li class="nav_links"><a href="./SignIn.html">Sign In</a></li>
+                    <li class="nav_links signup_link">
+                        <a href="./signUp.html">Signup for free</a>
+                    </li>
+                    <li>
+                        <span><img src="./imges/search@2x.png" alt="" class="search_meanu"></span>
+                    </li>
+                </ul>
+            </div>
 
-                <!-- The overlay -->
-                <div id="myNav" class="overlay">
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
 
-                    <!-- Button to close the overlay navigation -->
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-                    <!-- Overlay content -->
-                    <div class="overlay-content">
-                        <a href="./about.html">About</a>
-                        <a href="#">Instructor</a>
-                        <a href="#">student</a>
-                        <a href="#">Dashboard</a>
-                        <a href="#">Popular Courses</a>
-                        <a href="#">Web development</a>
-                        <a href="#">LifeStyle</a>
-                        <a href="#">Health and fitness</a>
-                        <a href="#">Digital marketing</a>
-                        <a href="#">Game development</a>
-                        <a href="#">Mobile development</a>
-                        <a href="#">Photography</a>
-                        <a href="#">Graphics design</a>
-                        <a href="#">All categories</a>
-                        <br>
-                        <a href="./courses.html">Courses</a>
-                        <a href="#">Help</a>
-                        <a href="./f&g.html">FAQ</a>
-                        <a href="#">Contact</a>
-                        <a href="./SignIn.html">Sign In</a>
-                    </div>
-                </div>
-                <!-- Use any element to open/show the overlay navigation menu -->
-            </nav>
-        </div>
-
-        <!-- ================================ HERO SECTION ===================== -->
-        <div class="hero_section">
-            <div class="">
-                <div class="flex justify-center flex-wrap flex-col md:flex-row">
-                    <div class=" md:w-6/12 w-full  h-96  flex-grow  flex justify-center items-center">
-                        <div class="md:w-8/12 w-10/12 hero_contain grid gap-5">
-                            <h1 class="hero_title">
-                                Earn while you learn!
-                            </h1>
-                            <p>
-                                An interactive fundraising platform for families and friends to create wealthy
-                                entrepreneurs focused on creating jobs and employment.
-                            </p>
-                            <div class="flex md:justify-start justify-center">
-                                <a href="./signUp.html"
-                                    class="rounded-full md:rounded-md bg-blue-500 w-7/12 text-white px-3 text-center py-3 ">Join
-                                    Us Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="  md:w-6/12 w-full hero_img flex flex-grow md:min-h-screen h-96 bg-center ">
-                        <!-- <img src="./imges/Image@2x.png" class="w-16 md:w-32 lg:w-auto"  alt=""> -->
-                    </div>
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a href="./about.html">About</a>
+                    <a href="./courses.html">Courses</a>
+                    <!-- <a href="#">Help</a> -->
+                    <a href="./f&g.html">FAQ</a>
+                    <a href="#">Contact</a>
+                    <a href="./SignIn.html">Sign In</a>
                 </div>
             </div>
-        </div>
+            <!-- Use any element to open/show the overlay navigation menu -->
+        </nav>
 
-    </div>
-    <!-- ======================= SEARCH AREA ===================== -->
-    <div class="search ">
-        <div>
-            <div class="home_search flex items-center">
-                <input type="text" placeholder="Search for courses to learn. e.g graphic design">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </div>
-            <div>
-
-            </div>
-        </div>
-        <div class="search_container md:flex grid">
-            <div class="search_box_1">
-                <div class="search_img_area">
-                    <img src="./imges/Books-1.png" alt="" width="100%">
-                </div>
-                <div>
-                    <h3>Library</h3>
-                    <p>
-                        Buy courses online and learn on the go.
-                    </p>
-                </div>
-            </div>
-            <div class="search_box_1">
-                <div class="search_img_area chat">
-                    <img src="./imges/Chatbox _@3x cropped.png" alt="">
-                </div>
-                <div>
-                    <h3>Support</h3>
-                    <p>
-                        Refer stores and products and get paid up to 80% commission for every referred purchase. That’s
-                        it.
-                        No gimmicks or fees.
-
-                    </p>
-                </div>
-            </div>
-            <div class="search_box_1">
-                <div class="search_img_area">
-                    <img src="./imges/Pig Right - [DESIGN 1.png" alt="" width="100%">
-                </div>
-                <div>
-                    <h3>
-                        Rewards System
-                    </h3>
-                    <p>
-                        Save a product or store and we’ll notify when there’s a price drop or new coupons.
-                    </p>
-                </div>
-            </div>
-            <div class="search_box_1">
-                <div class="search_img_area tree">
-                    <img src="./imges/Group.png" alt="" width="100%">
-                </div>
-                <div>
-                    <h3>
-                        Interactive Learning
-                    </h3>
-                    <p>
-                        Organize your products into collections, or tag your photos or Instagram feed with products. Get
-                        paid for every referral.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="line">
-        <div class="line_container"></div>
-    </div>
-
-    <!-- ========================== SUPPORT AREA ==================  -->
-    <div class="support">
-        <div class="support_box">
-            <div class="support_text">
-                <h3>Supports your friends and families</h3>
-                <div class="showless">
-
-                </div>
-                <p>
-                    This voluntary gifting community functions as result of donations made to support its members and
-                    their projects. We believe in helping others we help ourselves.
-                </p>
-
-                <a href="#">Learn more</a>
-
-            </div>
-            <div class="support_img">
-
-            </div>
-        </div>
-    </div>
-
-    <div class="feature">
-        <h1 class="hed">Featured Courses</h1>
-        <div class="feat_container justify-center grid md:flex">
-            <div class="feat_1">
-                <img src="./imges/Group 79.png" alt="">
-            </div>
-            <div class="feat_1">
-                <img src="./imges/Group 81.png" alt="">
-            </div>
-            <div class="feat_1">
-                <img src="./imges/Group 79.png" alt="">
-            </div>
-        </div>
-        <div class="feature_box w-full flex justify-center items-center">
-            <a href="#">View More</a>
-        </div>
-    </div>
-    </div>
-
-    <div class="sells">
-        <div class="sells_1">
-            <img src="./imges/Content 01@2x.png" class="sells_img_1" alt="">
-            <img src="./imges/Content 01.png" class="sells_img_2" alt="">
-        </div>
-    </div>
-    <!-- ================================ PACKAGES ============================ -->
-    <div class="packages">
-        <h1 class="package_title">Packages</h1>
-        <p class="package_sub_title">
-            Below are our various packages
-        </p>
-        <div class="pack grid md:flex">
-            <div class="pack_1">
-                <h4>Basic</h4>
-                <p>What you'll Get</p>
-                <div class="flex items-center">
-                    <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="" class="pack_img">
-                    <p class="m-3">Courses</p>
-                </div>
-                <div class="flex items-center">
-                    <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="" class="pack_img">
-                    <p class="m-3">Ebooks</p>
-                </div>
-                <div class="flex items-center">
-                    <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="" class="pack_img">
-                    <p class="m-3">Tutorials</p>
-                </div>
-                <div>
-                    <img src="./imges/Divider.png" alt="">
-                </div>
-                <div class="text-white dollar">
-                    <p class="m-3">&#36;30</p>
-                </div>
-                <div class="pack_btn_1">
-                    <a href="#" class="text-white">Choose</a>
-                </div>
-            </div>
-            <div class="pack_2">
-                <h4>Premium</h4>
-                <p>What you'll Get</p>
-                <div class="flex items-center">
-                    <img src="./imges/bxs-check-circle (2) 1.png" alt="">
-                    <p class="m-3">Basic Features</p>
-                </div>
-                <div class="flex items-center">
-                    <img src="./imges/bxs-check-circle (2) 1.png" alt="">
-                    <p class="m-3">Advanced Courses</p>
-                </div>
-                <div class="flex items-center">
-                    <img src="./imges/bxs-check-circle (2) 1.png" alt="">
-                    <p class="m-3">Advanced Tutorials</p>
-                </div>
-                <div>
-                    <img src="./imges/Divider.png" alt="">
-                </div>
-                <div class=" dollar">
-                    <p class="m-3">&#36;100</p>
-                </div>
-                <div class="pack_btn_2">
-                    <a href="#">Choose</a>
-                </div>
-            </div>
-            <div class="pack_3">
-                <h4>Business</h4>
-                <p>What you'll Get</p>
-                <div class="flex items-center">
-                    <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="" class="pack_img">
-                    <p class="m-3">Basic Features</p>
-                </div>
-                <div class="flex items-center">
-                    <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="" class="pack_img">
-                    <p class="m-3">Advanced Courses</p>
-                </div>
-                <div class="flex items-center">
-                    <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="" class="pack_img">
-                    <p class="m-3">Advanced Tutorials</p>
-                </div>
-                <div>
-                    <img src="./imges/Divider.png" alt="" class="pack_img_divider">
-                </div>
-                <div class=" dollar_1">
-                    <p class="m-3">&#36;200</p>
-
-                </div>
-                <div class="pack_btn_3">
-                    <a href="#">Choose</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ==================================== END OF PACKAGES ============================= -->
-
-
-    <!-- =============================== ALWAYS ========================== -->
-    <div class="always_create">
-        <div class="create">
-            <div class="create_box_1">
-                <div class="always_boxs">
-                    <img src="./imges/Always Free.png" alt="">
-                </div>
-
-            </div>
-            <div class="create_box_title">
-                <h3 class="always_title">Create your free account</h3>
-                <p>Start earning now. No hidden fees or gimmicks. Ever.</p>
-            </div>
-            <div class="box_create">
-                <div class="main_create_form">
-                    <div class="create_input">
-                        <p>Email Address</p>
-                        <input type="text" name="" id="" placeholder="Enter your email address">
-                    </div>
-                    <div class="create_input">
-                        <p>Password</p>
-                        <input type="text" name="" id="" placeholder="Enter your password (8+ Characters)">
-                    </div>
-                    <div class="create_btn">
-                        <a href="#">Sign up with email</a>
-                    </div>
-
-
-                </div>
-                <div class="account">
-                    <p class="text-white">Already have an account? <a href="#" class="sign_create">Sign In</a></p>
-                    <p class="text-white">By signing up, you agree to our <span class="create_term">Terms </span> and
-                        <span class="create_term">Privacy Policy.</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- =========================================== ENDS ALWAYS ========================== -->
-
-
-
-    <!-- ========================================== STEPS ================================ -->
-    <div class="steps">
-        <h1>Steps to start Earning</h1>
-        <div class="steps_container">
-            <div class="steps_box grid md:flex flex-row  md:justify-between">
-                <div class="steps_1">
-                    <div class="step_1_box_x flex items-center">
-                        <div>
-                            <img src="./imges/Group 179.png" alt="">
-                        </div>
-
-                        <a href="#">
-                            <div>
-                                <p>Step 1</p>
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <div class="step_1_box_x_2 flex items-center">
-                        <div>
-                            <img src="./imges/Group 179.png" alt="">
-                        </div>
-                        <a href="#">
-                            <div>
-                                <p>Step 2</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="step_1_box_x_3 flex items-center">
-                        <div>
-                            <img src="./imges/Group 179.png" alt="">
-                        </div>
-                        <div>
+        <!-- ============================= HERO SECTION =================== -->
+        <div class="hero w-full">
+            <div class="sub_hero md:flex grid justify-between ">
+                <div class="hero_1">
+                    <div class="hero_1_sub ">
+                        <h1>
+                            Earn while <br> you learn!
+                        </h1>
+                        <p>
+                            An interactive fundraising platform for families and friends to create wealthy entrepreneurs
+                            focused on creating jobs and employment.
+                        </p>
+                        <div class="md:w-auto w-full flex join">
                             <a href="#">
-                                <p>Step 3</p>
+                                Join Us Now
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="steps_2">
-                    <div class="first_box_img">
-                        <a href="#firstImage">
-                            <img src="./imges/Group 272 1@2x.png" alt="">
-                        </a>
+                <div class="hero_2">
+                    <div class="hero_2_sub">
+                        <img src="./imges/hero_img.png" alt="" class="">
                     </div>
-
                 </div>
-
             </div>
         </div>
     </div>
-    <div class="footer_cover_img">
-        <!-- =================== about get started ========= -->
-        <div class="about_getStarted">
-            <div class="started">
-                <h1>Get started today</h1>
-                <p>Signup on CobangArk now!</p>
-                <button>Create an account for free</button>
+
+
+    <!-- ================================== Home Search ======================= -->
+    <div class="home_search_button md:flex hidden justify-center ">
+        <div class="home_search_sub flex items-center">
+            <input type="text" name="" id="" placeholder="Search for courses to learn. e.g graphic design">
+            <a href="#">
+                <div class="home_search_icon flex items-center">
+                    <img src="./imges/search@2x.png" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- ================================================== Home Library ============ -->
+    <div class="home_library flex justify-center items-center">
+        <div class="home_library_box md:flex grid md:flex-nowrap flex-wrap">
+            <div class="home_library_box_1">
+                <div class="library_img">
+                    <img src="./imges/Books.png" alt="">
+                </div>
+                <h3>Library</h3>
+                <p>
+                    Buy courses online and learn on the go.
+                </p>
+            </div>
+            <div class="home_library_box_1">
+                <div class="library_img_1">
+                    <img src="./imges/Chatbox _@3x cropped.png" alt="">
+                </div>
+                <h3>Support</h3>
+                <p>
+                    Refer stores and products and get paid up to 80% commission for every referred purchase. That’s it.
+                    No gimmicks or fees.
+                </p>
+            </div>
+            <div class="home_library_box_1">
+                <div class="library_img_2">
+                    <img src="./imges/Pig Right - [DESIGN 1@2x.png" alt="">
+                </div>
+                <h3>Rewards System</h3>
+                <p>
+                    Save a product or store and we’ll notify when there’s a price drop or new coupons.
+                </p>
+            </div>
+            <div class="home_library_box_1">
+                <div class="library_img_3">
+                    <img src="./imges/Group@2x.png" alt="">
+                </div>
+                <h3>Interactive Learning</h3>
+                <p>
+                    Organize your products into collections, or tag your photos or Instagram feed with products. Get
+                    paid for every referral.
+                </p>
             </div>
         </div>
+    </div>
+    <!-- ==================================== SUPPORT ======================== -->
+    <div class="support flex items-center justify-center">
+        <div class="support_box md:flex grid justify-center items-center">
+            <div class="support_box_1">
+                <h3>
+                    Supports your friends and families
+                </h3>
+                <p>
+                    This voluntary gifting community functions as result of donations made to support its members and
+                    their projects. We believe in helping others we help ourselves.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="support_box_2 flex items-center">
+                <img src="./imges/support.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- ===================================== HOME FEATURED COURSES ============== -->
+    <div class="home_featured_courses">
+        <div class="flex ">
+            <div class="">
+                <h1 class="feat-head">Featured Courses</h1>
+            </div>
+        </div>
+        <div class="flex fead justify-center">
+            <ul class="feature_ul flex flex-wrap">
+                <li><a href="">All Categories</a></li>
+                <li><a href="">Design</a></li>
+                <li><a href="">Coding</a></li>
+                <li><a href="">DIY</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">Marketing</a></li>
+                <li><a href="">Animation</a></li>
+            </ul>
+        </div>
+        <div class="home_featured_container">
+            <div class="home_carousel owl-carousel owl-theme">
+                <div class="item">
+                    <div>
+                        <img src="./imges/feature1.png" alt="">
 
+                    </div>
+                    <div class="flex  ">
+                        <div class="feature_loop">
+                            <img src="./imges/featureZ.png" alt="">
 
-        <!-- ================ ABOUT FOOTER ============= -->
-        <div class="about_footer">
-            <div class="about_containers">
-                <div class="footer_box">
-                    <div class="foot_1">
-                        <div class="footer_logo">
-                            <img src="./imges/Group 305@3x.png" alt="">
                         </div>
                         <div>
-                            <p class="footer_Txt">
-                                COBANG ARK is an interactive fundraising e-learning platform for families and friends.
-                            </p>
+                            <div class="feat ">
+                                <h4>
+                                    Introduction to Photoshop for Web Designers
+                                </h4>
+                                <p>
+                                    Ogoluwa Ojewale
+                                </p>
+                            </div>
+                            <div class="flex feature_rating">
+                                <p>
+                                    3,700 Students
+                                </p>
+                                <div class="rate-bx">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex feature_bx">
+                                <div class="feature_bx_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="feature_bx_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./imges/feature2.png" alt="">
+                    </div>
+                    <div class="flex  ">
+                        <div class="feature_loop">
+                            <img src="./imges/featureZ.png" alt="">
+                        </div>
+                        <div>
+                            <div class="feat ">
+                                <h4>
+                                    Creating custom Shapes and Fonts
+                                </h4>
+                                <p>
+                                    Immanuel D’Trainer
+                                </p>
+                            </div>
+                            <div class="flex feature_rating">
+                                <p>
+
+                                    1,652 Students
+                                </p>
+                                <div class="rate-bx">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex feature_bx">
+                                <div class="feature_bx_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="feature_bx_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <img src="./imges/feature3.png" alt="">
+                    </div>
+                    <div class="flex  ">
+                        <div class="feature_loop">
+                            <img src="./imges/featureZ.png" alt="">
+                        </div>
+                        <div>
+                            <div class="feat ">
+                                <h4>
+                                    Video Editing Masterclass with Adobe Premiere Pro...
+                                </h4>
+                                <p>
+                                    Ukpono Lens
+                                </p>
+                            </div>
+                            <div class="flex feature_rating">
+                                <p>
+
+                                    721 Students
+                                </p>
+                                <div class="rate-bx">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex feature_bx">
+                                <div class="feature_bx_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="feature_bx_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./imges/feature4.png" alt="">
+                    </div>
+                    <div class="flex  ">
+                        <div class="feature_loop">
+                            <img src="./imges/featureZ.png" alt="">
+                        </div>
+                        <div>
+                            <div class="feat ">
+                                <h4>
+                                    3D & Animation for Beginners with Blender
+                                </h4>
+                                <p>
+
+                                    Ogoluwa Ojewale
+                                </p>
+                            </div>
+                            <div class="flex feature_rating">
+                                <p>
+
+                                    2,300 Students
+                                </p>
+                                <div class="rate-bx">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex feature_bx">
+                                <div class="feature_bx_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="feature_bx_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./imges/feature5.png" alt="">
+                    </div>
+                    <div class="flex  ">
+                        <div class="feature_loop">
+                            <img src="./imges/featureZ.png" alt="">
+                        </div>
+                        <div>
+                            <div class="feat ">
+                                <h4>
+                                    Drawing made easy with Procreate
+                                </h4>
+                                <p>
+                                    D’Artist Frank
+                                </p>
+                            </div>
+                            <div class="flex feature_rating">
+                                <p>
+
+                                    3,700 Students
+                                </p>
+                                <div class="rate-bx">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex feature_bx">
+                                <div class="feature_bx_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="feature_bx_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view_btn w-full flex justify-center ">
+            <a href="#">view more</a>
+        </div>
+    </div>
+
+    <!-- ============================================== VENDORS ================================== -->
+    <div class="vendors">
+        <div class="vendor_img_1 md:flex hidden ">
+            <div class="vendor_area  ">
+                <div class="vendor_box float-right">
+                    <h1>Sell products on CobangArk</h1>
+                    <p>
+                        We process your earnings so you can earn with peace of mind. Withdraw your earnings at any time.
+                    </p>
+                    <div>
+                        <a href="#">Signup for free</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="vendor_img_2 flex md:hidden">
+            <div class="vendor_img_box">
+                <h1>
+                    Get paid on your CobangArk Account
+                </h1>
+                <p>
+                    We process your earnings so you can earn with peace of mind. Withdraw your earnings at any time.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================== PACKAGES ================================= -->
+    <div class="packages ">
+        <div class="text-center">
+            <h1>
+                Packages
+            </h1>
+            <p class="pack_sub">
+                Below are our various packages
+            </p>
+        </div>
+        <div class="flex justify-center items-center">
+            <div class="packages_container flex justify-center">
+                <div class="pack_1">
+                    <div>
+                        <h2>Basic</h2>
+                        <p>What You’ll Get</p>
+                    </div>
+                    <div class="pack_main">
+                        <div class="flex items-center">
+                            <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="">
+                            <p>Courses </p>
                         </div>
 
+                        <div class="flex items-center">
+                            <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="">
+                            <p>Ebooks </p>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="">
+                            <p>Tutorials </p>
+                        </div>
+                        <div>
+                            <p>
+                                $30
+                            </p>
+                        </div>
+                        <div class="flex justify-center">
+                            <div class="pack_button_1">
+                                <a href="#">Choose</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="foot_2">
-                        <ul>
-                            <li>
-                                <a href="#">Courses</a>
-                                <a href="#">Dashboard</a>
-                                <a href="#">Contact</a>
-                                <a href="#">Profile</a>
-                                <a href="#">Testimonials</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy and Terms</a>
-                                <a href="#">Help</a>
-                                <a href="#">Contact</a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    
                 </div>
-                <div class="md:flex grid justify-between">
+                <div class="pack_2">
                     <div>
-                        <li class="flex footer_flex">
-                            <a href="#"><img src="./imges/101Font_Awesome_5_brands_pinterest 1.png" alt=""></a>
-                            <a href="#"><img src="./imges/101Vector.png" alt=""></a>
-                            <a href="#"><img src="./imges/101twitter 1.png" alt=""></a>
-                            <a href="#"><img src="./imges/101facebook-icon.png" alt=""></a>
-                        </li>
+                        <h2>Premium</h2>
+                        <p>What You’ll Get</p>
                     </div>
-                    <div class="visa">
-                        <li class="flex footer_flex">
-                            <a href="#"><img src="./imges/verse.png" alt=""></a>
-                            <a href="#"><img src="./imges/g4158.png" alt=""></a>
-                            <a href="#"><img src="./imges/master.png" alt=""></a>
-                            <a href="#"><img src="./imges/HaggleX Logo 1.png" alt=""></a>
+                    <div class="pack_main_1">
+                        <div class="flex items-center">
+                            <img src="./imges/bxs-check-circle (2) 1.png" alt="">
+                            <p>Basic Features </p>
+                        </div>
 
-                        </li>
+                        <div class="flex items-center">
+                            <img src="./imges/bxs-check-circle (2) 1.png" alt="">
+                            <p>Advanced Courses  </p>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="./imges/bxs-check-circle (2) 1.png" alt="">
+                            <p> Advanced Tutorials </p>
+                        </div>
+                        <div>
+                            <p>
+                                $100
+                            </p>
+                        </div>
+                        <div class="flex justify-center">
+                            <div class="pack_button_2">
+                                <a href="#">Choose</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pack_3">
+                    <div>
+                        <h2>Business</h2>
+                        <p>What You’ll Get</p>
+                    </div>
+                    <div class="pack_main">
+                        <div class="flex items-center">
+                            <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="">
+                            <p>Premium Features </p>
+                        </div>
+
+                        <div class="flex items-center">
+                            <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="">
+                            <p>Features 2 </p>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="./imges/bxs-check-circle (2) 1@2x.png" alt="">
+                            <p>Features 3 </p>
+                        </div>
+                        <div>
+                            <p>
+                                $200
+                            </p>
+                        </div>
+                        <div class="flex justify-center">
+                            <div class="pack_button_3">
+                                <a href="#">Choose</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- ====================================== GET STARTED ========================== -->
 
+    <!-- ================================= ALWAYS ============================= -->
+    <div class="always flex justify-center items-center">
+        <div class="always_container flex justify-center ">
+            <div>
+                <div class="flex justify-center">
+                    <div class="always_img flex justify-center items-center">
+                        <img src="./imges/Always Free.png" alt="">
+                    </div>
+                </div>
+                <div class="create-title">
+                    <h1>Create your account</h1>
+                    <p class="text-center ">
+                        Start earning now. No hidden fees or gimmicks. Ever.
+                    </p>
+                </div>
+
+                <div class="always_sign_area flex justify-center">
+                    <div class="always_sign_box">
+                        <div class="always_change_1 md:flex grid ">
+                            <div>
+                                <p>First Name</p>
+                                <input type="text" name="" id="" placeholder="John">
+                            </div>
+                            <div>
+                                <p>Last Name</p>
+                                <input type="text" name="" id="" placeholder="Dumelo">
+                            </div>
+                        </div>
+                        <div class="always_equal">
+                            <div class="always_select">
+                                <p>Register As</p>
+                                <select name="" id="" class="select_option">
+                                    <option value="">Select</option>
+                                    <option value="">Instructor</option>
+                                    <option value="">Student</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p>Email Address</p>
+                                <input type="text" name="" id="" placeholder="Enter your email address">
+                            </div>
+                            <div>
+                                <p>Password</p>
+                                <input type="text" name="" id="" placeholder="Enter your password (8+ Characters)">
+                            </div>
+                            <div class="always_button">
+                                <a href="#">
+                                    Sign up with email
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============================== START EARNING ===================== -->
+    <div class="start_earning flex md:justify-center items-center">
+        <div class="start_aern_box">
+            <h1>Steps to start Earning</h1>
+            <div class="box_earn md:flex grid ">
+                <div class="earn_box_1 flex  flex-col">
+                    <button onclick="step1()" class="flex  start_earning_button">
+                        <div class="earn_button_1">
+                            <img src="./imges/Group 179.png" alt="">
+                        </div>
+                        <div class="earn_button_2">
+                            <p class="button_title">Step1</p>
+                            <p class="button_para">Sign up and register with your valid Email and Phone No.</p>
+                        </div>
+                    </button>
+                    <button onclick="step2()" class="flex">
+                        <div class="earn_button_1">
+                            <img src="./imges/Group 105.png" alt="">
+                        </div>
+                        <div class="earn_button_2">
+                            <p class="button_title">Step2</p>
+                            <p class="button_para">Sign up and register with your valid Email and Phone No.</p>
+                        </div>
+                    </button>
+                    <button onclick="step3()" class="flex">
+                        <div class="earn_button_1">
+                            <img src="./imges/Group 107.png" alt="">
+                        </div>
+                        <div class="earn_button_2">
+                            <p class="button_title">Step3</p>
+                            <p class="button_para">Sign up and register with your valid Email and Phone No.</p>
+                        </div>
+                    </button>
+                    <!-- <button onclick="step2()">Step2</button>
+                    <button onclick="step3()">Step3</button> -->
+                </div>
+                <div class="earn_box_2">
+                    <div id="myDIV" class="earn">
+                        <img src="./imges/Group 272 1@2x.png" alt="">
+                    </div>
+                    <div id="myDIV2" class="hidden earn_1">
+                        This is a DIV2 element.
+                        <img src="./imges/Group 272 1@2x.png" alt="">
+                    </div>
+                    <div id="myDIV3" class="hidden earn_2">
+                        This is a DIv3 element.
+                        <img src="./imges/Group 272 1@2x.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ========================== GET STARTED -======================== -->
+    <div class="footer_color">
+        <div class="get_started flex justify-center items-center">
+            <div class="get_container flex justify-center items-center">
+                <div class="get_Area text-center">
+                    <h1>Get started today <br> Sign up on CobangArk now!</h1>
+                    <div class="flex justify-center">
+                        <div class="get_button">
+                            <a href="#">create account for free</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================== FOOTER ====================== -->
+        <div class="footer flex justify-center items-center">
+            <div class="footer_box md:flex grid justify-between items-center">
+                <div class="footer_box_1">
+                    <div class="footer_logo">
+                        <img src="./imges/logo.png" alt="">
+                    </div>
+                    <div>
+                        <p>
+                            COBANG ARK is an interactive fundraising e-learning platform for families and friends.
+                        </p>
+                    </div>
+                    <div>
+                        <ul class="box_one_img flex flex-wrap ">
+                            <li><a href=""><img src="./imges/101Font_Awesome_5_brands_pinterest 1.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101Vector.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101twitter 1.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101facebook-icon.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_box_1 footer_extra">
+                    <div>
+                        <ul class="md:flex grid flex-wrap md:justify-end">
+                            <li><a href="">Courses</a></li>
+                            <li><a href="">Dashboard</a></li>
+                            <li><a href="">contact</a></li>
+                            <li><a href="">Profile</a></li>
+                            <li><a href="">Testimonial</a></li>
+
+                        </ul>
+                        <ul class="md:flex grid flex-wrap md:justify-end">
+
+                            <li><a href="">Privacy and Terms </a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul class="box_one_1 flex flex-wrap md:justify-end ">
+                            <li><a href=""><img src="./imges/g4158.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/verse.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/master.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/HaggleX Logo 1.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>
     <script>
-        // var slideIndex = 0;
-        // showSlides();
-        // function showSlides() {
-        //     var i;
-        //     var slides = document.getElementsByClassName("mySlides");
-        //     var dots = document.getElementsByClassName("dot");
-        //     for (i = 0; i < slides.length; i++) {
-        //         slides[i].style.display = "none";
-        //     }
-        //     slideIndex++;
-        //     if (slideIndex > slides.length) { slideIndex = 1 }
-        //     for (i = 0; i < dots.length; i++) {
-        //         dots[i].className = dots[i].className.replace(" active", "");
-        //     }
-        //     slides[slideIndex - 1].style.display = "block";
-        //     dots[slideIndex - 1].className += " active";
-        //     setTimeout(showSlides, 2000); // Change image every 2 seconds
-        // }
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 13,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+
+                1000: {
+                    items: 4.6
+                }
+            }
+        })
+
+
+
+        var element1 = document.getElementById("myDIV");
+        var element2 = document.getElementById("myDIV2");
+        var element3 = document.getElementById("myDIV3");
+        function step1() {
+
+            element1.classList.remove("hidden");
+            element2.classList.add("hidden");
+            element3.classList.add("hidden");
+        }
+        function step2() {
+            element1.classList.add("hidden");
+            element2.classList.remove("hidden");
+            element3.classList.add("hidden");
+        }
+
+        function step3() {
+            element1.classList.add("hidden");
+            element2.classList.add("hidden");
+            element3.classList.remove("hidden");
+        }
+
+
+
+
     </script>
 </body>
 

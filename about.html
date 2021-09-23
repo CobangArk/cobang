@@ -5,27 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./fonts/Bossa-web-font/Bossa-ExtendedBold.woff2">
-    <link rel="stylesheet" href="./fonts/mazzard-web-font/MazzardH-Bold.woff">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/tw.css" />
+    <link rel="stylesheet" href="./fonts/mazzard-web-font/MazzardH-Bold.woff">
+    <link rel="stylesheet" href="css/tw.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="hero">
+    <!-- ============================================= FIRST BACKROUND IMAGE/NAvigation =================================== -->
+    <div class="first_bg">
+        <!-- <nav class="nav_area md:flex  justify-between items-center">
+            <a href="#">
+                <img src="./imges/logo.png" alt="" class="logo">
+            </a>
+            <ul class="md:flex">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li class="first_signup flex items-center justify-center"><a href="#">Signup for free</a></li>
+            </ul>
+        </nav> -->
         <nav>
 
             <div class="main_nav">
                 <li class="open_list">
-                    <span onclick="openNav()" class="open"><img src="./imges/menu-3-fill.png" alt=""></span>
+                    <span onclick="openNav()" class="open"><img src="./imges/menu-3-fill.png" alt="" class="ham"></span>
                 </li>
                 <a href="./index.html">
-                    <img src="./imges/Group 305@3x.png" alt="" class="logo">
+                    <img src="./imges/logo.png" alt="" class="logo">
                 </a>
                 <ul class="hidden md:block">
-                    <li class="nav_links "><a class="active_nav" href="./about.html">About</a></li>
+                    <li class="nav_links"><a href="./about.html">About</a></li>
                     <li class="dropdown nav_links">
                         <a href="./courses.html" class="dropbtn">Courses</a>
                         <div class="dropdown-content">
@@ -39,14 +62,14 @@
                             <a href="#">Graphics design</a>
                         </div>
                     </li>
-                    <li class="nav_links"><a href="./f&g.html">F&Q</a></li>
+                    <!-- <li class="nav_links"><a href="./f&g.html">F&Q</a></li> -->
                     <li class="nav_links"><a href="#">Contact</a></li>
                     <li class="nav_links"><a href="./SignIn.html">Sign In</a></li>
                     <li class="nav_links signup_link">
                         <a href="./signUp.html">Signup for free</a>
                     </li>
                     <li>
-                        <span><img src="./imges/Combined Shape.png" alt="" class="search_meanu"></span>
+                        <span><img src="./imges/search@2x.png" alt="" class="search_meanu"></span>
                     </li>
                 </ul>
             </div>
@@ -60,22 +83,8 @@
                 <!-- Overlay content -->
                 <div class="overlay-content">
                     <a href="./about.html">About</a>
-                    <a href="#">Instructor</a>
-                    <a href="#">student</a>
-                    <a href="#">Dashboard</a>
-                    <a href="#">Popular Courses</a>
-                    <a href="#">Web development</a>
-                    <a href="#">LifeStyle</a>
-                    <a href="#">Health and fitness</a>
-                    <a href="#">Digital marketing</a>
-                    <a href="#">Game development</a>
-                    <a href="#">Mobile development</a>
-                    <a href="#">Photography</a>
-                    <a href="#">Graphics design</a>
-                    <a href="#">All categories</a>
-                    <br>
                     <a href="./courses.html">Courses</a>
-                    <a href="#">Help</a>
+                    <!-- <a href="#">Help</a> -->
                     <a href="./f&g.html">FAQ</a>
                     <a href="#">Contact</a>
                     <a href="./SignIn.html">Sign In</a>
@@ -83,258 +92,269 @@
             </div>
             <!-- Use any element to open/show the overlay navigation menu -->
         </nav>
-    </div>
-    <!-- ================================== GET STARTED ========================== -->
-    <div class="about_hero">
-        <div class="about_container">
-            <div style="width: 100%; display: flex; justify-content: center;">
-                <div class="about_text">
-                    <h1>Our Story</h1>
-                    <p>Cobang ark was conceptualized by two friends who wanted an easier way of funding their small
-                        business without the hassle of providing collateral. They decided to find a way to help
-                        entrepreneurs like them to solve their funding issue and also provide resources needed to
-                        support their career while enhancing their skill set.</p>
-                </div>
-            </div>
-            <div class="about_img">
-                <img src="./imges/Rectangle@2x.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="counter">
-        <div class="sub_counter">
-            <div class="sub_count">
-                <div>
-                    <div class="badge">
-                        <img src="./imges/Badge.png" alt="">
-                        <p class="count_bold">2M</p>
-                        <p class="count_bold_text">Daily Active User</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="badge_1">
-                        <img src="./imges/Badge (1).png" alt="">
-                        <p class="count_bold">100k</p>
-                        <p class="count_bold_text">Paid Students</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="badge_2">
-                        <img src="./imges/Badge (1).png" alt="">
-                        <p class="count_bold">12k+</p>
-                        <p class="count_bold_text">Trainers</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="worth">
-        <div class="worth_sub">
-            <div class="worth_sub_1">
-                <h1>We make learning worth your time!</h1>
-                <p>Our courses are sectioned into modules for better understanding; learning at your convenience
-                    makes it fun and more interesting.</p>
-                <ul class="md:flex grid wroth_ul">
-                    <div>
-                        <span class="wroth_flex">
-                            <div>
-                                <img src="./imges/Icon.png" alt="">
-                            </div>
-                            <div>
-                                <li>User friendly</li>
-                            </div>
-                        </span>
-                        <span class="wroth_flex"><img src="./imges/Icon.png" alt="">
-                            <li>Practical skills</li>
-                        </span>
-                        <span class="wroth_flex"><img src="./imges/Icon.png" alt="">
-                            <li>Valued contents</li>
-                        </span>
-                    </div>
-                    <div>
-                        <span class="wroth_flex"><img src="./imges/Icon.png" alt="">
-                            <li>Interesting Tutorials</li>
-                        </span>
-                        <span class="wroth_flex"><img src="./imges/Icon.png" alt="">
-                            <li>User friendly</li>
-                        </span>
-                        <span class="wroth_flex"><img src="./imges/Icon.png" alt="">
-                            <li>Superb communication</li>
-                        </span>
-                    </div>
-                </ul>
-            </div>
-            <div class="worth_sub_2">
-                <img src="./imges/Image@7x.png" alt="">
-            </div>
-        </div>
-    </div>
 
 
-    <!-- ================== ecosystem -=================== -->
-    <div class="ecosystem">
-        <div class="sub_ecosystem ecos_1">
-            <div class="eco">
-                <!-- <div class="eco_1">
-                        <img src="./imges/Image (1).png" alt="">
-                    </div>
-                    <div class="eco_2">
-                        <img src="./imges/Image (2).png" alt="">
-                    </div> -->
-            </div>
-        </div>
-        <div class="sub_ecosystem ecos ">
-            <h1 class="ecos_head">Building a skilled-based Ecosystem</h1>
-            <p>
-                Acquired Reproductive Knowledge we believe is the foundation for any start-up to build upon. By
-                promoting a skilled-base ecosystem, student can interact seamlessly through our platform and
-                teachers can impact knowledge for career advancements.
-            </p>
-            <div class="vision">
-                <h1>Vision</h1>
-                <p>
-                    To create a community of wealthy knowledge-based entrepreneurs focused on creating jobs and
-                    employment in our locality for the betterment of the most deprived members of our society.
-                </p>
-            </div>
-            <div class="mission">
-                <h1 class="mission">Mission</h1>
-                <p>
-                    To build individuals and their businesses through sustainable wealth creating programs using
-                    education as catalysts to build a growth-centred ecosystem mutually benefiting for all.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- qoute -->
-    <div class="quote">
-
-
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <div class="grid justify-center quote_bx">
-                    <div class="img_box">
-                        <img src="./imges/quote-left.png" alt="">
-                    </div>
-                    <p>
-                        An interactive fundraising platform for families and friends to create wealthy entrepreneurs
-                        focused on creating jobs and employment.
-                    </p>
-                    <div class="text">Sade Nixon - Graphic Designer
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="mySlides fade">
-                <div class="grid justify-center quote_bx">
-                    <div class="img_box">
-                        <img src="./imges/quote-left.png" alt="">
-                    </div>
-                    <p>
-
-                        An interactive fundraising platform for families and friends to create wealthy entrepreneurs
-                        focused on creating jobs and employment.
-                    </p>
-                    <div class="text">Sade Nixon - Graphic Designer
-                    </div>
-                </div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="grid justify-center quote_bx ">
-                    <div class="img_box">
-                        <img src="./imges/quote-left.png" alt="">
-                    </div>
-                    <p>
-                        An interactive fundraising platform for families and friends to create wealthy entrepreneurs
-                        focused on creating jobs and employment.
-                    </p>
-                    <div class="text">Sade Nixon - Graphic Designer
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-
-    </div>
-    <div class="footer_cover_img">
-        <!-- =================== about get started ========= -->
-        <div class="about_getStarted">
-            <div class="started">
-                <h1>Get started today</h1>
-                <p>Signup on CobangArk now!</p>
-                <button>Create an account for free</button>
-            </div>
-        </div>
-
-
-        <!-- ================ ABOUT FOOTER ============= -->
-        <div class="about_footer">
-            <div class="about_containers">
-                <div class="footer_box">
-                    <div class="foot_1">
-                        <div class="footer_logo">
-                            <img src="./imges/Group 305@3x.png" alt="">
-                        </div>
-                        <div>
-                            <p class="footer_Txt">
-                                COBANG ARK is an interactive fundraising e-learning platform for families and friends.
+        <!-- ============================= About Section ============== -->
+        <div class="about flex justify-center items-center">
+            <div class="about_container">
+                <div class="">
+                    <div class="flex justify-center">
+                        <div class="about_1">
+                            <h1>Our Story</h1>
+                            <p>
+                                An interactive fundraising platform for families and friends to create wealthy
+                                entrepreneurs focused on creating jobs and employment. An interactive fundraising
+                                platform for families and friends to create wealthy entrepreneurs focused on creating
+                                jobs and employment.
                             </p>
                         </div>
-
                     </div>
-                    <div class="foot_2">
-                        <ul>
-                            <li>
-                                <a href="#">Courses</a>
-                                <a href="#">Dashboard</a>
-                                <a href="#">Contact</a>
-                                <a href="#">Profile</a>
-                                <a href="#">Testimonials</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy and Terms</a>
-                                <a href="#">Help</a>
-                                <a href="#">Contact</a>
-                            </li>
-                        </ul>
+                    <div class="about_2">
 
-                    </div>
-                    
-                </div>
-                <div class="md:flex grid justify-between">
-                    <div>
-                        <li class="flex footer_flex">
-                            <a href="#"><img src="./imges/101Font_Awesome_5_brands_pinterest 1.png" alt=""></a>
-                            <a href="#"><img src="./imges/101Vector.png" alt=""></a>
-                            <a href="#"><img src="./imges/101twitter 1.png" alt=""></a>
-                            <a href="#"><img src="./imges/101facebook-icon.png" alt=""></a>
-                        </li>
-                    </div>
-                    <div class="visa">
-                        <li class="flex footer_flex">
-                            <a href="#"><img src="./imges/verse.png" alt=""></a>
-                            <a href="#"><img src="./imges/g4158.png" alt=""></a>
-                            <a href="#"><img src="./imges/master.png" alt=""></a>
-                            <a href="#"><img src="./imges/HaggleX Logo 1.png" alt=""></a>
-
-                        </li>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- ================================ About counter ============= -->
+    <div class="about_counter flex justify-center items-center">
+        <div class="about_x md:flex grid ">
+            <div class="counter_bx flex justify-center">
+                <div>
+                    <div>
+                        <img src="./imges/Badge.png" alt="" style="padding-left: 20px;">
+                    </div>
+                    <h3>
+                        2M
+                    </h3>
+                    <p>
+                        Daily Active Users
+                    </p>
+                </div>
+            </div>
+            <div class="counter_bx flex justify-center">
+                <div>
+                    <div>
+                        <img src="./imges/Badge (1).png" alt="">
+                    </div>
+                    <h3>
+                        100K
+                    </h3>
+                    <p>
+                        Paid Students
+                    </p>
+                </div>
+            </div>
+            <div class="counter_bx flex justify-center">
+                <div>
+                    <div>
+                        <img src="./imges/Badge (1).png" alt="">
+                    </div>
+                    <h3>
+                        12K+
+                    </h3>
+                    <p>
+                        Trainer
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================= Worth ================== -->
+    <div class="worth flex justify-center items-center">
+        <div class="worth_container">
+            <div class="wroth_bx p-4">
+                <div class="worth_sub">
+                    <h1>We make learning worth your time!</h1>
+                    <p>An interactive fundraising platform for families and friends to create wealthy entrepreneurs
+                        focused
+                        on creating jobs and employment.</p>
+                </div>
+                <div class="wory md:flex  justify-between">
+                    <div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+                            <p>Fast Delivery</p>
+                        </div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+                            <p>Hungry for Exploration</p>
+                        </div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+                            <p>Teamwork Always</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+                            <p>Communication</p>
+                        </div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+
+                            <p>Weekly Evaluation</p>
+                        </div>
+                        <div class="flex">
+                            <img src="./imges/Icon.svg" alt="">
+                            <p>Update for the Trend</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================================== ECO ====================-->
+    <div class="eco flex justify-center items-center">
+        <div class="eco_container md:flex  grid">
+            <div class="eco_1">
+                <img src="./imges/Group 338@2x.png" alt="">
+            </div>
+            <div class="eco_2 p-3">
+                <h1 class="ecos_head">Building the <br> Work Ecosystem</h1>
+                <p class="eco_sub">
+                    Acquired Reproductive Knowledge we believe is the foundation for any start-up to build upon. By
+                    promoting a skilled-base ecosystem, student can interact seamlessly through our platform and
+                    teachers can impact knowledge for career advancements.
+                </p>
+                <div class="vision">
+                    <h1>Vision</h1>
+                    <p>
+                        To create a community of wealthy knowledge-based entrepreneurs focused on creating jobs and
+                        employment in our locality for the betterment of the most deprived members of our society.
+                    </p>
+                </div>
+                <div class="mission">
+                    <h1 class="mission">Mission</h1>
+                    <p>
+                        To build individuals and their businesses through sustainable wealth creating programs using
+                        education as catalysts to build a growth-centred ecosystem mutually benefiting for all.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================== Quote ============================ -->
+    <div class="quote flex justify-center items-center">
+        <div class="qoute_container">
+            <!-- Slideshow container -->
+
+            <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="mySlides">
+                    <div class="qoute_icon flex justify-center p-4">
+                        <img src="./imges/quote-left.png" alt="">
+                    </div>
+                    <q> An interactive fundraising platform for families and friends to create wealthy entrepreneurs
+                        focused on creating jobs and employment. An interactive fundraising platform for families and
+                        friends to create wealthy entrepreneurs focused on creating jobs and employment.</q>
+                    <p class="author">- Sade Nixon - Graphic Designer</p>
+                </div>
+
+                <div class="mySlides">
+                    <div class="qoute_icon flex justify-center p-4">
+                        <img src="./imges/quote-left.png" alt="">
+                    </div>
+                    <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                    <p class="author">- Ernest Hemingway</p>
+                </div>
+
+                <div class="mySlides">
+                    <div class="qoute_icon flex justify-center p-4">
+                        <img src="./imges/quote-left.png" alt="">
+                    </div>
+                    <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                    <p class="author">- Thomas A. Edison</p>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- Dots/bullets/indicators -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+    <!-- ========================== GET STARTED -======================== -->
+    <div class="footer_color">
+        <div class="get_started flex justify-center items-center">
+            <div class="get_container flex justify-center items-center">
+                <div class="get_Area text-center">
+                    <h1>Get started today <br> Sign up on CobangArk now!</h1>
+                    <div class="flex justify-center">
+                        <div class="get_button">
+                            <a href="#">create account for free</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ================================== FOOTER ====================== -->
+        <div class="footer flex justify-center items-center">
+            <div class="footer_box md:flex grid justify-between items-center">
+                <div class="footer_box_1">
+                    <div class="footer_logo">
+                        <img src="./imges/logo.png" alt="">
+                    </div>
+                    <div>
+                        <p>
+                            COBANG ARK is an interactive fundraising e-learning platform for families and friends.
+                        </p>
+                    </div>
+                    <div>
+                        <ul class="box_one_img flex flex-wrap ">
+                            <li><a href=""><img src="./imges/101Font_Awesome_5_brands_pinterest 1.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101Vector.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101twitter 1.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101facebook-icon.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_box_1 footer_extra">
+                    <div>
+                        <ul class="md:flex grid flex-wrap md:justify-end">
+                            <li><a href="">Courses</a></li>
+                            <li><a href="">Dashboard</a></li>
+                            <li><a href="">contact</a></li>
+                            <li><a href="">Profile</a></li>
+                            <li><a href="">Testimonial</a></li>
+
+                        </ul>
+                        <ul class="md:flex grid flex-wrap md:justify-end">
+
+                            <li><a href="">Privacy and Terms </a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul class="box_one_1 flex flex-wrap md:justify-end ">
+                            <li><a href=""><img src="./imges/g4158.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/verse.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/master.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/HaggleX Logo 1.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <script src="app.js"></script>
 
 </body>

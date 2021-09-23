@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./fonts/Bossa-web-font/Bossa-ExtendedBold.woff2">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./fonts/mazzard-web-font/MazzardH-Bold.woff">
+    <link rel="stylesheet" href="css/tw.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ============================================= FIRST BACKROUND IMAGE/NAvigation =================================== -->
+    <div class="first_bg">
+        <!-- <nav class="nav_area md:flex  justify-between items-center">
+            <a href="#">
+                <img src="./imges/logo.png" alt="" class="logo">
+            </a>
+            <ul class="md:flex">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li class="first_signup flex items-center justify-center"><a href="#">Signup for free</a></li>
+            </ul>
+        </nav> -->
+        <nav>
+
+            <div class="main_nav">
+                <li class="open_list">
+                    <span onclick="openNav()" class="open"><img src="./imges/menu-3-fill.png" alt="" class="ham"></span>
+                </li>
+                <a href="./index.html">
+                    <img src="./imges/logo.png" alt="" class="logo">
+                </a>
+                <ul class="hidden md:block">
+                    <li class="nav_links"><a href="./about.html">About</a></li>
+                    <li class="dropdown nav_links">
+                        <a href="./courses.html" class="dropbtn">Courses</a>
+                        <div class="dropdown-content">
+                            <a href="#">Web development</a>
+                            <a href="#">LifeStyle</a>
+                            <a href="#">Health and fitness</a>
+                            <a href="#">Digital marketing</a>
+                            <a href="#">Game development</a>
+                            <a href="#">Mobile development</a>
+                            <a href="#">Photography</a>
+                            <a href="#">Graphics design</a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav_links"><a href="./f&g.html">F&Q</a></li> -->
+                    <li class="nav_links"><a href="#">Contact</a></li>
+                    <li class="nav_links"><a href="./SignIn.html">Sign In</a></li>
+                    <!-- <li class="nav_links"><a href="./Packaes.html">Packages</a></li> -->
+
+                    <li class="nav_links signup_link">
+                        <a href="./signUp.html">Signup for free</a>
+                    </li>
+                    <li>
+                        <span><img src="./imges/search@2x.png" alt="" class="search_meanu"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a href="./about.html">About</a>
+                    <a href="./courses.html">Courses</a>
+                    <!-- <a href="#">Help</a> -->
+                    <a href="./f&g.html">FAQ</a>
+                    <a href="#">Contact</a>
+                    <a href="./SignIn.html">Sign In</a>
+                </div>
+            </div>
+            <!-- Use any element to open/show the overlay navigation menu -->
+        </nav>
+
+        <div class="Course flex justify-center items-center">
+            <h1>
+                All Courses
+            </h1>
+        </div>
+    </div>
+
+    <div class="all md:flex grid justify-between">
+        <div class="all_bx1">
+            <div class="all_search flex items-center">
+                <input type="text" placeholder="Search for courses">
+            
+                <img src="./imges/search@2x.png" alt="" >
+        
+            </div>
+            <div class="bx-all">
+                <ul>
+                    <li><a href="">All Categories </a></li>
+                    <li><a href="./designCourses.html">Design</a></li>
+                    <li><a href="">Coding</a></li>
+                    <li><a href="">DIY</a></li>
+                    <li><a href="">Business</a></li>
+                    <li><a href="">Marketing</a></li>
+                    <li><a href="">Animation</a></li>
+                    <li><a href="">UI/UX Design</a></li>
+                    <li><a href="">Leadership</a></li>
+                    <li><a href="">Creative Writing</a></li>
+                    <li><a href="">Web development</a></li>
+                    <li><a href="">Analytics</a></li>
+                    <li><a href="#">Productivity</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="all_bx2  ">
+            <div class="flex justify-between filter_Area items-center">
+                <div class="all_title">
+                    Course
+                </div>
+                <div class="filter flex justify-center items-center">
+                    <img src="./imges/filter@2x.png" alt="">
+                    Filter
+                </div>
+            </div>
+            <div class="md:flex grid flex-wrap">
+                <div class="all_element">
+
+                    <div class="all_img1">
+                        <img src="./imges/feature1.png" alt="">
+                    </div>
+
+                    <div class="flex">
+                        <div class="">
+                            <img src="./imges/featureZ.png" alt="">
+
+                        </div>
+                        <div>
+                            <div>
+                                <h4>
+                                    Introduction to Photoshop for Web Designers
+                                </h4>
+                                <p>
+                                    Ogoluwa Ojewale
+                                </p>
+                            </div>
+                            <div class="all_rate_bx flex items-center">
+                                <p>
+                                    3,700 Students
+                                </p>
+                                <div class="all_rate">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="all_btn_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="all_btn_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="all_element">
+
+                    <div class="all_img1">
+                        <img src="./imges/feature2.png" alt="">
+                    </div>
+
+                    <div class="flex">
+                        <div class="">
+                            <img src="./imges/featureZ.png" alt="">
+
+                        </div>
+                        <div>
+                            <div>
+                                <h4>
+                                    Creating custom Shapes and Fonts
+                                </h4>
+                                <p>
+                                    Immanuel D’Trainer
+                                </p>
+                            </div>
+                            <div class="all_rate_bx flex items-center">
+                                <p>
+                                    1,652 Students
+                                </p>
+                                <div class="all_rate">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="all_btn_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="all_btn_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="all_element">
+
+                    <div class="all_img1">
+                        <img src="./imges/feature3.png" alt="">
+                    </div>
+
+                    <div class="flex">
+                        <div class="">
+                            <img src="./imges/featureZ.png" alt="">
+
+                        </div>
+                        <div>
+                            <div>
+                                <h4>
+                                    Video Editing Masterclass with Adobe Premiere Pro...
+                                </h4>
+                                <p>
+                                    Ukpono Lens
+                                </p>
+                            </div>
+                            <div class="all_rate_bx flex items-center">
+                                <p>
+                                    721 Students
+                                </p>
+                                <div class="all_rate">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="all_btn_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="all_btn_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="all_element">
+
+                    <div class="all_img1">
+                        <img src="./imges/feature5.png" alt="">
+                    </div>
+
+                    <div class="flex">
+                        <div class="">
+                            <img src="./imges/featureZ.png" alt="">
+
+                        </div>
+                        <div>
+                            <div>
+                                <h4>
+                                    Drawing made easy with Procreate
+                                </h4>
+                                <p>
+                                    D’Artist Frank
+                                </p>
+                            </div>
+                            <div class="all_rate_bx flex items-center">
+                                <p>
+                                    3,700 Students
+                                </p>
+                                <div class="all_rate">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="all_btn_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="all_btn_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="all_element">
+
+                    <div class="all_img1">
+                        <img src="./imges/feature4.png" alt="">
+                    </div>
+
+                    <div class="flex">
+                        <div class="">
+                            <img src="./imges/featureZ.png" alt="">
+
+                        </div>
+                        <div>
+                            <div>
+                                <h4>
+                                    3D & Animation for Beginners with Blender
+                                </h4>
+                                <p>
+                                    Ogoluwa Ojewale
+                                </p>
+                            </div>
+                            <div class="all_rate_bx flex items-center">
+                                <p>
+                                    2,300 Students
+                                </p>
+                                <div class="all_rate">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="all_btn_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="all_btn_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="all_element">
+
+                    <div class="all_img1">
+                        <img src="./imges/feature2.png" alt="">
+                    </div>
+
+                    <div class="flex">
+                        <div class="">
+                            <img src="./imges/featureZ.png" alt="">
+
+                        </div>
+                        <div>
+                            <div>
+                                <h4>
+                                    Creating custom Shapes and Fonts
+                                </h4>
+                                <p>
+                                    Immanuel D’Trainer
+                                </p>
+                            </div>
+                            <div class="all_rate_bx flex items-center">
+                                <p>
+                                    1,652 Students
+                                </p>
+                                <div class="all_rate">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="all_btn_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="all_btn_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="all_element">
+
+                    <div class="all_img1">
+                        <img src="./imges/feature3.png" alt="">
+                    </div>
+
+                    <div class="flex">
+                        <div class="">
+                            <img src="./imges/featureZ.png" alt="">
+
+                        </div>
+                        <div>
+                            <div>
+                                <h4>
+                                    Video Editing Masterclass with Adobe Premiere Pro...
+                                </h4>
+                                <p>
+                                    Ukpono Lens
+                                </p>
+                            </div>
+                            <div class="all_rate_bx flex items-center">
+                                <p>
+                                    721 Students
+                                </p>
+                                <div class="all_rate">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="all_btn_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="all_btn_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="all_element">
+
+                    <div class="all_img1">
+                        <img src="./imges/feature1.png" alt="">
+                    </div>
+
+                    <div class="flex">
+                        <div class="">
+                            <img src="./imges/featureZ.png" alt="">
+
+                        </div>
+                        <div>
+                            <div>
+                                <h4>
+                                    Introduction to Photoshop for Web Designers
+                                </h4>
+                                <p>
+                                    Ogoluwa Ojewale
+                                </p>
+                            </div>
+                            <div class="all_rate_bx flex items-center">
+                                <p>
+                                    3,700 Students
+                                </p>
+                                <div class="all_rate">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="all_btn_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="all_btn_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="all_element">
+
+                    <div class="all_img1">
+                        <img src="./imges/feature5.png" alt="">
+                    </div>
+
+                    <div class="flex">
+                        <div class="">
+                            <img src="./imges/featureZ.png" alt="">
+
+                        </div>
+                        <div>
+                            <div>
+                                <h4>
+                                    Drawing made easy with Procreate
+                                </h4>
+                                <p>
+                                    D’Artist Frank
+                                </p>
+                            </div>
+                            <div class="all_rate_bx flex items-center">
+                                <p>
+                                    3,700 Students
+                                </p>
+                                <div class="all_rate">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="all_btn_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="all_btn_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="home_featured_courses">
+        <div class="flex ">
+            <div class="">
+                <h1 class="feat-head">Featured Courses</h1>
+            </div>
+        </div>
+        <div class="flex fead justify-center">
+            <ul class="feature_ul flex flex-wrap">
+                <li><a href="">All Categories</a></li>
+                <li><a href="">Design</a></li>
+                <li><a href="">Coding</a></li>
+                <li><a href="">DIY</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">Marketing</a></li>
+                <li><a href="">Animation</a></li>
+            </ul>
+        </div>
+        <div class="home_featured_container">
+            <div class="home_carousel  flex justify-center  owl-carousel owl-theme">
+                <div class="item">
+                    <div>
+                        <img src="./imges/feature1.png" alt="">
+
+                    </div>
+                    <div class="flex  ">
+                        <div class="feature_loop">
+                            <img src="./imges/featureZ.png" alt="">
+
+                        </div>
+                        <div>
+                            <div class="feat ">
+                                <h4>
+                                    Introduction to Photoshop for Web Designers
+                                </h4>
+                                <p>
+                                    Ogoluwa Ojewale
+                                </p>
+                            </div>
+                            <div class="flex feature_rating">
+                                <p>
+                                    3,700 Students
+                                </p>
+                                <div class="rate-bx">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex feature_bx">
+                                <div class="feature_bx_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="feature_bx_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./imges/feature2.png" alt="">
+                    </div>
+                    <div class="flex  ">
+                        <div class="feature_loop">
+                            <img src="./imges/featureZ.png" alt="">
+                        </div>
+                        <div>
+                            <div class="feat ">
+                                <h4>
+                                    Creating custom Shapes and Fonts
+                                </h4>
+                                <p>
+                                    Immanuel D’Trainer
+                                </p>
+                            </div>
+                            <div class="flex feature_rating">
+                                <p>
+
+                                    1,652 Students
+                                </p>
+                                <div class="rate-bx">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex feature_bx">
+                                <div class="feature_bx_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="feature_bx_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <img src="./imges/feature3.png" alt="">
+                    </div>
+                    <div class="flex  ">
+                        <div class="feature_loop">
+                            <img src="./imges/featureZ.png" alt="">
+                        </div>
+                        <div>
+                            <div class="feat ">
+                                <h4>
+                                    Video Editing Masterclass with Adobe Premiere Pro...
+                                </h4>
+                                <p>
+                                    Ukpono Lens
+                                </p>
+                            </div>
+                            <div class="flex feature_rating">
+                                <p>
+
+                                    721 Students
+                                </p>
+                                <div class="rate-bx">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex feature_bx">
+                                <div class="feature_bx_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="feature_bx_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./imges/feature4.png" alt="">
+                    </div>
+                    <div class="flex  ">
+                        <div class="feature_loop">
+                            <img src="./imges/featureZ.png" alt="">
+                        </div>
+                        <div>
+                            <div class="feat ">
+                                <h4>
+                                    3D & Animation for Beginners with Blender
+                                </h4>
+                                <p>
+
+                                    Ogoluwa Ojewale
+                                </p>
+                            </div>
+                            <div class="flex feature_rating">
+                                <p>
+
+                                    2,300 Students
+                                </p>
+                                <div class="rate-bx">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex feature_bx">
+                                <div class="feature_bx_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="feature_bx_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./imges/feature5.png" alt="">
+                    </div>
+                    <div class="flex  ">
+                        <div class="feature_loop">
+                            <img src="./imges/featureZ.png" alt="">
+                        </div>
+                        <div>
+                            <div class="feat ">
+                                <h4>
+                                    Drawing made easy with Procreate
+                                </h4>
+                                <p>
+                                    D’Artist Frank
+                                </p>
+                            </div>
+                            <div class="flex feature_rating">
+                                <p>
+
+                                    3,700 Students
+                                </p>
+                                <div class="rate-bx">
+                                    <img src="./imges/rating@2x.png" alt="" class="feat-img">
+                                </div>
+                            </div>
+                            <div class="flex feature_bx">
+                                <div class="feature_bx_1">
+                                    <a href="#">Premium Package</a>
+                                </div>
+                                <div class="feature_bx_2">
+                                    <a href="#">Design</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="view_btn w-full flex justify-center ">
+            <a href="#">view more</a>
+        </div> -->
+    </div>
+
+
+    <!-- ===================== Creative ==================== -->
+    <div class="creative">
+        <div class="creative_bx flex justify-center">
+            <div class="creative_container flex-wrap md:flex grid">
+                <div class="creative_1">
+                    <p>Creative</p>
+                    <ul>
+                        <li><a href="">Animation</a></li>
+                        <li><a href="">Drawing</a></li>
+                        <li><a href="">Graphic Design</a></li>
+                        <li><a href="">Illustration</a></li>
+                        <li><a href="">Photography</a></li>
+                        <div class="creative_button">
+                            <a href="#">View All </a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="creative_1">
+                    <p>Business</p>
+                    <ul>
+                        <li><a href="">Entrepreneurship </a></li>
+                        <li><a href="">Freelancing</a></li>
+                        <li><a href="">Leadership</a></li>
+                        <li><a href="">Marketing</a></li>
+                        <li><a href="">Productivity</a></li>
+                        <div class="creative_button">
+                            <a href="#">View All </a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="creative_1">
+                    <p>Technology</p>
+                    <ul>
+                        <li><a href="">Data Science </a></li>
+                        <li><a href="">Game Design</a></li>
+                        <li><a href="">Mobile Development</a></li>
+                        <li><a href="">Product Management</a></li>
+                        <li><a href="">Web Development</a></li>
+                        <div class="creative_button">
+                            <a href="#">View All </a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="creative_1">
+                    <p>LifeStyle</p>
+                    <ul>
+                        <li><a href="">Crafts </a></li>
+                        <li><a href="">Culinary</a></li>
+                        <li><a href="">Gaming</a></li>
+                        <li><a href="">Health & Wellness</a></li>
+                        <li><a href="">Languages</a></li>
+                        <div class="creative_button">
+                            <a href="#">View All </a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ========================== GET STARTED -======================== -->
+    <div class="footer_color">
+        <div class="get_started flex justify-center items-center">
+            <div class="get_container flex justify-center items-center">
+                <div class="get_Area text-center">
+                    <h1>Get started today <br> Sign up on CobangArk now!</h1>
+                    <div class="flex justify-center">
+                        <div class="get_button">
+                            <a href="#">create account for free</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ================================== FOOTER ====================== -->
+        <div class="footer flex justify-center items-center">
+            <div class="footer_box md:flex grid justify-between items-center">
+                <div class="footer_box_1">
+                    <div class="footer_logo">
+                        <img src="./imges/logo.png" alt="">
+                    </div>
+                    <div>
+                        <p>
+                            COBANG ARK is an interactive fundraising e-learning platform for families and friends.
+                        </p>
+                    </div>
+                    <div>
+                        <ul class="box_one_img flex flex-wrap ">
+                            <li><a href=""><img src="./imges/101Font_Awesome_5_brands_pinterest 1.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101Vector.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101twitter 1.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101facebook-icon.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_box_1 footer_extra">
+                    <div>
+                        <ul class="md:flex grid flex-wrap md:justify-end">
+                            <li><a href="">Courses</a></li>
+                            <li><a href="">Dashboard</a></li>
+                            <li><a href="">contact</a></li>
+                            <li><a href="">Profile</a></li>
+                            <li><a href="">Testimonial</a></li>
+
+                        </ul>
+                        <ul class="md:flex grid flex-wrap md:justify-end">
+
+                            <li><a href="">Privacy and Terms </a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul class="box_one_1 flex flex-wrap md:justify-end ">
+                            <li><a href=""><img src="./imges/g4158.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/verse.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/master.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/HaggleX Logo 1.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 13,
+            nav: false,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+
+                1000: {
+                    items: 4.6
+                }
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>
