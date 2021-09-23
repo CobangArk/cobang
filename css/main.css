@@ -38,7 +38,9 @@
     background-position: center;
     background-size: cover;
 }
-
+.active_link > a{ 
+    color: #259CD7 !important;
+}
 /* Style The Dropdown Button */
 .dropbtn {
     /* background-color: #4CAF50; */
