@@ -41,6 +41,60 @@
 .active_link > a{ 
     color: #259CD7 !important;
 }
+/* ======================== CUSTOM COURSE DROP NAV ===================== */
+
+
+/* Style The Dropdown Button */
+.dropbtn-course {
+    /* background-color: #4CAF50; */
+    color: white;
+    padding: 16px;
+    display: flex;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdowns {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-course {
+    display: none;
+    position: absolute;
+    right: 10px;
+    background-color: #f9f9f9;
+    width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  /* .course_content{
+    margin-left: -100px;
+    min-width: 170px;
+  } */
+  /* Links inside the dropdown */
+  .dropdown-course a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-course a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdowns:hover .dropdown-course {
+    display: block;
+  }
+
+  /* ================================================= */
+
+
+
 /* Style The Dropdown Button */
 .dropbtn {
     /* background-color: #4CAF50; */
@@ -94,7 +148,14 @@
   /* =========================================================================================
    ======================================== NAVIGATION MEUN ================================= 
    ============================================================================================*/
-  
+ .course_nav_icon{
+     width: 25px ;
+     height: 25px;
+    }
+    .course_nav_avatar{
+        height: 50px;
+        width: 50px;
+    }
   .active_nav{
     color: #259CD7 !important;
   }
