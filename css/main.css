@@ -341,9 +341,7 @@
   .icons_hidden{
     display: none;
   }
-  .ham img{
-      /* width: 10px !important; */
-  }
+
   }
     /*=========================================================================================
      ================================= END OF NAVIGATION MEUN =================================
@@ -1262,9 +1260,6 @@ margin: 10px 0px;
     border-radius: 24px;
     border: 2px solid #259CD7;
 }
-.box_earn{
-    /* background: rgba(29, 187, 255, 0.5); */
-}
 .earn_box_1 button div{
     margin: 10px;
 }
@@ -1660,9 +1655,7 @@ margin: 10px 0px;
 }
 
 @media screen and (max-width: 789px){
-    .signup_form{
-        /* background: red; */
-    }
+
     .signup_2{
         width: 100%;
     }
@@ -2150,10 +2143,7 @@ font-weight: normal;
   }
   
   /* Add a background color to the active dot/circle */
-  .active, .dot:hover {
-    /* background-color: #717171; */
-  }
-  
+ 
   /* Add an italic font style to all quotes */
   q {font-family: 'Mazzard.new'; font-weight: 500; color: 
     #183B56; font-size: 20px;}
@@ -2588,9 +2578,7 @@ border-radius: 15px;
     width: 60px;
     margin: 10px;
 }
-.all_btn_1{
 
-}
 .all_btn_1{
     background: rgba(37, 156, 215, 0.1);
     border: 1px solid #259CD7;
@@ -2601,7 +2589,7 @@ border-radius: 15px;
     color: #259CD7;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 .all_btn_2{
     background: rgba(37, 156, 215, 0.1);
@@ -2805,4 +2793,24 @@ margin-top: 30px;
     }
     
     
+  }
+
+
+
+
+
+
+  /* ============================ PRODUCT DESIGN ============== */
+  .product{
+      height: 100vh;
+      width: 100%;
+      background-color: red;
+  }
+  .prdt{
+      /* background-color: green; */
+      width: 34%;
+      text-align: center;
+  }
+  .prdt h1{
+      font-size: 50px;
   }
