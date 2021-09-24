@@ -2802,9 +2802,10 @@ margin-top: 30px;
 
   /* ============================ PRODUCT DESIGN ============== */
   .product{
-      height: 100vh;
+      height: auto;
       width: 100%;
-      background-color: red;
+      /* background-color: red; */
+      border: 2px solid red;
   }
   .prdt{
       /* background-color: green; */
@@ -2813,4 +2814,269 @@ margin-top: 30px;
   }
   .prdt h1{
       font-size: 50px;
+      line-height: 57px;
   }
+  .inner_product{
+      width: 80%;
+      margin-top: -100px;
+      margin-bottom: 100px;
+      height: auto;
+      /* background-color: green; */
+      border: 2px solid green;
+      border-radius: 20px;
+      padding: 30px;
+  }
+  .product_video{
+      border: 2px solid purple;
+      height: auto;
+      width: 100%;
+      border-radius: 20px;
+  }
+  .product_video video{
+      border-radius: 20px;
+  }
+  .product_video_instructor{
+      height: 100px;
+      width: 100%;
+      margin: 12px 0px;
+      border: 3px solid orange;
+  }
+  .product_main{
+      height: auto;
+      width: 100%;
+      border: 2px solid darkblue;
+  }
+  .product_bx_1{
+      width: 30%;
+      height: 100vh;
+      border: 2px solid lawngreen;
+  }
+  .product_bx_2{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+.product_search{
+  /* border: 2px solid firebrick; */
+  height: auto;
+  margin: 20px 0px;
+  width: 100%;
+}
+.product_search_bx{
+    width: 60%;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 44px 64px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding-left: 20px;
+}
+.p_x{
+    /* padding: 20px; */
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid fuchsia; */
+    border-radius: 30px;
+}
+.p_x2{
+    width: 50px;
+    /* border: 1px solid #FFA82B; */
+    border-bottom-right-radius: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.p_x2 img{
+    width: 41px;
+    height: 41px;
+}
+.p_x input{
+    outline: none;
+    height: 50px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+   
+}
+.p_x input[type=text]{
+    font-family: 'Bossa'
+}
+.product_overview{
+    height: auto;
+    width: 100%;
+    border: 2px solid lightslategray;
+}
+.product_about{
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    margin-top: 9px;
+    border: 2px solid green;
+}
+.product_overview_list li{
+  padding: 10px;
+  list-style: none;
+}
+/* #require{
+    transition-delay: 4s;
+    transition: 0.5s ease ;
+} */
+.product_overview_list li a{
+    font-family: 'Bossa';
+    color: 
+    #5A7180;
+}
+.product_overview_list li a:hover{
+    color: 
+    #0F1B41;
+}
+.product_learn{
+    height: auto;
+    width: 70%;
+    margin-top: 9px;
+    border: 2px solid green;
+}
+.product_about h4{
+    font-size: 22px;
+    font-family: 'Bossa';
+    color: #0F1B41;
+}
+.product_about p{
+    font-family: 'Mazzard.new';
+    color: 
+    #5A7180;
+    font-size: 18px;
+}
+.product_learn h4{
+    padding: 7px 19px;
+    font-size: 22px;
+    color: #0F1B41;
+    font-family: 'Bossa';
+}
+.product_learn_v div{
+    margin: 6px 19px ;
+}
+.product_learn_v div p{
+    color: 
+    #5A7180;
+    font-family: 'Mazzard.new';
+    font-size: 16px;
+}
+.product_cover{
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    margin-top: 9px;
+    border: 2px solid green;
+}
+.product_cover h4{
+    font-size: 22px;
+    font-family: 'Bossa';
+    color: #0F1B41;
+}
+.product_cover p{
+    color: 
+    #5A7180;
+    font-size: 18px;
+    font-family: 'Mazzard.new';
+}
+.product_requirement h4{
+    padding-left: 10px;
+    font-size: 22px;
+    color: 
+    #0F1B41;
+    font-family: 'Bossa';
+}
+.product_requirement{
+    height: auto;
+    width: 70%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 2px solid green;
+}
+.require_bx {
+  margin: 10px;
+}
+.require_bx p{
+    font-size: 18px;
+    color: #5A7180;
+    font-family: 'Mazzard.new';
+}
+.product_instructor_x{
+    width: 100%;
+    height: auto;
+    background: rgba(37, 156, 215, 0.05);
+    border-radius: 4px;
+    border: 2px solid #FF6868;
+    margin-top: 9px;
+}
+.product_rate{
+    height: 120px;
+    width: 100%;
+    margin-top: 9px;
+    border: 3px solid #FF6868;
+}
+.product_full_review{
+    margin-top: 9px;
+    height: 100vh;
+    width: 100%;
+    border: 2px solid red ;
+}
+.product_instructor_x img{
+    width: 50px;
+}
+.instructor_para p{
+    font-size: 18px;
+    font-family: 'Mazzard.new';
+}
+.product_instructor_x h4{
+    font-family: 'Bossa';
+    font-size: 22px;
+}
+.product_instructor_x h3{
+    font-family: 'Bossa';
+}
+.product_instructor_x .p-2 p{
+    font-family: 'Bossa';
+}
+
+@media screen and (max-width: 789px){
+    .product_bx_1{
+        width: 100%;
+    }
+    .inner_product{
+        padding: 3px;
+    }
+    .product_bx_2{
+        padding:3px;
+     
+    }
+    .product_bx_1{
+        width: 100%;
+    }
+    .product_search_bx{
+        width: 100%;
+    }
+    .p_x input[type=text]{
+        font-size: 10px;
+    }
+    .p_x2 img{
+        width: 30px;
+        height: 30px;
+    }
+    .product_design_title{
+        font-size: 22px !important;
+    }
+    .product_design_bx{
+        width: 100%;
+    }
+    .product_overview_list li a{
+      font-size: 15px !important;
+    }
+    .product_overview_list li{
+        padding: 3px;
+        list-style: none;
+      }
+}
