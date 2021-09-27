@@ -2847,7 +2847,7 @@ margin-top: 30px;
       padding: 30px;
   }
   .product_video{
-      border: 2px solid purple;
+      /* border: 2px solid purple; */
       height: auto;
       width: 100%;
       border-radius: 20px;
@@ -3036,10 +3036,16 @@ margin-top: 30px;
     width: 50px;
 }
 .product_rate{
-    height: 120px;
+    height: auto;
     width: 100%;
     margin-top: 9px;
     border: 3px solid #FF6868;
+}
+.product_rate h4{
+    font-family: 'Bossa';
+    padding: 10px;
+    color: #0F1B41;
+    font-size: 22px;
 }
 .product_full_review{
     margin-top: 9px;
@@ -3118,6 +3124,52 @@ margin-top: 30px;
    font-size: 19px;
    color: #1D263A;
 }
+.rate_area_1{
+    /* width: ; */
+    margin: 10px;
+    /* border: 1px solid green; */
+    height: auto;
+}
+.product_rate > div{
+    /* margin: 10px; */
+}
+.area_4{
+    width: 120px;
+    height: 120px;
+    background: rgba(81, 91, 229, 0.120739);
+mix-blend-mode: normal;
+border-radius: 10px;
+}
+.area_4 p{
+    font-family: 'Bossa';
+    font-size: 16px;
+}
+.area_4 h3{
+    font-family: 'Bossa';
+    font-size: 22px
+}
+.area_4 img{
+    /* width: 100%; */
+    width: 78px;
+}
+.rate_area_2{
+    width: 90%;
+    border: 1px solid green;
+    height: 100px;
+    margin: 10px;
+}
+.rate_area_3{
+    width: 20%;
+    border: 1px solid green;
+    height: 100px;
+    margin: 10px;
+}
+.rate_area_4{
+    width: 20%;
+    border: 1px solid green;
+    height: 100px;
+    margin: 10px;
+}
 @media screen and (max-width: 789px){
     .inner_product{
         width: 90%;
@@ -3127,16 +3179,7 @@ margin-top: 30px;
         font-size: 15px;
     
     }
-    .product_bx_2  div{
-        /* padding: 3px; */
-    }
-/*   
-    .require_bx{
-        padding: 0px;
-    }
-    .product_learn{
-        padding: 0px;
-    } */
+ 
 }
 
 
