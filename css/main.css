@@ -3437,7 +3437,7 @@ border-radius: 10px;
     #0F1B41;
 }
 .accord label:hover{
-    color: #fff;
+    /* color: #fff; */
 }
 .accord_1 a{
     font-family: 'Bossa';
