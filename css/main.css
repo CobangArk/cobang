@@ -2890,7 +2890,88 @@ margin-top: 30px;
       height: auto;
       width: 100%;
       /* background-color: red; */
-      border: 2px solid red;
+      /* border: 2px solid red; */
+  }
+  .enroll{
+      /* border: 2px solid red; */
+      width: 100%;
+      height: auto;
+  }
+  .enroll_btn{
+      display: flex;
+      background-color: #259CD7;
+      filter: drop-shadow(0px 16px 36px rgba(37, 156, 215, 0.21));
+      width: 88%;
+      border-radius: 20px;
+      height: 60px;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      color: #fff;
+  }
+  .enroll_btn a{
+      font-size: 22px;
+      font-family: 'Bossa';
+  }
+  .enroll h4{
+      padding: 10px;
+      font-family: 'Mazzard.new';
+      font-size: 22px;
+      font-weight: 700;
+      padding-top: 10px;
+      color: #213053;
+  }
+  .enroll_list_1{
+    width: 72px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(37, 156, 215, 0.1);
+/* CobangArk Blue */
+
+    border: 1px solid #259CD7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 3px 10px;
+  }
+  .enroll_list_2{
+    background: rgba(37, 156, 215, 0.1);
+    /* CobangArk Blue */
+     margin: 3px 10px;
+    border: 1px solid #259CD7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33px;
+  }
+  .enroll .enroll_list_1 a{
+    color: #259CD7;
+    font-family: 'Mazzard.new';
+  }
+  .enroll .enroll_list_2 a{
+    color: #259CD7;
+    font-family: 'Mazzard.new';
+  }
+  .enroll .enroll_list_3 a{
+    color: #259CD7;
+    font-family: 'Mazzard.new';
+  }
+  .enroll_list_3{
+    width: 62px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(37, 156, 215, 0.1);
+/* CobangArk Blue */
+    margin: 3px 10px;
+    border: 1px solid #259CD7;
+    box-sizing: border-box;
+    border-radius: 20px;
   }
   .prdt{
       /* background-color: green; */
@@ -3117,7 +3198,7 @@ margin-top: 30px;
     height: auto;
     width: 100%;
     padding: 20px;
-    border: 2px solid red ;
+    /* border: 2px solid red ; */
 }
 .product_full_review H1{
     font-size: 20px;
@@ -3146,9 +3227,33 @@ margin-top: 30px;
     font-family: 'Mazzard.new';
 }
 .give{
-    height: 200px;
+    height: auto;
     margin: 20px 0px;
-    border: 2px solid red;
+    /* border: 2px solid red;    */
+}
+.give .txt-area{
+    height: 200px;
+    border: 1px solid #5A7180;
+    outline: none;
+    width: 100%;
+    color: #5A7180;
+}
+.give > div{
+    width: 164px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #259CD7;
+}
+.give > div a{
+    font-family: 'Bossa';
+}
+.give h4{
+    line-height: 40px;
+    font-family: 'Bossa';
+    color: #0F1B41;
 }
 .product_instructor_x img{
     width: 50px;
@@ -3325,6 +3430,16 @@ border-radius: 10px;
 .accord input, label:hover{
     background-color: #259CD7;
     /* color: white; */
+}
+.accord label{
+    font-family: 'Bossa';
+    font-size: 18px;
+    color: 
+    #0F1B41;
+}
+.accord_1 a{
+    color: 
+    #5A7180;
 }
 
 
