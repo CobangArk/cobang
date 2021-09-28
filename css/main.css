@@ -2326,6 +2326,71 @@ font-weight: normal;
 	opacity: 0;
 	transition: 1s ease 0.3s;
 }
+.progress-done_5 {
+    background: #259CD7;
+	/* box-shadow: 0 3px 3px -5px #259CD7, 0 2px 5px #259CD7; */
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
+.progress-done_6 {
+    background: #259CD7;
+	/* box-shadow: 0 3px 3px -5px #259CD7, 0 2px 5px #259CD7; */
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
+.progress-done_7 {
+    background: #259CD7;
+	/* box-shadow: 0 3px 3px -5px #259CD7, 0 2px 5px #259CD7; */
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
+.progress-done_8 {
+    background: #259CD7;
+	/* box-shadow: 0 3px 3px -5px #259CD7, 0 2px 5px #259CD7; */
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
+.progress-done_9 {
+    background: #259CD7;
+	/* box-shadow: 0 3px 3px -5px #259CD7, 0 2px 5px #259CD7; */
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
 .x1{
     width: 200px;
     background: rgba(255, 104, 104, 0.1);
@@ -3039,7 +3104,7 @@ margin-top: 30px;
     height: auto;
     width: 100%;
     margin-top: 9px;
-    border: 3px solid #FF6868;
+    /* border: 3px solid #FF6868; */
 }
 .product_rate h4{
     font-family: 'Bossa';
@@ -3153,9 +3218,10 @@ border-radius: 10px;
     width: 78px;
 }
 .rate_area_2{
-    width: 90%;
-    border: 1px solid green;
-    height: 100px;
+    padding: 10px;
+    width: auto;
+    /* border: 1px solid green; */
+    height: auto;
     margin: 10px;
 }
 .rate_area_3{
@@ -3165,10 +3231,20 @@ border-radius: 10px;
     margin: 10px;
 }
 .rate_area_4{
+    padding: 20px;
     width: 20%;
-    border: 1px solid green;
-    height: 100px;
+    /* border: 1px solid green; */
+    height: auto;
     margin: 10px;
+}
+.rate_area_4 div{
+    line-height: 40px;
+ 
+}
+.rate_area_4 div p{
+    font-family: 'Mazzard.new';
+    font-weight: bold;
+    color: #0F1B41;
 }
 @media screen and (max-width: 789px){
     .inner_product{
