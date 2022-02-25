@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./fonts/Bossa-web-font/Bossa-ExtendedBold.woff2">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./fonts/mazzard-web-font/MazzardH-Bold.woff">
+    <link rel="stylesheet" href="css/tw.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ============================================= FIRST BACKROUND IMAGE/NAvigation =================================== -->
+    <div class="first_bg">
+        <!-- <nav class="nav_area md:flex  justify-between items-center">
+            <a href="#">
+                <img src="./imges/logo.png" alt="" class="logo">
+            </a>
+            <ul class="md:flex">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li class="first_signup flex items-center justify-center"><a href="#">Signup for free</a></li>
+            </ul>
+        </nav> -->
+        <nav>
+
+            <div class="main_nav">
+                <li class="open_list">
+                    <span onclick="openNav()" class="open"><img src="./imges/menu-3-fill.png" alt="" class="ham"></span>
+                </li>
+                <a href="./index.html">
+                    <img src="./imges/logo.png" alt="" class="logo">
+                </a>
+                <ul class="hidden md:block">
+                    <li class="nav_links"><a href="./index.html">Home</a></li>
+                    <li class="nav_links "><a href="./about.html">About</a></li>
+                    <li class="dropdown nav_links">
+                        <a href="./courses.html" class="dropbtn">Courses</a>
+                        <!-- <div class="dropdown-content">
+                            <a href="#">Web development</a>
+                            <a href="#">LifeStyle</a>
+                            <a href="#">Health and fitness</a>
+                            <a href="#">Digital marketing</a>
+                            <a href="#">Game development</a>
+                            <a href="#">Mobile development</a>
+                            <a href="#">Photography</a>
+                            <a href="#">Graphics design</a>
+                        </div> -->
+                    </li>
+                    <!-- <li class="nav_links"><a href="./f&g.html">F&Q</a></li> -->
+                    <li class="nav_links"><a href="#">Contact</a></li>
+                    <li class="nav_links"><a href="./signIn.html">Sign In</a></li>
+                    <li class="nav_links signup_link">
+                        <a href="./signUp.html">Signup for free</a>
+                    </li>
+                    <li>
+                        <span><img src="./imges/search@2x.png" alt="" class="search_meanu"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./courses.html">Courses</a>
+                    <!-- <a href="#">Help</a> -->
+                    <a href="./f&g.html">FAQ</a>
+                    <a href="#">Contact</a>
+                    <a href="./SignIn.html">Sign In</a>
+                </div>
+            </div>
+            <!-- Use any element to open/show the overlay navigation menu -->
+        </nav>
+
+
+        <!-- ============================= About Section ============== -->
+        <div class="about flex justify-center items-center">
+            <div class="about_container">
+                <div class="">
+                    <div class="flex justify-center">
+                        <div class="about_1">
+                            <h1>Rewards</h1>
+                            <p>
+                                At Cobang Ark we understand the needs of our students. We have not only put together
+                                valued practical courses but also set aside rewards to encourage and support our
+                                students learning.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reward_2">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reward_student">
+        <div class="reward_title flex justify-center ">
+            <div class="reward_title_bx">
+                Ways students can earn on CobangArk
+            </div>
+        </div>
+        <div class="reward_container grid md:flex items-center">
+            <div class="reward_bx_1">
+                  <div>
+                      <img src="./imges/reward_2.png" alt="" class="reward_qq1">
+                      <img src="./imges/reward_1.png" alt="" class="reward_qq">
+                  </div>
+            </div>
+            <div class="reward_bx_2">
+                <h4>Automatic Reward System (ARS)</h4>
+                <p>
+                    Once a package is purchase the automatic reward system is activated and students begin to earn from
+                    Cobang reward Account.
+                </p>
+                <h4>Referrals</h4>
+                <p>
+                    Students begin to earn between 3% – 5% as CobangArk Ambassadors when they make referrals on package(s).
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- =========================== Quote ============================ -->
+    <div class="quote flex justify-center items-center">
+        <div class="qoute_container">
+            <!-- Slideshow container -->
+
+            <div class="slideshow-container">
+
+                <!-- Full-width slides/quotes -->
+                <div class="mySlides">
+                    <div class="qoute_icon flex justify-center p-4">
+                        <img src="./imges/quote-left.png" alt="">
+                    </div>
+                    <q> An interactive fundraising platform for families and friends to create wealthy entrepreneurs
+                        focused on creating jobs and employment. An interactive fundraising platform for families and
+                        friends to create wealthy entrepreneurs focused on creating jobs and employment.</q>
+                    <p class="author">- Sade Nixon - Graphic Designer</p>
+                </div>
+
+                <div class="mySlides">
+                    <div class="qoute_icon flex justify-center p-4">
+                        <img src="./imges/quote-left.png" alt="">
+                    </div>
+                    <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                    <p class="author">- Ernest Hemingway</p>
+                </div>
+
+                <div class="mySlides">
+                    <div class="qoute_icon flex justify-center p-4">
+                        <img src="./imges/quote-left.png" alt="">
+                    </div>
+                    <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                    <p class="author">- Thomas A. Edison</p>
+                </div>
+
+                <!-- Next/prev buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- Dots/bullets/indicators -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+    <!-- ========================== GET STARTED -======================== -->
+    <div class="footer_color">
+        <div class="get_started flex justify-center items-center">
+            <div class="get_container flex justify-center items-center">
+                <div class="get_Area text-center">
+                    <h1>Get started today <br> Sign up on CobangArk now!</h1>
+                    <div class="flex justify-center">
+                        <div class="get_button">
+                            <a href="#">create account for free</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ================================== FOOTER ====================== -->
+        <div class="footer flex justify-center items-center">
+            <div class="footer_box md:flex grid justify-between items-center">
+                <div class="footer_box_1">
+                    <div class="footer_logo">
+                        <img src="./imges/logo.png" alt="">
+                    </div>
+                    <div>
+                        <p>
+                            COBANG ARK is an interactive fundraising e-learning platform for families and friends.
+                        </p>
+                    </div>
+                    <div>
+                        <ul class="box_one_img flex flex-wrap ">
+                            <li><a href=""><img src="./imges/101Font_Awesome_5_brands_pinterest 1.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101Vector.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101twitter 1.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/101facebook-icon.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_box_1 footer_extra">
+                    <div>
+                        <ul class="md:flex grid flex-wrap md:justify-end">
+                            <li><a href="">Courses</a></li>
+                            <li><a href="">Dashboard</a></li>
+                            <li><a href="">contact</a></li>
+                            <li><a href="">Profile</a></li>
+                            <li><a href="">Testimonial</a></li>
+
+                        </ul>
+                        <ul class="md:flex grid flex-wrap md:justify-end">
+
+                            <li><a href="">Privacy and Terms </a></li>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                        <ul class="box_one_1 flex flex-wrap md:justify-end ">
+                            <li><a href=""><img src="./imges/g4158.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/verse.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/master.png" alt=""></a></li>
+                            <li><a href=""><img src="./imges/HaggleX Logo 1.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

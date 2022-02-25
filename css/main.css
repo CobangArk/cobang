@@ -2648,15 +2648,7 @@ border-radius: 15px;
     width: 100%;
     background-color: #2A206F;
 }
-.home_carousel{
-    /* background-color: red; */
-}
-  /* .home_carousel{
-    display: flex;
-    justify-content: center;
-  
-    width: 84% !important;
-} */
+
 .all_element h4{
     font-size: 16px;
     font-weight: 700;
@@ -3320,9 +3312,7 @@ margin-top: 30px;
     /* border: 1px solid green; */
     height: auto;
 }
-.product_rate > div{
-    /* margin: 10px; */
-}
+
 .area_4{
     width: 120px;
     height: 120px;
@@ -3456,9 +3446,7 @@ border-radius: 10px;
     color: 
     #0F1B41;
 }
-.accord label:hover{
-    /* color: #fff; */
-}
+
 .accord_1 a{
     font-family: 'Bossa';
     color: 
@@ -3514,4 +3502,206 @@ border-radius: 10px;
       .video_star p{
           font-size: 16px;
       }
+}
+
+
+
+/* ============================ PRIVACY POLICY ========================== */
+.policy {
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 30px;
+}
+.policy p{
+    font-family: "Mazzard.new";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #5A7184;
+    line-height: 20px;
+}
+.policy h4{
+    color: #183B56;
+    font-size: 60px;
+    font-family: "Mazzard M";
+}
+.policy_bx_1{
+    padding: 50px 140px;
+}
+.policy_bx_1 p{
+    font-family: "Mazzard.new";
+    padding-top: 20px;
+    color: #5A7184;
+    font-size: 16px;
+}
+.policy_bx_1 h4{
+    font-family: "Bossa";
+    color: #183B56;color: #5A7184;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.policy_bx_1 li{
+    list-style: outside;
+    font-family: "Mazzard.new";
+    color: #5A7184;
+}
+.policy_bx_1 h6{
+    font-family: "Bossa";
+    color: #183B56;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+
+@media screen and (max-width: 789px){
+    .policy_bx_1{
+        padding: 50px 30px;
+    }
+    .policy h4{
+        color: #183B56;
+        font-size: 34px;
+        font-family: "Bossa";
+    }
+    .policy p{
+        font-size: 16px;
+    }
+}
+
+
+
+/* ==================================  TERMS OF SERVICES =================== */
+
+.terms {
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 30px;
+}
+.terms p{
+    font-family: "Mazzard.new";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #5A7184;
+    line-height: 20px;
+}
+.terms h4{
+    color: #183B56;
+    font-size: 60px;
+    font-family: "Mazzard M";
+}
+.term_bx_1{
+    padding: 50px 140px;
+}
+
+.term_bx_1 p{
+    font-family: "Mazzard.new";
+    padding-top: 20px;
+    color: #5A7184;
+    font-size: 16px;
+}
+.term_bx_1 h4{
+    font-family: "Mazzard M";
+    color: #183B56;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 15px;
+}
+.term_bx_1 a{
+    font-family: "Mazzard.new";
+    color: #5A7184;
+}
+@media screen and (max-width: 789px){
+    .term_bx_1{
+        padding: 50px 30px;
+    }
+    .terms h4{
+        color: #183B56;
+        font-size: 28px;
+        font-family: "Bossa";
+    }
+    .terms p{
+        font-size: 16px;
+    }
+}
+
+
+
+/* =================  REWARDS ================= */
+.reward_2{
+    width: 100%;
+    filter: drop-shadow(0px 16px 36px rgba(0, 43, 65, 0.15));
+    border-radius: 20px;
+    background-image: url(../imges/reward.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: orchid; */
+     height: 480px ;
+     margin-bottom: -200px;  
+}
+
+.reward_student{
+    height: auto;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 190px;
+    padding: 20px 240px;
+}
+.reward_container{
+    padding-top: 30px;
+}
+.reward_container .reward_bx_1{
+    height: auto;
+    border: 1px solid #000;
+    width: 100%;
+    padding: 20px;
+}
+.reward_container .reward_bx_2{
+    height: auto;
+    border: 1px solid #000;
+    width: 100%;
+    padding: 20px;
+}
+.reward_title_bx{
+    width: 300px;
+    font-family: "Mazzard M";
+    font-size: 30px;line-height: 34px;
+    color: #183B56;
+    /* border: 1px solid #000; */
+}
+.reward_bx_1 img{
+    width: 300px;
+}
+.reward_qq{
+    margin-top: -230px;
+    margin-left: 100px;
+    z-index: 1;
+    position: relative;
+}
+.reward_qq1{
+    position: relative;
+    z-index: 2;
+}
+.reward_bx_2 h4{
+    color: #183B56;
+    font-family: "Mazzard M";
+    font-size: 22px;
+    margin-top: 10px;
+}
+.reward_bx_2 p{
+    color: #5A7184;
+    font-family: "Mazzard.new";
+}
+@media screen and (max-width: 789px){
+    .reward_2{
+        height: 190px ;
+        background-size: contain !important;
+    }
+    .reward_student{
+        padding: 20px  0px;
+    }
+  
 }
